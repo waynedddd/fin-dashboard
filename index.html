@@ -4,189 +4,412 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fin 📊 持仓日报</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <style>
   :root {
-    --bg: #0f1117;
-    --card: #1a1d28;
-    --border: #2a2d3a;
-    --text: #e0e0e0;
-    --dim: #888;
-    --green: #00c853;
-    --red: #ff1744;
-    --blue: #448aff;
-    --yellow: #ffd600;
+    --bg: oklch(0.13 0.005 260);
+    --bg-elevated: oklch(0.17 0.005 260);
+    --bg-hover: oklch(0.20 0.005 260);
+    --border: oklch(0.25 0.005 260);
+    --border-subtle: oklch(0.20 0.005 260);
+    --text: oklch(0.93 0.005 260);
+    --text-secondary: oklch(0.60 0.005 260);
+    --text-muted: oklch(0.45 0.005 260);
+    --gold: oklch(0.80 0.15 85);
+    --gold-dim: oklch(0.65 0.12 85);
+    --gold-glow: oklch(0.80 0.15 85 / 0.15);
+    --red: oklch(0.65 0.2 25);
+    --red-bg: oklch(0.65 0.2 25 / 0.1);
+    --green: oklch(0.70 0.17 155);
+    --green-bg: oklch(0.70 0.17 155 / 0.1);
+    --blue: oklch(0.70 0.15 250);
+    --blue-bg: oklch(0.70 0.15 250 / 0.1);
+    --radius: 10px;
+    --font: 'Inter', -apple-system, system-ui, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
   }
+
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
   body {
-    font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    font-family: var(--font);
     background: var(--bg);
     color: var(--text);
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
   }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 20px;
+  }
+
+  /* Header */
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 24px;
+    padding: 32px 0 24px;
   }
-  header h1 { font-size: 24px; font-weight: 600; }
-  header h1 span { color: var(--blue); }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-icon {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dim));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: oklch(0.15 0 0);
+  }
+
+  .brand h1 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .brand h1 span {
+    color: var(--gold);
+  }
+
+  .brand .subtitle {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 1px;
+  }
+
+  /* Date Nav */
   .date-nav {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 4px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    padding: 4px;
   }
+
   .date-nav button {
-    background: var(--card);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 6px 12px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 6px 10px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
+    transition: all 150ms;
+    display: flex;
+    align-items: center;
   }
-  .date-nav button:hover { border-color: var(--blue); }
+
+  .date-nav button:hover {
+    background: var(--bg-hover);
+    color: var(--text);
+  }
+
   .date-nav .current-date {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
-    min-width: 140px;
+    font-family: var(--mono);
+    min-width: 150px;
     text-align: center;
+    color: var(--text);
   }
+
+  /* Tabs */
   .tab-bar {
     display: flex;
-    gap: 0;
-    margin-bottom: 24px;
+    gap: 2px;
+    margin: 20px 0 28px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    padding: 4px;
+    width: fit-content;
   }
+
   .tab {
-    padding: 10px 24px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    color: var(--dim);
+    padding: 8px 20px;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
-    transition: all 0.2s;
+    font-family: var(--font);
+    border-radius: 6px;
+    transition: all 200ms;
   }
-  .tab:first-child { border-radius: 8px 0 0 8px; }
-  .tab:last-child { border-radius: 0 8px 8px 0; }
+
+  .tab:hover { color: var(--text); }
+
   .tab.active {
-    background: var(--blue);
-    border-color: var(--blue);
-    color: #fff;
+    background: var(--gold-glow);
+    color: var(--gold);
+    box-shadow: 0 0 0 1px var(--gold-dim);
   }
-  .report-section {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 24px;
+
+  /* Sections */
+  .section {
     margin-bottom: 20px;
+    animation: fadeIn 400ms ease-out;
   }
-  .report-section h2 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 16px;
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .section-header {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
   }
+
+  .section-header i { width: 16px; height: 16px; }
+
+  .card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: border-color 200ms;
+  }
+
+  .card:hover { border-color: var(--border); }
+
+  /* Stock Grid */
   .stock-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 10px;
   }
+
   .stock-card {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 16px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    transition: all 200ms;
+    cursor: default;
   }
-  .stock-card .name {
+
+  .stock-card:hover {
+    border-color: var(--border);
+    transform: translateY(-1px);
+  }
+
+  .stock-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .stock-name {
     font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 4px;
-  }
-  .stock-card .code { color: var(--dim); font-size: 13px; }
-  .stock-card .price {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 8px 0;
-  }
-  .stock-card .change { font-size: 14px; font-weight: 600; }
-  .up { color: var(--red); }
-  .down { color: var(--green); }
-  .flat { color: var(--dim); }
-  .summary-text {
-    line-height: 1.8;
     font-size: 14px;
-    color: var(--text);
+    margin-bottom: 2px;
   }
-  .summary-text p { margin-bottom: 12px; }
-  .summary-text h3 {
-    font-size: 15px;
-    margin: 16px 0 8px;
-    color: var(--blue);
+
+  .stock-code {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-muted);
   }
-  .summary-text ul {
-    padding-left: 20px;
-    margin-bottom: 12px;
+
+  .stock-price {
+    font-family: var(--mono);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
   }
-  .summary-text li { margin-bottom: 6px; }
-  .tag {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 4px;
+
+  .stock-change {
+    font-family: var(--mono);
     font-size: 12px;
     font-weight: 500;
+    text-align: right;
+    margin-top: 2px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+    float: right;
   }
-  .tag-risk { background: rgba(255,23,68,0.15); color: var(--red); }
-  .tag-opportunity { background: rgba(0,200,83,0.15); color: var(--green); }
-  .tag-info { background: rgba(68,138,255,0.15); color: var(--blue); }
+
+  .up .stock-price { color: var(--red); }
+  .up .stock-change { color: var(--red); background: var(--red-bg); }
+  .down .stock-price { color: var(--green); }
+  .down .stock-change { color: var(--green); background: var(--green-bg); }
+  .flat .stock-price { color: var(--text-secondary); }
+  .flat .stock-change { color: var(--text-secondary); background: var(--bg-hover); }
+
+  .stock-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-subtle);
+    line-height: 1.5;
+  }
+
+  /* Content */
+  .content {
+    line-height: 1.8;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+
+  .content h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gold);
+    margin: 16px 0 6px;
+  }
+
+  .content h3:first-child { margin-top: 0; }
+
+  .content p { margin-bottom: 10px; }
+
+  .content ul {
+    padding-left: 18px;
+    margin-bottom: 10px;
+  }
+
+  .content li {
+    margin-bottom: 4px;
+    color: var(--text);
+  }
+
+  .content strong { color: var(--text); font-weight: 600; }
+
+  /* Risk tags */
+  .risk-card {
+    border-left: 2px solid var(--red);
+  }
+
+  /* Empty State */
   .empty-state {
     text-align: center;
-    padding: 60px 20px;
-    color: var(--dim);
+    padding: 80px 20px;
   }
-  .empty-state .icon { font-size: 48px; margin-bottom: 16px; }
-  .empty-state p { font-size: 15px; }
-  .timestamp {
-    text-align: right;
-    color: var(--dim);
-    font-size: 12px;
-    margin-top: 12px;
+
+  .empty-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+    opacity: 0.5;
   }
-  /* A股用红涨绿跌 */
-  .note {
+
+  .empty-state p {
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  .empty-state .hint {
     font-size: 12px;
-    color: var(--dim);
     margin-top: 8px;
-    font-style: italic;
+    color: var(--text-muted);
+    opacity: 0.6;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-subtle);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  .footer .disclaimer {
+    max-width: 500px;
+    line-height: 1.5;
+  }
+
+  .footer .timestamp {
+    font-family: var(--mono);
+    white-space: nowrap;
+  }
+
+  /* Convention note */
+  .convention {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 12px;
+    padding: 4px 10px;
+    background: var(--bg-hover);
+    border-radius: 20px;
+  }
+
+  .dot-red { width: 8px; height: 8px; border-radius: 50%; background: var(--red); }
+  .dot-green { width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    header { flex-direction: column; gap: 16px; align-items: flex-start; }
+    .stock-grid { grid-template-columns: 1fr; }
+    .tab-bar { width: 100%; }
+    .tab { flex: 1; text-align: center; }
+    .footer { flex-direction: column; gap: 12px; text-align: center; }
   }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>📊 <span>Fin</span> 持仓日报</h1>
-  <div class="date-nav">
-    <button onclick="changeDate(-1)">◀</button>
-    <div class="current-date" id="currentDate"></div>
-    <button onclick="changeDate(1)">▶</button>
+<div class="container">
+  <header>
+    <div class="brand">
+      <div class="brand-icon">F</div>
+      <div>
+        <h1><span>Fin</span> Dashboard</h1>
+        <div class="subtitle">你的持仓，我来盯。</div>
+      </div>
+    </div>
+    <div class="date-nav">
+      <button onclick="changeDate(-1)"><i data-lucide="chevron-left" style="width:16px;height:16px"></i></button>
+      <div class="current-date" id="currentDate"></div>
+      <button onclick="changeDate(1)"><i data-lucide="chevron-right" style="width:16px;height:16px"></i></button>
+    </div>
+  </header>
+
+  <div class="tab-bar">
+    <button class="tab active" onclick="switchTab('pre')" id="tab-pre">☀ 盘前</button>
+    <button class="tab" onclick="switchTab('post')" id="tab-post">☽ 盘后</button>
   </div>
-</header>
 
-<div class="tab-bar">
-  <div class="tab active" onclick="switchTab('pre')" id="tab-pre">☀️ 盘前总结</div>
-  <div class="tab" onclick="switchTab('post')" id="tab-post">🌙 盘后总结</div>
-</div>
+  <div id="report-content">
+    <div class="empty-state">
+      <div class="empty-icon">◌</div>
+      <p>加载中...</p>
+    </div>
+  </div>
 
-<div id="report-content">
-  <div class="empty-state">
-    <div class="icon">📭</div>
-    <p>加载报告中...</p>
+  <div class="footer" id="footer" style="display:none">
+    <div class="disclaimer">⚠ 数据仅供参考，不构成投资建议。投资有风险，决策需谨慎。</div>
+    <div class="timestamp" id="reportTimestamp"></div>
   </div>
 </div>
 
@@ -195,23 +418,18 @@ const REPORTS_DIR = './reports/';
 let currentDate = new Date();
 let currentTab = 'pre';
 
-// 调整到上海时区
 function getShanghaiDate(d) {
-  const offset = 8 * 60;
   const utc = d.getTime() + d.getTimezoneOffset() * 60000;
-  return new Date(utc + offset * 60000);
+  return new Date(utc + 8 * 60 * 60000);
 }
 
 function formatDate(d) {
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, '0');
-  const day = String(d.getDate()).padStart(2, '0');
-  return `${y}-${m}-${day}`;
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
 
 function formatDisplayDate(d) {
-  const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
-  return `${formatDate(d)} ${weekdays[d.getDay()]}`;
+  const w = ['日','一','二','三','四','五','六'];
+  return `${formatDate(d)}  周${w[d.getDay()]}`;
 }
 
 function changeDate(delta) {
@@ -229,21 +447,24 @@ function switchTab(tab) {
 async function loadReport() {
   const dateStr = formatDate(currentDate);
   document.getElementById('currentDate').textContent = formatDisplayDate(currentDate);
-  
   const filename = `${dateStr}-${currentTab === 'pre' ? 'morning' : 'afternoon'}.json`;
   const container = document.getElementById('report-content');
-  
+  const footer = document.getElementById('footer');
+
   try {
     const resp = await fetch(REPORTS_DIR + filename);
     if (!resp.ok) throw new Error('Not found');
     const data = await resp.json();
     renderReport(data);
+    footer.style.display = 'flex';
+    document.getElementById('reportTimestamp').textContent = data.timestamp || '';
   } catch (e) {
+    footer.style.display = 'none';
     container.innerHTML = `
       <div class="empty-state">
-        <div class="icon">${currentTab === 'pre' ? '☀️' : '🌙'}</div>
-        <p>${dateStr} ${currentTab === 'pre' ? '盘前' : '盘后'}报告暂无数据</p>
-        <p class="note">报告会在交易日自动生成</p>
+        <div class="empty-icon">${currentTab === 'pre' ? '☀' : '☽'}</div>
+        <p>${dateStr} 的${currentTab === 'pre' ? '盘前' : '盘后'}报告还没生成</p>
+        <div class="hint">交易日自动更新</div>
       </div>`;
   }
 }
@@ -251,68 +472,70 @@ async function loadReport() {
 function renderReport(data) {
   const container = document.getElementById('report-content');
   let html = '';
-  
-  // 大盘概况
+
   if (data.market) {
     html += `
-    <div class="report-section">
-      <h2>🏛️ 大盘概况</h2>
-      <div class="summary-text">${data.market}</div>
+    <div class="section" style="animation-delay:0ms">
+      <div class="section-header"><i data-lucide="bar-chart-3"></i> 大盘概况</div>
+      <div class="card"><div class="content">${data.market}</div></div>
     </div>`;
   }
-  
-  // 持仓详情
+
   if (data.stocks && data.stocks.length) {
     html += `
-    <div class="report-section">
-      <h2>💼 持仓表现</h2>
+    <div class="section" style="animation-delay:80ms">
+      <div class="section-header"><i data-lucide="briefcase"></i> 持仓表现</div>
       <div class="stock-grid">
         ${data.stocks.map(s => {
-          const changeClass = s.change > 0 ? 'up' : s.change < 0 ? 'down' : 'flat';
+          const cls = s.change > 0 ? 'up' : s.change < 0 ? 'down' : 'flat';
           const sign = s.change > 0 ? '+' : '';
           return `
-          <div class="stock-card">
-            <div class="name">${s.name}</div>
-            <div class="code">${s.code}</div>
-            <div class="price ${changeClass}">${s.price || '--'}</div>
-            <div class="change ${changeClass}">${sign}${s.change || 0}%</div>
-            ${s.note ? `<div class="note">${s.note}</div>` : ''}
+          <div class="stock-card ${cls}">
+            <div class="stock-top">
+              <div>
+                <div class="stock-name">${s.name}</div>
+                <div class="stock-code">${s.code}</div>
+              </div>
+              <div>
+                <div class="stock-price">${s.price || '—'}</div>
+                <div class="stock-change">${sign}${s.change || 0}%</div>
+              </div>
+            </div>
+            ${s.note ? `<div class="stock-note">${s.note}</div>` : ''}
           </div>`;
         }).join('')}
       </div>
-      <p class="note">🔴 红色=涨 🟢 绿色=跌（A股惯例）</p>
+      <div class="convention">
+        <span class="dot-red"></span> 涨
+        <span class="dot-green"></span> 跌
+        <span style="margin-left:4px">A股惯例</span>
+      </div>
     </div>`;
   }
-  
-  // 分析与建议
+
   if (data.analysis) {
     html += `
-    <div class="report-section">
-      <h2>🔍 分析与建议</h2>
-      <div class="summary-text">${data.analysis}</div>
+    <div class="section" style="animation-delay:160ms">
+      <div class="section-header"><i data-lucide="lightbulb"></i> 分析与建议</div>
+      <div class="card"><div class="content">${data.analysis}</div></div>
     </div>`;
   }
-  
-  // 风险提示
+
   if (data.risks) {
     html += `
-    <div class="report-section">
-      <h2>⚠️ 风险提示</h2>
-      <div class="summary-text">${data.risks}</div>
+    <div class="section" style="animation-delay:240ms">
+      <div class="section-header"><i data-lucide="alert-triangle"></i> 风险提示</div>
+      <div class="card risk-card"><div class="content">${data.risks}</div></div>
     </div>`;
   }
-  
-  // 时间戳
-  if (data.timestamp) {
-    html += `<div class="timestamp">生成时间: ${data.timestamp}</div>`;
-  }
-  
+
   container.innerHTML = html;
+  lucide.createIcons();
 }
 
-// Init
 currentDate = getShanghaiDate(new Date());
 loadReport();
+lucide.createIcons();
 </script>
 </body>
 </html>
