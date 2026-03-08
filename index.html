@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fin 📊 持仓日报</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d28;
+    --border: #2a2d3a;
+    --text: #e0e0e0;
+    --dim: #888;
+    --green: #00c853;
+    --red: #ff1744;
+    --blue: #448aff;
+    --yellow: #ffd600;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+  }
+  header h1 { font-size: 24px; font-weight: 600; }
+  header h1 span { color: var(--blue); }
+  .date-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .date-nav button {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .date-nav button:hover { border-color: var(--blue); }
+  .date-nav .current-date {
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 140px;
+    text-align: center;
+  }
+  .tab-bar {
+    display: flex;
+    gap: 0;
+    margin-bottom: 24px;
+  }
+  .tab {
+    padding: 10px 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--dim);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  .tab:first-child { border-radius: 8px 0 0 8px; }
+  .tab:last-child { border-radius: 0 8px 8px 0; }
+  .tab.active {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+  }
+  .report-section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .report-section h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .stock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+  }
+  .stock-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .stock-card .name {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .stock-card .code { color: var(--dim); font-size: 13px; }
+  .stock-card .price {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 8px 0;
+  }
+  .stock-card .change { font-size: 14px; font-weight: 600; }
+  .up { color: var(--red); }
+  .down { color: var(--green); }
+  .flat { color: var(--dim); }
+  .summary-text {
+    line-height: 1.8;
+    font-size: 14px;
+    color: var(--text);
+  }
+  .summary-text p { margin-bottom: 12px; }
+  .summary-text h3 {
+    font-size: 15px;
+    margin: 16px 0 8px;
+    color: var(--blue);
+  }
+  .summary-text ul {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+  .summary-text li { margin-bottom: 6px; }
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .tag-risk { background: rgba(255,23,68,0.15); color: var(--red); }
+  .tag-opportunity { background: rgba(0,200,83,0.15); color: var(--green); }
+  .tag-info { background: rgba(68,138,255,0.15); color: var(--blue); }
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--dim);
+  }
+  .empty-state .icon { font-size: 48px; margin-bottom: 16px; }
+  .empty-state p { font-size: 15px; }
+  .timestamp {
+    text-align: right;
+    color: var(--dim);
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  /* A股用红涨绿跌 */
+  .note {
+    font-size: 12px;
+    color: var(--dim);
+    margin-top: 8px;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📊 <span>Fin</span> 持仓日报</h1>
+  <div class="date-nav">
+    <button onclick="changeDate(-1)">◀</button>
+    <div class="current-date" id="currentDate"></div>
+    <button onclick="changeDate(1)">▶</button>
+  </div>
+</header>
+
+<div class="tab-bar">
+  <div class="tab active" onclick="switchTab('pre')" id="tab-pre">☀️ 盘前总结</div>
+  <div class="tab" onclick="switchTab('post')" id="tab-post">🌙 盘后总结</div>
+</div>
+
+<div id="report-content">
+  <div class="empty-state">
+    <div class="icon">📭</div>
+    <p>加载报告中...</p>
+  </div>
+</div>
+
+<script>
+const REPORTS_DIR = './reports/';
+let currentDate = new Date();
+let currentTab = 'pre';
+
+// 调整到上海时区
+function getShanghaiDate(d) {
+  const offset = 8 * 60;
+  const utc = d.getTime() + d.getTimezoneOffset() * 60000;
+  return new Date(utc + offset * 60000);
+}
+
+function formatDate(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
+function formatDisplayDate(d) {
+  const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六'];
+  return `${formatDate(d)} ${weekdays[d.getDay()]}`;
+}
+
+function changeDate(delta) {
+  currentDate.setDate(currentDate.getDate() + delta);
+  loadReport();
+}
+
+function switchTab(tab) {
+  currentTab = tab;
+  document.getElementById('tab-pre').classList.toggle('active', tab === 'pre');
+  document.getElementById('tab-post').classList.toggle('active', tab === 'post');
+  loadReport();
+}
+
+async function loadReport() {
+  const dateStr = formatDate(currentDate);
+  document.getElementById('currentDate').textContent = formatDisplayDate(currentDate);
+  
+  const filename = `${dateStr}-${currentTab === 'pre' ? 'morning' : 'afternoon'}.json`;
+  const container = document.getElementById('report-content');
+  
+  try {
+    const resp = await fetch(REPORTS_DIR + filename);
+    if (!resp.ok) throw new Error('Not found');
+    const data = await resp.json();
+    renderReport(data);
+  } catch (e) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="icon">${currentTab === 'pre' ? '☀️' : '🌙'}</div>
+        <p>${dateStr} ${currentTab === 'pre' ? '盘前' : '盘后'}报告暂无数据</p>
+        <p class="note">报告会在交易日自动生成</p>
+      </div>`;
+  }
+}
+
+function renderReport(data) {
+  const container = document.getElementById('report-content');
+  let html = '';
+  
+  // 大盘概况
+  if (data.market) {
+    html += `
+    <div class="report-section">
+      <h2>🏛️ 大盘概况</h2>
+      <div class="summary-text">${data.market}</div>
+    </div>`;
+  }
+  
+  // 持仓详情
+  if (data.stocks && data.stocks.length) {
+    html += `
+    <div class="report-section">
+      <h2>💼 持仓表现</h2>
+      <div class="stock-grid">
+        ${data.stocks.map(s => {
+          const changeClass = s.change > 0 ? 'up' : s.change < 0 ? 'down' : 'flat';
+          const sign = s.change > 0 ? '+' : '';
+          return `
+          <div class="stock-card">
+            <div class="name">${s.name}</div>
+            <div class="code">${s.code}</div>
+            <div class="price ${changeClass}">${s.price || '--'}</div>
+            <div class="change ${changeClass}">${sign}${s.change || 0}%</div>
+            ${s.note ? `<div class="note">${s.note}</div>` : ''}
+          </div>`;
+        }).join('')}
+      </div>
+      <p class="note">🔴 红色=涨 🟢 绿色=跌（A股惯例）</p>
+    </div>`;
+  }
+  
+  // 分析与建议
+  if (data.analysis) {
+    html += `
+    <div class="report-section">
+      <h2>🔍 分析与建议</h2>
+      <div class="summary-text">${data.analysis}</div>
+    </div>`;
+  }
+  
+  // 风险提示
+  if (data.risks) {
+    html += `
+    <div class="report-section">
+      <h2>⚠️ 风险提示</h2>
+      <div class="summary-text">${data.risks}</div>
+    </div>`;
+  }
+  
+  // 时间戳
+  if (data.timestamp) {
+    html += `<div class="timestamp">生成时间: ${data.timestamp}</div>`;
+  }
+  
+  container.innerHTML = html;
+}
+
+// Init
+currentDate = getShanghaiDate(new Date());
+loadReport();
+</script>
+</body>
+</html>
