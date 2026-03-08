@@ -418,8 +418,6 @@
   .pin-display.shake {
     animation: shake 400ms ease-out;
   }
-    animation: shake 400ms ease-out;
-  }
   @keyframes shake {
     0%,100% { transform: translateX(0); }
     25% { transform: translateX(-6px); }
@@ -431,7 +429,7 @@
 (function() {
   const HASH = '8e5d1b8b6dcde91bfca4e4b1e6fe123a0f34e45d6a9e3c7f82d1b04c5a96b2e1';
   const stored = sessionStorage.getItem('fin_auth');
-  if (stored === 'ok') { document.getElementById('lockScreen').style.display = 'none'; return; }
+  if (stored === 'ok') { document.getElementById('lockScreen').style.display = 'none'; document.querySelector('.container').style.display = 'block'; return; }
 
   document.getElementById('lockScreen').style.display = 'flex';
   document.querySelector('.container').style.display = 'none';
