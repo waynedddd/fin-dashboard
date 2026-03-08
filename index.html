@@ -379,7 +379,89 @@
 </head>
 <body>
 
-<div class="container">
+<!-- Password Lock -->
+<div id="lockScreen" style="display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;gap:20px;">
+  <div class="brand-icon" style="width:48px;height:48px;font-size:24px;">F</div>
+  <div style="font-size:14px;color:var(--text-secondary);">输入密码访问</div>
+  <div style="display:flex;gap:8px;" id="pinContainer">
+    <input type="password" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]" autofocus>
+    <input type="password" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
+    <input type="password" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
+    <input type="password" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
+  </div>
+  <div id="pinError" style="font-size:12px;color:var(--red);opacity:0;transition:opacity 200ms;">密码错误</div>
+</div>
+
+<style>
+  .pin-input {
+    width: 44px; height: 52px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-family: var(--mono);
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    transition: border-color 200ms;
+  }
+  .pin-input:focus { border-color: var(--gold); }
+  .pin-input.shake {
+    animation: shake 400ms ease-out;
+  }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+  }
+</style>
+
+<script>
+(function() {
+  const HASH = '8e5d1b8b6dcde91bfca4e4b1e6fe123a0f34e45d6a9e3c7f82d1b04c5a96b2e1';
+  const stored = sessionStorage.getItem('fin_auth');
+  if (stored === 'ok') { document.getElementById('lockScreen').style.display = 'none'; return; }
+
+  document.getElementById('lockScreen').style.display = 'flex';
+  document.querySelector('.container').style.display = 'none';
+
+  const pins = document.querySelectorAll('.pin-input');
+  pins.forEach((input, i) => {
+    input.addEventListener('input', () => {
+      if (input.value && i < 3) pins[i+1].focus();
+      if (i === 3 && input.value) checkPin();
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Backspace' && !input.value && i > 0) pins[i-1].focus();
+    });
+  });
+
+  async function sha256(msg) {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
+    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+  }
+
+  async function checkPin() {
+    const code = Array.from(pins).map(p => p.value).join('');
+    const hash = await sha256(code);
+    if (hash === 'a11f793d5f24841552b2befc8d946d9f7e5652edfb58bd49c3a8423a6031c952') {
+      sessionStorage.setItem('fin_auth', 'ok');
+      document.getElementById('lockScreen').style.display = 'none';
+      document.querySelector('.container').style.display = 'block';
+    } else {
+      document.getElementById('pinError').style.opacity = '1';
+      pins.forEach(p => { p.value = ''; p.classList.add('shake'); });
+      pins[0].focus();
+      setTimeout(() => {
+        pins.forEach(p => p.classList.remove('shake'));
+        document.getElementById('pinError').style.opacity = '0';
+      }, 1500);
+    }
+  }
+})();
+</script>
+
+<div class="container" style="display:none;">
   <header>
     <div class="brand">
       <div class="brand-icon">F</div>
