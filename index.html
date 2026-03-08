@@ -383,11 +383,13 @@
 <div id="lockScreen" style="display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;gap:20px;">
   <div class="brand-icon" style="width:48px;height:48px;font-size:24px;">F</div>
   <div style="font-size:14px;color:var(--text-secondary);">输入密码访问</div>
-  <div style="display:flex;gap:8px;" id="pinContainer">
-    <input type="text" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]" autofocus>
-    <input type="text" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
-    <input type="text" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
-    <input type="text" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
+  <div style="display:flex;gap:8px;position:relative;" id="pinContainer">
+    <div class="pin-display"><span id="d0">&nbsp;</span></div>
+    <div class="pin-display"><span id="d1">&nbsp;</span></div>
+    <div class="pin-display"><span id="d2">&nbsp;</span></div>
+    <div class="pin-display"><span id="d3">&nbsp;</span></div>
+    <input type="tel" id="pinReal" maxlength="4" inputmode="numeric" pattern="[0-9]*"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;font-size:16px;" autofocus>
   </div>
   <button id="pinSubmit" onclick="window._checkPin && window._checkPin()" style="
     margin-top:4px;padding:8px 32px;background:var(--gold);color:oklch(0.15 0 0);
@@ -398,20 +400,24 @@
 </div>
 
 <style>
-  .pin-input {
+  .pin-display {
     width: 44px; height: 52px;
     background: var(--bg-elevated);
     border: 1px solid var(--border);
     border-radius: 8px;
-    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: var(--mono);
-    font-size: 20px;
-    text-align: center;
-    outline: none;
+    font-size: 22px;
+    color: var(--text);
     transition: border-color 200ms;
   }
-  .pin-input:focus { border-color: var(--gold); }
-  .pin-input.shake {
+  .pin-display.active { border-color: var(--gold); }
+  .pin-display.filled { border-color: var(--gold-dim); }
+  .pin-display.shake {
+    animation: shake 400ms ease-out;
+  }
     animation: shake 400ms ease-out;
   }
   @keyframes shake {
@@ -430,19 +436,25 @@
   document.getElementById('lockScreen').style.display = 'flex';
   document.querySelector('.container').style.display = 'none';
 
-  const pins = document.querySelectorAll('.pin-input');
-  pins.forEach((input, i) => {
-    input.addEventListener('input', () => {
-      input.value = input.value.replace(/[^0-9]/g, '');
-      if (input.value && i < 3) { pins[i+1].focus(); pins[i+1].select(); }
-      if (i === 3 && input.value) checkPin();
+  const pinInput = document.getElementById('pinReal');
+  const displays = [document.getElementById('d0'),document.getElementById('d1'),document.getElementById('d2'),document.getElementById('d3')];
+  const boxes = document.querySelectorAll('.pin-display');
+
+  document.getElementById('lockScreen').addEventListener('click', () => pinInput.focus());
+  pinInput.focus();
+
+  pinInput.addEventListener('input', () => {
+    const val = pinInput.value.replace(/[^0-9]/g, '').slice(0,4);
+    pinInput.value = val;
+    displays.forEach((d,i) => {
+      d.textContent = val[i] || '\u00a0';
+      boxes[i].classList.toggle('filled', !!val[i]);
+      boxes[i].classList.toggle('active', i === val.length && val.length < 4);
     });
-    input.addEventListener('keydown', (e) => {
-      if (e.key === 'Backspace' && !input.value && i > 0) { pins[i-1].focus(); pins[i-1].select(); }
-      if (e.key === 'Enter') checkPin();
-    });
-    input.addEventListener('focus', () => input.select());
+    if (val.length === 4) checkPin();
   });
+
+  pinInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') checkPin(); });
 
   async function sha256(msg) {
     const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
@@ -452,7 +464,8 @@
   window._checkPin = checkPin;
 
   async function checkPin() {
-    const code = Array.from(pins).map(p => p.value).join('');
+    const code = pinInput.value;
+    if (code.length < 4) return;
     const hash = await sha256(code);
     if (hash === 'a11f793d5f24841552b2befc8d946d9f7e5652edfb58bd49c3a8423a6031c952') {
       sessionStorage.setItem('fin_auth', 'ok');
@@ -460,10 +473,13 @@
       document.querySelector('.container').style.display = 'block';
     } else {
       document.getElementById('pinError').style.opacity = '1';
-      pins.forEach(p => { p.value = ''; p.classList.add('shake'); });
-      pins[0].focus();
+      pinInput.value = '';
+      displays.forEach(d => d.textContent = '\u00a0');
+      boxes.forEach(b => { b.classList.remove('filled','active'); b.classList.add('shake'); });
+      boxes[0].classList.add('active');
+      pinInput.focus();
       setTimeout(() => {
-        pins.forEach(p => p.classList.remove('shake'));
+        boxes.forEach(b => b.classList.remove('shake'));
         document.getElementById('pinError').style.opacity = '0';
       }, 1500);
     }
