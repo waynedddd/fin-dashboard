@@ -384,12 +384,12 @@
   <div class="brand-icon" style="width:48px;height:48px;font-size:24px;">F</div>
   <div style="font-size:14px;color:var(--text-secondary);">输入密码访问</div>
   <div style="display:flex;gap:8px;position:relative;" id="pinContainer">
-    <div class="pin-display"><span id="d0">&nbsp;</span></div>
-    <div class="pin-display"><span id="d1">&nbsp;</span></div>
-    <div class="pin-display"><span id="d2">&nbsp;</span></div>
-    <div class="pin-display"><span id="d3">&nbsp;</span></div>
-    <input type="tel" id="pinReal" maxlength="4" inputmode="numeric" pattern="[0-9]*"
-      style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;font-size:16px;" autofocus>
+    <input type="tel" id="pinReal" maxlength="4" inputmode="numeric" pattern="[0-9]*" autofocus
+      placeholder="····"
+      style="width:200px;height:56px;background:var(--bg-elevated);border:1px solid var(--border);
+        border-radius:8px;color:var(--text);font-family:var(--mono);font-size:28px;text-align:center;
+        letter-spacing:16px;outline:none;caret-color:var(--gold);transition:border-color 200ms;"
+      onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='var(--border)'">
   </div>
   <button id="pinSubmit" onclick="window._checkPin && window._checkPin()" style="
     margin-top:4px;padding:8px 32px;background:var(--gold);color:oklch(0.15 0 0);
@@ -415,7 +415,7 @@
   }
   .pin-display.active { border-color: var(--gold); }
   .pin-display.filled { border-color: var(--gold-dim); }
-  .pin-display.shake {
+  .pin-display.shake, .shake {
     animation: shake 400ms ease-out;
   }
   @keyframes shake {
@@ -435,21 +435,13 @@
   document.querySelector('.container').style.display = 'none';
 
   const pinInput = document.getElementById('pinReal');
-  const displays = [document.getElementById('d0'),document.getElementById('d1'),document.getElementById('d2'),document.getElementById('d3')];
-  const boxes = document.querySelectorAll('.pin-display');
 
   document.getElementById('lockScreen').addEventListener('click', () => pinInput.focus());
-  pinInput.focus();
+  setTimeout(() => pinInput.focus(), 100);
 
   pinInput.addEventListener('input', () => {
-    const val = pinInput.value.replace(/[^0-9]/g, '').slice(0,4);
-    pinInput.value = val;
-    displays.forEach((d,i) => {
-      d.textContent = val[i] || '\u00a0';
-      boxes[i].classList.toggle('filled', !!val[i]);
-      boxes[i].classList.toggle('active', i === val.length && val.length < 4);
-    });
-    if (val.length === 4) checkPin();
+    pinInput.value = pinInput.value.replace(/[^0-9]/g, '').slice(0,4);
+    if (pinInput.value.length === 4) checkPin();
   });
 
   pinInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') checkPin(); });
@@ -472,12 +464,12 @@
     } else {
       document.getElementById('pinError').style.opacity = '1';
       pinInput.value = '';
-      displays.forEach(d => d.textContent = '\u00a0');
-      boxes.forEach(b => { b.classList.remove('filled','active'); b.classList.add('shake'); });
-      boxes[0].classList.add('active');
+      pinInput.style.borderColor = 'var(--red)';
+      pinInput.classList.add('shake');
       pinInput.focus();
       setTimeout(() => {
-        boxes.forEach(b => b.classList.remove('shake'));
+        pinInput.classList.remove('shake');
+        pinInput.style.borderColor = 'var(--border)';
         document.getElementById('pinError').style.opacity = '0';
       }, 1500);
     }
