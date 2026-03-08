@@ -380,104 +380,115 @@
 <body>
 
 <!-- Password Lock -->
-<div id="lockScreen" style="display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;gap:20px;">
-  <div class="brand-icon" style="width:48px;height:48px;font-size:24px;">F</div>
-  <div style="font-size:14px;color:var(--text-secondary);">输入密码访问</div>
-  <div style="display:flex;gap:8px;position:relative;" id="pinContainer">
-    <input type="tel" id="pinReal" maxlength="4" inputmode="numeric" pattern="[0-9]*" autofocus
-      placeholder="····"
-      style="width:200px;height:56px;background:var(--bg-elevated);border:1px solid var(--border);
-        border-radius:8px;color:var(--text);font-family:var(--mono);font-size:28px;text-align:center;
-        letter-spacing:16px;outline:none;caret-color:var(--gold);transition:border-color 200ms;"
-      onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='var(--border)'">
-  </div>
-  <button id="pinSubmit" onclick="window._checkPin && window._checkPin()" style="
-    margin-top:4px;padding:8px 32px;background:var(--gold);color:oklch(0.15 0 0);
-    border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;
-    font-family:var(--font);transition:opacity 200ms;opacity:0.9;
-  " onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">进入</button>
-  <div id="pinError" style="font-size:12px;color:var(--red);opacity:0;transition:opacity 200ms;">密码错误</div>
+<div id="lockScreen">
+  <form id="pinForm" onsubmit="return false;" style="display:flex;flex-direction:column;align-items:center;gap:20px;">
+    <div class="brand-icon" style="width:48px;height:48px;font-size:24px;">F</div>
+    <label for="pinCode" style="font-size:14px;color:var(--text-secondary);">输入密码访问</label>
+    <input type="tel" id="pinCode" name="pin" maxlength="4" inputmode="numeric" autocomplete="off"
+      placeholder="····" autofocus>
+    <button type="submit" id="pinSubmit">进入</button>
+    <div id="pinError">密码错误</div>
+  </form>
 </div>
 
 <style>
-  .pin-display {
-    width: 44px; height: 52px;
-    background: var(--bg-elevated);
-    border: 1px solid var(--border);
-    border-radius: 8px;
+  #lockScreen {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--mono);
-    font-size: 22px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--bg);
+    z-index: 9999;
+  }
+  #lockScreen.hidden { display: none; }
+  #pinCode {
+    width: 200px;
+    height: 56px;
+    background: var(--bg-elevated);
+    border: 2px solid var(--border);
+    border-radius: 8px;
     color: var(--text);
-    transition: border-color 200ms;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 12px;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
   }
-  .pin-display.active { border-color: var(--gold); }
-  .pin-display.filled { border-color: var(--gold-dim); }
-  .pin-display.shake, .shake {
-    animation: shake 400ms ease-out;
+  #pinCode:focus { border-color: var(--gold); }
+  #pinCode.error { border-color: var(--red); animation: shake 400ms; }
+  #pinSubmit {
+    padding: 10px 36px;
+    background: var(--gold);
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-appearance: none;
   }
+  #pinError { font-size:12px; color:var(--red); opacity:0; transition:opacity 200ms; }
+  #pinError.show { opacity:1; }
   @keyframes shake {
-    0%,100% { transform: translateX(0); }
-    25% { transform: translateX(-6px); }
-    75% { transform: translateX(6px); }
+    0%,100% { transform:translateX(0); }
+    25% { transform:translateX(-6px); }
+    75% { transform:translateX(6px); }
   }
 </style>
 
 <script>
 (function() {
-  const HASH = '8e5d1b8b6dcde91bfca4e4b1e6fe123a0f34e45d6a9e3c7f82d1b04c5a96b2e1';
-  const stored = sessionStorage.getItem('fin_auth');
-  if (stored === 'ok') { document.getElementById('lockScreen').style.display = 'none'; document.querySelector('.container').style.display = 'block'; return; }
-
-  document.getElementById('lockScreen').style.display = 'flex';
-  document.querySelector('.container').style.display = 'none';
-
-  const pinInput = document.getElementById('pinReal');
-
-  document.getElementById('lockScreen').addEventListener('click', () => pinInput.focus());
-  setTimeout(() => pinInput.focus(), 100);
-
-  pinInput.addEventListener('input', () => {
-    pinInput.value = pinInput.value.replace(/[^0-9]/g, '').slice(0,4);
-    if (pinInput.value.length === 4) checkPin();
-  });
-
-  pinInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') checkPin(); });
-
-  async function sha256(msg) {
-    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
-    return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+  var stored = sessionStorage.getItem('fin_auth');
+  if (stored === 'ok') {
+    document.getElementById('lockScreen').classList.add('hidden');
+    return;
   }
 
-  window._checkPin = checkPin;
+  var input = document.getElementById('pinCode');
+  var form = document.getElementById('pinForm');
+  var err = document.getElementById('pinError');
 
-  async function checkPin() {
-    const code = pinInput.value;
+  // Focus on load
+  setTimeout(function() { input.focus(); input.click(); }, 300);
+
+  input.addEventListener('input', function() {
+    input.value = input.value.replace(/[^0-9]/g, '').slice(0, 4);
+    if (input.value.length === 4) verify();
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    verify();
+  });
+
+  function verify() {
+    var code = input.value;
     if (code.length < 4) return;
-    const hash = await sha256(code);
-    if (hash === 'a11f793d5f24841552b2befc8d946d9f7e5652edfb58bd49c3a8423a6031c952') {
-      sessionStorage.setItem('fin_auth', 'ok');
-      document.getElementById('lockScreen').style.display = 'none';
-      document.querySelector('.container').style.display = 'block';
-    } else {
-      document.getElementById('pinError').style.opacity = '1';
-      pinInput.value = '';
-      pinInput.style.borderColor = 'var(--red)';
-      pinInput.classList.add('shake');
-      pinInput.focus();
-      setTimeout(() => {
-        pinInput.classList.remove('shake');
-        pinInput.style.borderColor = 'var(--border)';
-        document.getElementById('pinError').style.opacity = '0';
-      }, 1500);
-    }
+    crypto.subtle.digest('SHA-256', new TextEncoder().encode(code)).then(function(buf) {
+      var hash = Array.from(new Uint8Array(buf)).map(function(b) { return b.toString(16).padStart(2,'0'); }).join('');
+      if (hash === 'a11f793d5f24841552b2befc8d946d9f7e5652edfb58bd49c3a8423a6031c952') {
+        sessionStorage.setItem('fin_auth', 'ok');
+        document.getElementById('lockScreen').classList.add('hidden');
+      } else {
+        err.classList.add('show');
+        input.value = '';
+        input.classList.add('error');
+        setTimeout(function() {
+          input.classList.remove('error');
+          err.classList.remove('show');
+          input.focus();
+        }, 1500);
+      }
+    });
   }
 })();
 </script>
 
-<div class="container" style="display:none;">
+<div class="container">
   <header>
     <div class="brand">
       <div class="brand-icon">F</div>
