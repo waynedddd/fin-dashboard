@@ -428,12 +428,14 @@
   const pins = document.querySelectorAll('.pin-input');
   pins.forEach((input, i) => {
     input.addEventListener('input', () => {
-      if (input.value && i < 3) pins[i+1].focus();
+      input.value = input.value.replace(/[^0-9]/g, '');
+      if (input.value && i < 3) { pins[i+1].focus(); pins[i+1].select(); }
       if (i === 3 && input.value) checkPin();
     });
     input.addEventListener('keydown', (e) => {
-      if (e.key === 'Backspace' && !input.value && i > 0) pins[i-1].focus();
+      if (e.key === 'Backspace' && !input.value && i > 0) { pins[i-1].focus(); pins[i-1].select(); }
     });
+    input.addEventListener('focus', () => input.select());
   });
 
   async function sha256(msg) {
