@@ -384,11 +384,16 @@
   <div class="brand-icon" style="width:48px;height:48px;font-size:24px;">F</div>
   <div style="font-size:14px;color:var(--text-secondary);">输入密码访问</div>
   <div style="display:flex;gap:8px;" id="pinContainer">
-    <input type="password" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]" autofocus>
-    <input type="password" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
-    <input type="password" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
-    <input type="password" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
+    <input type="text" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]" autofocus>
+    <input type="text" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
+    <input type="text" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
+    <input type="text" maxlength="1" class="pin-input" inputmode="numeric" pattern="[0-9]">
   </div>
+  <button id="pinSubmit" onclick="window._checkPin && window._checkPin()" style="
+    margin-top:4px;padding:8px 32px;background:var(--gold);color:oklch(0.15 0 0);
+    border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;
+    font-family:var(--font);transition:opacity 200ms;opacity:0.9;
+  " onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">进入</button>
   <div id="pinError" style="font-size:12px;color:var(--red);opacity:0;transition:opacity 200ms;">密码错误</div>
 </div>
 
@@ -434,6 +439,7 @@
     });
     input.addEventListener('keydown', (e) => {
       if (e.key === 'Backspace' && !input.value && i > 0) { pins[i-1].focus(); pins[i-1].select(); }
+      if (e.key === 'Enter') checkPin();
     });
     input.addEventListener('focus', () => input.select());
   });
@@ -442,6 +448,8 @@
     const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(msg));
     return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
   }
+
+  window._checkPin = checkPin;
 
   async function checkPin() {
     const code = Array.from(pins).map(p => p.value).join('');
