@@ -72,6 +72,7 @@
     font-size: 18px;
     font-weight: 700;
     color: oklch(0.15 0 0);
+    overflow: hidden;
   }
 
   .brand h1 {
@@ -382,7 +383,7 @@
 <!-- Password Lock -->
 <div id="lockScreen">
   <form id="pinForm" onsubmit="return false;" style="display:flex;flex-direction:column;align-items:center;gap:20px;">
-    <div class="brand-icon" style="width:48px;height:48px;font-size:24px;">F</div>
+    <div class="brand-icon" style="width:48px;height:48px;"><svg viewBox="0 0 36 36" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 4 C18 4 22 10 22 18 C22 24 20 28 18 32 C16 28 10 22 10 18 C10 12 15 6 18 4Z" fill="#1a1a1a" opacity="0.85"/><ellipse cx="18" cy="28" rx="10" ry="2" fill="#1a1a1a" opacity="0.15"/></svg></div>
     <label for="pinCode" style="font-size:14px;color:var(--text-secondary);">输入密码访问</label>
     <input type="tel" id="pinCode" name="pin" maxlength="4" inputmode="numeric" autocomplete="off"
       placeholder="····" autofocus>
@@ -491,7 +492,7 @@
 <div class="container">
   <header>
     <div class="brand">
-      <div class="brand-icon">F</div>
+      <div class="brand-icon"><svg viewBox="0 0 36 36" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="fin-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a1a1a" stop-opacity="0.9"/><stop offset="100%" stop-color="#1a1a1a" stop-opacity="0.7"/></linearGradient></defs><path d="M18 4 C18 4 22 10 22 18 C22 24 20 28 18 32 C16 28 10 22 10 18 C10 12 15 6 18 4Z" fill="url(#fin-g)"/><ellipse cx="18" cy="28" rx="10" ry="2" fill="#1a1a1a" opacity="0.15"/></svg></div>
       <div>
         <h1><span>Fin</span> Dashboard</h1>
         <div class="subtitle">你的持仓，我来盯。</div>
