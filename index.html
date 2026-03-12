@@ -508,6 +508,7 @@
   <div class="tab-bar">
     <button class="tab active" onclick="switchTab('pre')" id="tab-pre">☀ 盘前</button>
     <button class="tab" onclick="switchTab('post')" id="tab-post">☽ 盘后</button>
+    <button class="tab" onclick="switchTab('macro')" id="tab-macro">🌐 宏观</button>
   </div>
 
   <div id="report-content">
@@ -551,13 +552,15 @@ function switchTab(tab) {
   currentTab = tab;
   document.getElementById('tab-pre').classList.toggle('active', tab === 'pre');
   document.getElementById('tab-post').classList.toggle('active', tab === 'post');
+  document.getElementById('tab-macro').classList.toggle('active', tab === 'macro');
   loadReport();
 }
 
 async function loadReport() {
   const dateStr = formatDate(currentDate);
   document.getElementById('currentDate').textContent = formatDisplayDate(currentDate);
-  const filename = `${dateStr}-${currentTab === 'pre' ? 'morning' : 'afternoon'}.json`;
+  const tabFile = currentTab === 'pre' ? 'morning' : currentTab === 'post' ? 'afternoon' : 'macro';
+  const filename = `${dateStr}-${tabFile}.json`;
   const container = document.getElementById('report-content');
   const footer = document.getElementById('footer');
 
@@ -572,8 +575,8 @@ async function loadReport() {
     footer.style.display = 'none';
     container.innerHTML = `
       <div class="empty-state">
-        <div class="empty-icon">${currentTab === 'pre' ? '☀' : '☽'}</div>
-        <p>${dateStr} 的${currentTab === 'pre' ? '盘前' : '盘后'}报告还没生成</p>
+        <div class="empty-icon">${currentTab === 'pre' ? '☀' : currentTab === 'post' ? '☽' : '🌐'}</div>
+        <p>${dateStr} 的${currentTab === 'pre' ? '盘前' : currentTab === 'post' ? '盘后' : '宏观'}报告还没生成</p>
         <div class="hint">交易日自动更新</div>
       </div>`;
   }
@@ -636,6 +639,39 @@ function renderReport(data) {
     <div class="section" style="animation-delay:240ms">
       <div class="section-header"><i data-lucide="alert-triangle"></i> 风险提示</div>
       <div class="card risk-card"><div class="content">${data.risks}</div></div>
+    </div>`;
+  }
+
+  // Macro-specific sections
+  if (data.indicators) {
+    html += `
+    <div class="section" style="animation-delay:0ms">
+      <div class="section-header"><i data-lucide="activity"></i> 宏观数据</div>
+      <div class="card"><div class="content">${data.indicators}</div></div>
+    </div>`;
+  }
+
+  if (data.sentiment) {
+    html += `
+    <div class="section" style="animation-delay:80ms">
+      <div class="section-header"><i data-lucide="gauge"></i> 市场情绪</div>
+      <div class="card"><div class="content">${data.sentiment}</div></div>
+    </div>`;
+  }
+
+  if (data.policy) {
+    html += `
+    <div class="section" style="animation-delay:160ms">
+      <div class="section-header"><i data-lucide="landmark"></i> 政策动向</div>
+      <div class="card"><div class="content">${data.policy}</div></div>
+    </div>`;
+  }
+
+  if (data.conclusion) {
+    html += `
+    <div class="section" style="animation-delay:240ms">
+      <div class="section-header"><i data-lucide="target"></i> 综合判断</div>
+      <div class="card"><div class="content">${data.conclusion}</div></div>
     </div>`;
   }
 
