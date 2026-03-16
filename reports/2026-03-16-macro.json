@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-03-16 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 数据获取失败：Tavily API Key 未配置，以下为框架性分析，不含实时数据。</strong></p><ul><li><strong>美联储政策：</strong>需关注3月FOMC会议决议及点阵图变化，市场此前预期2026年维持利率不变或小幅降息</li><li><strong>美债收益率：</strong>10Y美债收益率走势是全球风险资产定价锚，需实时跟踪</li><li><strong>美元指数(DXY)：</strong>美元强弱直接影响人民币汇率和北向资金流向</li><li><strong>中国PMI：</strong>2月制造业PMI待确认，关注荣枯线上下位置</li><li><strong>社融/M2：</strong>信用扩张节奏反映实体经济融资需求</li><li><strong>CPI/PPI：</strong>通缩压力是否缓解是核心观察点</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><p><strong>数据缺失，无法给出实时情绪判断。</strong></p><ul><li><strong>VIX恐慌指数：</strong>需确认是否处于低波动区间（&lt;15）或警戒区间（&gt;20）</li><li><strong>A股成交量：</strong>两市成交额是否维持在万亿以上，反映市场活跃度</li><li><strong>北向资金：</strong>外资近期净流入/流出趋势</li><li><strong>融资余额：</strong>杠杆资金参与意愿</li></ul>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>两会后政策落地期：</strong>3月通常是两会政策细化落地阶段，关注财政发力节奏和产业政策方向</li><li><strong>货币政策：</strong>央行是否有降准降息预期，公开市场操作方向</li><li><strong>房地产政策：</strong>一线城市放松政策的效果跟踪</li><li><strong>科技/AI政策：</strong>国产替代和AI应用是否有新催化</li></ul>",
+  "conclusion": "<h3>📌 综合判断</h3><p><strong>由于实时数据缺失，以下为条件性判断：</strong></p><ul><li>若美联储维持鸽派，美债收益率下行 → 利好A股成长风格</li><li>若中国PMI站稳荣枯线上方、社融超预期 → 经济复苏确认，利好顺周期</li><li>若美元走弱、人民币企稳 → 北向资金有望回流</li></ul><p><strong>仓位建议（暂定）：</strong>维持当前约75%仓位不变，待数据确认后决定是否加仓。25%现金保留作为应对波动的缓冲。</p>",
+  "risks": "<h3>⚠️ 风险提示</h3><ul><li><strong>数据盲区风险：</strong>本次分析未获取实时数据，判断可靠性低，请Wayne自行核实关键指标</li><li><strong>地缘风险：</strong>中美关系、台海局势等黑天鹅事件</li><li><strong>流动性风险：</strong>若美联储意外鹰派，全球流动性收紧</li><li><strong>汇率风险：</strong>人民币快速贬值可能引发外资流出</li><li><strong>政策不及预期：</strong>两会后若财政发力弱于市场预期</li></ul>"
+}
