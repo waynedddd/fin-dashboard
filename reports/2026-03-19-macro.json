@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-03-19 08:00",
+  "indicators": "<h3>⚠️ 宏观数据（数据源异常）</h3><p><strong>注意：Tavily API Key 未配置，以下为框架占位，无实时数据。</strong></p><ul><li><strong>美联储：</strong>3月FOMC会议窗口期（3/18-19），市场关注点阵图及降息路径指引</li><li><strong>中国PMI：</strong>待2月数据确认（通常3月初公布），关注制造业复苏持续性</li><li><strong>美债10Y：</strong>需实时查询</li><li><strong>美元指数：</strong>需实时查询</li><li><strong>VIX：</strong>需实时查询</li></ul>",
+  "sentiment": "<h3>📊 市场情绪</h3><p><strong>数据缺失，无法生成情绪判断。</strong></p><p>建议手动关注：北向资金流向、融资余额变化、ETF申赎数据。</p>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储FOMC：</strong>3月18-19日会议，今日将公布利率决议及经济预测摘要（SEP），这是本周最重要的宏观事件</li><li><strong>国内：</strong>两会后政策落地期，关注财政发力节奏和地产政策边际变化</li></ul>",
+  "conclusion": "<h3>📌 综合判断</h3><p><strong>判断：中性偏谨慎（确定性低）</strong></p><p>今日凌晨美联储利率决议公布，结果需确认后再做判断。在数据真空期：</p><ul><li>维持当前仓位（~75%），不建议盲目加仓</li><li>等FOMC结果明确后再调整</li><li>若降息预期强化 → 可适度加仓成长/科技</li><li>若鹰派超预期 → 减仓至60%防守</li></ul>",
+  "risks": "<h3>⚡ 风险提示</h3><ul><li><strong>FOMC决议风险：</strong>今日凌晨结果出炉，鹰派意外将压制全球风险资产</li><li><strong>数据盲区：</strong>Tavily搜索不可用，本报告缺乏实时数据支撑，结论确定性极低</li><li><strong>建议：</strong>请尽快在 <code>~/.openclaw/.env</code> 中配置 <code>TAVILY_API_KEY=xxx</code>，明日报告将恢复正常</li></ul>"
+}

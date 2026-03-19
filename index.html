@@ -509,6 +509,7 @@
     <button class="tab active" onclick="switchTab('pre')" id="tab-pre">☀ 盘前</button>
     <button class="tab" onclick="switchTab('post')" id="tab-post">☽ 盘后</button>
     <button class="tab" onclick="switchTab('macro')" id="tab-macro">🌐 宏观</button>
+    <button class="tab" onclick="switchTab('picks')" id="tab-picks">🎯 推荐</button>
   </div>
 
   <div id="report-content">
@@ -553,6 +554,7 @@ function switchTab(tab) {
   document.getElementById('tab-pre').classList.toggle('active', tab === 'pre');
   document.getElementById('tab-post').classList.toggle('active', tab === 'post');
   document.getElementById('tab-macro').classList.toggle('active', tab === 'macro');
+  document.getElementById('tab-picks').classList.toggle('active', tab === 'picks');
   loadReport();
 }
 
@@ -565,6 +567,15 @@ async function loadReport() {
   const footer = document.getElementById('footer');
 
   try {
+    if (currentTab === 'picks') {
+      const resp = await fetch(REPORTS_DIR + 'picks.json');
+      if (!resp.ok) throw new Error('Not found');
+      const data = await resp.json();
+      renderPicks(data);
+      footer.style.display = 'flex';
+      document.getElementById('reportTimestamp').textContent = '推荐记录';
+      return;
+    }
     const resp = await fetch(REPORTS_DIR + filename);
     if (!resp.ok) throw new Error('Not found');
     const data = await resp.json();
@@ -677,6 +688,100 @@ function renderReport(data) {
 
   container.innerHTML = html;
   lucide.createIcons();
+}
+
+function renderPicks(data) {
+  const container = document.getElementById('report-content');
+  if (!data.picks || !data.picks.length) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">🎯</div>
+        <p>还没有推荐记录</p>
+        <div class="hint">短线选股筛选后会自动添加</div>
+      </div>`;
+    return;
+  }
+
+  // Sort: active first (no exitDate), then by date desc
+  const sorted = [...data.picks].sort((a, b) => {
+    if (!a.exitDate && b.exitDate) return -1;
+    if (a.exitDate && !b.exitDate) return 1;
+    return new Date(b.date) - new Date(a.date);
+  });
+
+  const active = sorted.filter(p => !p.exitDate);
+  const closed = sorted.filter(p => p.exitDate);
+
+  let html = '';
+
+  if (active.length) {
+    html += `
+    <div class="section">
+      <div class="section-header"><i data-lucide="target"></i> 持续跟踪中 (${active.length})</div>
+      <div class="stock-grid">
+        ${active.map(p => renderPickCard(p)).join('')}
+      </div>
+    </div>`;
+  }
+
+  if (closed.length) {
+    html += `
+    <div class="section">
+      <div class="section-header"><i data-lucide="archive"></i> 已结束 (${closed.length})</div>
+      <div class="stock-grid">
+        ${closed.map(p => renderPickCard(p)).join('')}
+      </div>
+    </div>`;
+  }
+
+  // Stats
+  const totalPicks = data.picks.length;
+  const wins = data.picks.filter(p => (p.currentChange || 0) > 0).length;
+  const winRate = totalPicks ? (wins / totalPicks * 100).toFixed(0) : 0;
+  const avgReturn = totalPicks
+    ? (data.picks.reduce((s, p) => s + (p.currentChange || 0), 0) / totalPicks).toFixed(2)
+    : 0;
+
+  html += `
+  <div class="section">
+    <div class="section-header"><i data-lucide="bar-chart-3"></i> 推荐统计</div>
+    <div class="card">
+      <div class="content" style="display:flex;gap:32px;flex-wrap:wrap;">
+        <div><strong>总推荐</strong><br><span style="font-family:var(--mono);font-size:20px;">${totalPicks}</span></div>
+        <div><strong>胜率</strong><br><span style="font-family:var(--mono);font-size:20px;color:${winRate >= 50 ? 'var(--red)' : 'var(--green)'};">${winRate}%</span></div>
+        <div><strong>平均收益</strong><br><span style="font-family:var(--mono);font-size:20px;color:${avgReturn >= 0 ? 'var(--red)' : 'var(--green)'};">${avgReturn > 0 ? '+' : ''}${avgReturn}%</span></div>
+      </div>
+    </div>
+  </div>`;
+
+  container.innerHTML = html;
+  lucide.createIcons();
+}
+
+function renderPickCard(p) {
+  const change = p.currentChange || 0;
+  const cls = change > 0 ? 'up' : change < 0 ? 'down' : 'flat';
+  const sign = change > 0 ? '+' : '';
+  const days = Math.floor((new Date() - new Date(p.date)) / 86400000);
+
+  return `
+  <div class="stock-card ${cls}">
+    <div class="stock-top">
+      <div>
+        <div class="stock-name">${p.name}</div>
+        <div class="stock-code">${p.code}</div>
+      </div>
+      <div>
+        <div class="stock-price">${p.currentPrice || p.pickPrice || '—'}</div>
+        <div class="stock-change">${sign}${change}%</div>
+      </div>
+    </div>
+    <div class="stock-note">
+      推荐价 <strong>${p.pickPrice}</strong> · ${p.date} · ${days}天
+      ${p.reason ? `<br>${p.reason}` : ''}
+      ${p.exitDate ? `<br>🏁 ${p.exitDate} 退出` : ''}
+    </div>
+  </div>`;
 }
 
 currentDate = getShanghaiDate(new Date());
