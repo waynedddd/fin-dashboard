@@ -584,12 +584,21 @@ async function loadReport() {
     document.getElementById('reportTimestamp').textContent = data.timestamp || '';
   } catch (e) {
     footer.style.display = 'none';
-    container.innerHTML = `
-      <div class="empty-state">
-        <div class="empty-icon">${currentTab === 'pre' ? '☀' : currentTab === 'post' ? '☽' : '🌐'}</div>
-        <p>${dateStr} 的${currentTab === 'pre' ? '盘前' : currentTab === 'post' ? '盘后' : '宏观'}报告还没生成</p>
-        <div class="hint">交易日自动更新</div>
-      </div>`;
+    if (currentTab === 'picks') {
+      container.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-icon">🎯</div>
+          <p>推荐记录加载失败</p>
+          <div class="hint">如使用 file:// 打开，请改用 http 服务：python3 -m http.server 8080</div>
+        </div>`;
+    } else {
+      container.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-icon">${currentTab === 'pre' ? '☀' : currentTab === 'post' ? '☽' : '🌐'}</div>
+          <p>${dateStr} 的${currentTab === 'pre' ? '盘前' : currentTab === 'post' ? '盘后' : '宏观'}报告还没生成</p>
+          <div class="hint">交易日自动更新</div>
+        </div>`;
+    }
   }
 }
 

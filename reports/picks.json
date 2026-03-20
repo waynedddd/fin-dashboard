@@ -1,3 +1,34 @@
 {
-  "picks": []
+  "picks": [
+    {
+      "code": "000670",
+      "name": "盈方微",
+      "pickPrice": 19.92,
+      "currentPrice": 19.92,
+      "currentChange": 0.0,
+      "date": "2026-03-21",
+      "reason": "龙虎榜净买1.86亿 涨停板 半导体",
+      "exitDate": null
+    },
+    {
+      "code": "000862",
+      "name": "银星能源",
+      "pickPrice": 11.04,
+      "currentPrice": 11.04,
+      "currentChange": 0.0,
+      "date": "2026-03-21",
+      "reason": "龙虎榜净买1.85亿 涨停板 光伏风电",
+      "exitDate": null
+    },
+    {
+      "code": "000815",
+      "name": "美利云",
+      "pickPrice": 7.67,
+      "currentPrice": 7.67,
+      "currentChange": 0.0,
+      "date": "2026-03-21",
+      "reason": "龙虎榜净买5637万 主力逆势买入 算力概念",
+      "exitDate": null
+    }
+  ]
 }
