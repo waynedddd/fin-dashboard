@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-03-25 08:00",
+  "indicators": "<h3>⚠️ 数据获取失败</h3><p>本次宏观数据未能成功抓取。Brave Search API 和 Tavily API 均未配置密钥，web_fetch 被网络策略阻断。</p><p><strong>需要配置：</strong></p><ul><li>运行 <code>openclaw configure --section web</code> 设置 BRAVE_API_KEY</li><li>或在 <code>~/.openclaw/.env</code> 中添加 TAVILY_API_KEY</li></ul><p>配置完成后，下次 cron 将正常产出宏观报告。</p>",
+  "sentiment": "<h3>市场情绪</h3><p>数据不可用，无法评估。</p>",
+  "policy": "<h3>政策动向</h3><p>数据不可用，无法评估。</p>",
+  "conclusion": "<h3>综合判断</h3><p>因无法获取实时数据，本次不给出仓位建议。请 Wayne 手动检查关键指标后决策。</p>",
+  "risks": "<h3>风险提示</h3><ul><li>⚠️ 自动化宏观监控链路中断，需尽快修复 API 配置</li><li>在数据盲区期间，建议维持现有仓位不做大幅调整</li></ul>"
+}
