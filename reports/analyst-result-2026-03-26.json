@@ -1,0 +1,15 @@
+{
+  "analysis_date": "2026-03-26",
+  "recommendations": [
+    {"code": "000899", "name": "赣能股份", "rating": "buy", "confidence": 0.72, "target_price": 16.5, "stop_loss": 14.4, "reasons": ["电力板块主线，连续放量上攻", "PE仅15.65合理估值", "5日K线量价齐升形态好"], "risks": ["今日涨幅已达9%接近涨停追高风险", "电力板块整体过热可能回调"], "hold_days": 3},
+    {"code": "001283", "name": "豪鹏科技", "rating": "buy", "confidence": 0.68, "target_price": 80.0, "stop_loss": 69.5, "reasons": ["储能+锂电池双概念催化", "放量整理后再放量接力形态", "拟募资8亿扩产储能电池基本面支撑"], "risks": ["5日涨幅20%+获利盘大", "PE38.89偏高"], "hold_days": 2},
+    {"code": "002108", "name": "沧州明珠", "rating": "buy", "confidence": 0.65, "target_price": 5.3, "stop_loss": 4.6, "reasons": ["低位放巨量资金介入明显", "低价股弹性大", "定增14亿补流基本面改善预期"], "risks": ["PE51偏高", "前4日连跌后单日暴拉可能游资一日游"], "hold_days": 2},
+    {"code": "300342", "name": "天银机电", "rating": "avoid", "confidence": 0.4, "reasons": [], "risks": ["PE363倍极度高估", "净利润同比降56%", "控股股东减持"]},
+    {"code": "300497", "name": "富祥药业", "rating": "avoid", "confidence": 0.35, "reasons": [], "risks": ["亏损企业PE为负", "3日拉升20%+超买", "无催化剂纯炒作"]},
+    {"code": "000720", "name": "新能泰山", "rating": "avoid", "confidence": 0.3, "reasons": [], "risks": ["亏损", "一字涨停庄股走势", "换手1.68%流动性极差"]},
+    {"code": "000692", "name": "惠天热电", "rating": "avoid", "confidence": 0.35, "reasons": [], "risks": ["亏损", "子公司法律风险", "5日涨25%超买"]},
+    {"code": "600396", "name": "华电辽能", "rating": "avoid", "confidence": 0.4, "reasons": [], "risks": ["PE204倍", "5日涨42%极度超买", "高开回落抛压显现"]}
+  ],
+  "market_view": "电力板块集体涨停，中东冲突推动能源概念，但板块过热需警惕回调，只做确定性高的低位放量品种",
+  "top_pick": "000899"
+}

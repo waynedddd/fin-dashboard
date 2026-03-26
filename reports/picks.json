@@ -38,7 +38,9 @@
       "currentChange": 0.0,
       "date": "2026-03-26",
       "reason": "放量上涨 涨6.91% 换手11.91%",
-      "exitDate": null
+      "exitDate": null,
+      "targetPrice": 16.5,
+      "stopLoss": 14.4
     },
     {
       "code": "300342",
@@ -48,7 +50,8 @@
       "currentChange": 0.0,
       "date": "2026-03-26",
       "reason": "放量上涨 涨6.67% 换手17.79%",
-      "exitDate": null
+      "exitDate": "2026-03-26",
+      "exitReason": "LLM分析: avoid"
     },
     {
       "code": "300483",
@@ -68,7 +71,8 @@
       "currentChange": 0.0,
       "date": "2026-03-26",
       "reason": "放量上涨 涨6.59% 换手26.65%",
-      "exitDate": null
+      "exitDate": "2026-03-26",
+      "exitReason": "LLM分析: avoid"
     },
     {
       "code": "002108",
@@ -78,7 +82,9 @@
       "currentChange": 0.0,
       "date": "2026-03-26",
       "reason": "放量上涨 涨6.58% 换手10.08%",
-      "exitDate": null
+      "exitDate": null,
+      "targetPrice": 5.3,
+      "stopLoss": 4.6
     }
   ]
 }
