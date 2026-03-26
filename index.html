@@ -509,7 +509,8 @@
     <button class="tab active" onclick="switchTab('pre')" id="tab-pre">☀ 盘前</button>
     <button class="tab" onclick="switchTab('post')" id="tab-post">☽ 盘后</button>
     <button class="tab" onclick="switchTab('macro')" id="tab-macro">🌐 宏观</button>
-    <button class="tab" onclick="switchTab('picks')" id="tab-picks">🎯 推荐</button>
+    <button class="tab" onclick="switchTab('picks')" id="tab-picks">🎯 短线</button>
+    <button class="tab" onclick="switchTab('longterm')" id="tab-longterm">🏦 中长线</button>
   </div>
 
   <div id="report-content">
@@ -555,6 +556,7 @@ function switchTab(tab) {
   document.getElementById('tab-post').classList.toggle('active', tab === 'post');
   document.getElementById('tab-macro').classList.toggle('active', tab === 'macro');
   document.getElementById('tab-picks').classList.toggle('active', tab === 'picks');
+  document.getElementById('tab-longterm').classList.toggle('active', tab === 'longterm');
   loadReport();
 }
 
@@ -573,7 +575,24 @@ async function loadReport() {
       const data = await resp.json();
       renderPicks(data);
       footer.style.display = 'flex';
-      document.getElementById('reportTimestamp').textContent = '推荐记录';
+      document.getElementById('reportTimestamp').textContent = '短线推荐';
+      return;
+    }
+    if (currentTab === 'longterm') {
+      // Try today first, then find latest
+      let ltData = null;
+      for (let d = 0; d < 7; d++) {
+        const dd = new Date(); dd.setDate(dd.getDate() - d);
+        const ds = formatDate(getShanghaiDate(dd));
+        try {
+          const resp = await fetch(REPORTS_DIR + `longterm-screener-${ds}.json`);
+          if (resp.ok) { ltData = await resp.json(); break; }
+        } catch(e) {}
+      }
+      if (!ltData) throw new Error('Not found');
+      renderLongterm(ltData);
+      footer.style.display = 'flex';
+      document.getElementById('reportTimestamp').textContent = `中长线筛选 ${ltData.date || ''}`;
       return;
     }
     const resp = await fetch(REPORTS_DIR + filename);
@@ -588,8 +607,15 @@ async function loadReport() {
       container.innerHTML = `
         <div class="empty-state">
           <div class="empty-icon">🎯</div>
-          <p>推荐记录加载失败</p>
+          <p>短线推荐记录加载失败</p>
           <div class="hint">如使用 file:// 打开，请改用 http 服务：python3 -m http.server 8080</div>
+        </div>`;
+    } else if (currentTab === 'longterm') {
+      container.innerHTML = `
+        <div class="empty-state">
+          <div class="empty-icon">🏦</div>
+          <p>中长线筛选数据还没生成</p>
+          <div class="hint">每周一 20:00 自动更新</div>
         </div>`;
     } else {
       container.innerHTML = `
@@ -862,6 +888,103 @@ function renderPickCard(p) {
     </div>` : ''}
     ${p.reason && !reasons.length ? `<div style="margin-top:8px;font-size:12px;color:var(--muted);">${p.reason}</div>` : ''}
     ${p.exitDate ? `<div style="margin-top:8px;padding:4px 8px;background:rgba(107,114,128,0.1);border-radius:4px;font-size:12px;color:var(--muted);">🏁 ${p.exitDate} 退出 ${p.exitReason ? '· ' + p.exitReason : ''}</div>` : ''}
+  </div>`;
+}
+
+function renderLongterm(data) {
+  const container = document.getElementById('report-content');
+  const candidates = data.candidates || [];
+  if (!candidates.length) {
+    container.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon">🏦</div>
+        <p>本期无符合条件的中长线标的</p>
+      </div>`;
+    return;
+  }
+
+  // Sort by score desc
+  candidates.sort((a, b) => (b.score || 0) - (a.score || 0));
+  const top = candidates.slice(0, 20);
+
+  let html = `
+  <div class="section">
+    <div class="section-header"><i data-lucide="filter"></i> 筛选概览</div>
+    <div class="card">
+      <div class="content" style="display:flex;gap:32px;flex-wrap:wrap;">
+        <div><strong>股票池</strong><br><span style="font-family:var(--mono);font-size:20px;">${data.pool || '—'}</span></div>
+        <div><strong>扫描</strong><br><span style="font-family:var(--mono);font-size:20px;">${data.total_screened || '—'}</span></div>
+        <div><strong>通过</strong><br><span style="font-family:var(--mono);font-size:20px;color:var(--gold);">${data.passed || candidates.length}</span></div>
+        <div><strong>日期</strong><br><span style="font-family:var(--mono);font-size:16px;">${data.date || '—'}</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-header"><i data-lucide="trophy"></i> 基本面 Top 20</div>
+    <div class="stock-grid">
+      ${top.map(c => renderLongtermCard(c)).join('')}
+    </div>
+  </div>`;
+
+  container.innerHTML = html;
+  lucide.createIcons();
+}
+
+function renderLongtermCard(c) {
+  const score = c.score || 0;
+  const scoreColor = score >= 10 ? '#ef4444' : score >= 8 ? '#eab308' : 'var(--text-secondary)';
+  const reasons = c.reasons || [];
+  const risks = c.risks || [];
+
+  const revenue = c.revenue ? (c.revenue >= 1e8 ? (c.revenue / 1e8).toFixed(0) + '亿' : (c.revenue / 1e4).toFixed(0) + '万') : '—';
+  const profit = c.net_profit ? (c.net_profit >= 1e8 ? (c.net_profit / 1e8).toFixed(0) + '亿' : (c.net_profit / 1e4).toFixed(0) + '万') : '—';
+  const mcap = c.market_cap ? (c.market_cap / 1e8).toFixed(0) + '亿' : '—';
+
+  // Rating from analyst result (if available)
+  const ratingMap = {
+    'strong_buy': { label: '强烈买入', color: '#ef4444', bg: 'rgba(239,68,68,0.2)' },
+    'buy': { label: '买入', color: '#ef4444', bg: 'rgba(239,68,68,0.15)' },
+    'hold': { label: '观望', color: '#eab308', bg: 'rgba(234,179,8,0.15)' },
+    'avoid': { label: '回避', color: '#6b7280', bg: 'rgba(107,114,128,0.15)' },
+  };
+  const rating = ratingMap[c.rating] || null;
+
+  return `
+  <div class="stock-card" style="position:relative;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+      <div>
+        <div class="stock-name"><a href="https://xueqiu.com/S/${c.code.startsWith('6') ? 'SH' : 'SZ'}${c.code}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;border-bottom:1px dashed rgba(255,255,255,0.2);">${c.name}</a></div>
+        <div class="stock-code"><a href="https://quote.eastmoney.com/${c.code.startsWith('6') ? 'sh' : 'sz'}${c.code}.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">${c.code} ↗</a></div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-family:var(--mono);font-size:24px;font-weight:700;color:${scoreColor};">${score}</div>
+        <div style="font-size:10px;color:var(--muted);">基本面得分</div>
+        ${rating ? `<span style="display:inline-block;margin-top:4px;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;color:${rating.color};background:${rating.bg};">${rating.label}</span>` : ''}
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 16px;margin-top:12px;font-size:12px;">
+      <div><span style="color:var(--muted);">ROE</span> <strong style="color:${(c.roe||0) > 20 ? 'var(--red)' : 'var(--text)'};">${c.roe || '—'}%</strong></div>
+      <div><span style="color:var(--muted);">PE</span> <strong style="color:${(c.pe||99) < 20 ? 'var(--gold)' : 'var(--text)'};">${c.pe ? c.pe.toFixed(1) : '—'}</strong></div>
+      <div><span style="color:var(--muted);">毛利率</span> <strong>${c.gross_margin || '—'}%</strong></div>
+      <div><span style="color:var(--muted);">净利率</span> <strong>${c.net_margin || '—'}%</strong></div>
+      <div><span style="color:var(--muted);">营收增速</span> <strong style="color:${(c.revenue_growth||0) > 15 ? 'var(--red)' : 'var(--text)'};">${c.revenue_growth || '—'}%</strong></div>
+      <div><span style="color:var(--muted);">负债率</span> <strong>${c.debt_ratio || '—'}%</strong></div>
+      <div><span style="color:var(--muted);">营收</span> <strong>${revenue}</strong></div>
+      <div><span style="color:var(--muted);">净利</span> <strong>${profit}</strong></div>
+    </div>
+    <div style="display:flex;gap:12px;margin-top:8px;font-size:12px;color:var(--muted);">
+      <span>市值 ${mcap}</span>
+      <span>价格 <strong style="color:var(--text);">${c.price || '—'}</strong></span>
+      ${c.report_period ? `<span>${c.report_period}</span>` : ''}
+    </div>
+    ${reasons.length ? `
+    <div style="margin-top:8px;">
+      ${reasons.map(r => `<span style="display:inline-block;margin:2px 4px 2px 0;padding:2px 6px;border-radius:3px;font-size:11px;background:var(--gold-glow);color:var(--gold);">${r}</span>`).join('')}
+    </div>` : ''}
+    ${risks.length ? `
+    <div style="margin-top:4px;">
+      ${risks.map(r => `<span style="display:inline-block;margin:2px 4px 2px 0;padding:2px 6px;border-radius:3px;font-size:11px;background:var(--red-bg);color:var(--red);">${r}</span>`).join('')}
+    </div>` : ''}
   </div>`;
 }
 
