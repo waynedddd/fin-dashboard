@@ -144,24 +144,38 @@ ROE: 14.81% | 毛利率: 54.7% | 净利率: 35.02%
       "name": "股票名",
       "rating": "strong_buy/buy/hold/avoid",
       "confidence": 0.0-1.0,
-      "fair_value": 合理估值价格,
       "current_price": 当前价,
-      "upside_pct": 上涨空间百分比,
+      "fair_value": 合理估值价格(基于目标PE×预期EPS),
+      "target_price_6m": 6个月目标价,
+      "target_price_12m": 12个月目标价,
       "entry_zone": [理想买入区间下限, 上限],
-      "reasons": ["理由1", "理由2"],
-      "risks": ["风险1", "风险2"],
-      "moat": "护城河描述",
+      "stop_loss": 止损价(关键支撑下方5-8%),
+      "upside_pct": 12个月上涨空间百分比,
       "hold_months": 建议持有月数,
-      "position_pct": 建议仓位1-20
+      "position_pct": 建议仓位1-20(占总资金百分比),
+      "reasons": ["理由1", "理由2", "理由3"],
+      "risks": ["风险1", "风险2"],
+      "moat": "护城河一句话描述",
+      "catalyst": "未来6-12个月最大催化剂",
+      "valuation_method": "估值方法说明(如:按25倍PE×2025E EPS 70元)"
     }
   ],
-  "sector_view": "行业配置建议",
-  "market_view": "中长期市场判断"
+  "sector_view": "行业配置建议(哪些行业超配/低配)",
+  "market_view": "中长期市场判断",
+  "portfolio_suggestion": "如果只能买3只，选哪3只，各配多少仓位"
 }
 ```
 
 **评级标准：**
-- strong_buy: 优质赛道+强护城河+低估值+明确催化剂
-- buy: 基本面优秀+估值合理
-- hold: 好公司但当前估值偏高
-- avoid: 有隐患或估值泡沫
+- strong_buy: 优质赛道+强护城河+低估值+明确催化剂，上涨空间>30%
+- buy: 基本面优秀+估值合理，上涨空间15-30%
+- hold: 好公司但当前估值偏高或缺乏催化剂，等回调
+- avoid: 有隐患、估值泡沫、或行业下行
+
+**持有期和目标价要求：**
+- strong_buy: 持有6-12个月，目标收益30-50%，止损-15%
+- buy: 持有3-6个月，目标收益15-30%，止损-10%
+- hold: 不建议当前买入，给出理想买入价位
+- 目标价必须有估值依据（PE法/PEG法/DCF），不能拍脑袋
+- entry_zone是理想介入区间，不是当前价——好公司也要买在好价格
+- stop_loss设在关键支撑位或入场价下方8%

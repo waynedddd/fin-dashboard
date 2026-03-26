@@ -903,11 +903,32 @@ function renderLongterm(data) {
     return;
   }
 
-  // Sort by score desc
-  candidates.sort((a, b) => (b.score || 0) - (a.score || 0));
+  // Sort: analyzed first (strong_buy > buy > hold > avoid), then by score
+  const ratingOrder = {'strong_buy': 0, 'buy': 1, 'hold': 2, 'avoid': 3};
+  candidates.sort((a, b) => {
+    const ra = a.rating ? ratingOrder[a.rating] ?? 2 : 9;
+    const rb = b.rating ? ratingOrder[b.rating] ?? 2 : 9;
+    if (ra !== rb) return ra - rb;
+    return (b.score || 0) - (a.score || 0);
+  });
   const top = candidates.slice(0, 20);
 
-  let html = `
+  let html = '';
+
+  // Market view & portfolio suggestion
+  if (data.market_view || data.portfolio_suggestion) {
+    html += `
+    <div class="section">
+      <div class="section-header"><i data-lucide="compass"></i> 市场判断</div>
+      <div class="card"><div class="content">
+        ${data.market_view ? `<div style="margin-bottom:8px;">${data.market_view}</div>` : ''}
+        ${data.sector_view ? `<div style="margin-bottom:8px;color:var(--text-secondary);">📊 ${data.sector_view}</div>` : ''}
+        ${data.portfolio_suggestion ? `<div style="padding:8px 12px;background:var(--gold-glow);border-radius:6px;border-left:3px solid var(--gold);"><strong style="color:var(--gold);">💰 组合建议：</strong> ${data.portfolio_suggestion}</div>` : ''}
+      </div></div>
+    </div>`;
+  }
+
+  html += `
   <div class="section">
     <div class="section-header"><i data-lucide="filter"></i> 筛选概览</div>
     <div class="card">
