@@ -29,6 +29,56 @@
       "date": "2026-03-21",
       "reason": "龙虎榜净买5637万 主力逆势买入 算力概念",
       "exitDate": null
+    },
+    {
+      "code": "000899",
+      "name": "赣能股份",
+      "pickPrice": 15.17,
+      "currentPrice": 15.17,
+      "currentChange": 0.0,
+      "date": "2026-03-26",
+      "reason": "放量上涨 涨6.91% 换手11.91%",
+      "exitDate": null
+    },
+    {
+      "code": "300342",
+      "name": "天银机电",
+      "pickPrice": 50.73,
+      "currentPrice": 50.73,
+      "currentChange": 0.0,
+      "date": "2026-03-26",
+      "reason": "放量上涨 涨6.67% 换手17.79%",
+      "exitDate": null
+    },
+    {
+      "code": "300483",
+      "name": "首华燃气",
+      "pickPrice": 23.36,
+      "currentPrice": 23.36,
+      "currentChange": 0.0,
+      "date": "2026-03-26",
+      "reason": "放量上涨 涨6.62% 换手18.57%",
+      "exitDate": null
+    },
+    {
+      "code": "300497",
+      "name": "富祥药业",
+      "pickPrice": 18.44,
+      "currentPrice": 18.44,
+      "currentChange": 0.0,
+      "date": "2026-03-26",
+      "reason": "放量上涨 涨6.59% 换手26.65%",
+      "exitDate": null
+    },
+    {
+      "code": "002108",
+      "name": "沧州明珠",
+      "pickPrice": 4.86,
+      "currentPrice": 4.86,
+      "currentChange": 0.0,
+      "date": "2026-03-26",
+      "reason": "放量上涨 涨6.58% 换手10.08%",
+      "exitDate": null
     }
   ]
 }
