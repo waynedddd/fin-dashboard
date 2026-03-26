@@ -938,16 +938,30 @@ function renderLongtermCard(c) {
 
   const revenue = c.revenue ? (c.revenue >= 1e8 ? (c.revenue / 1e8).toFixed(0) + '亿' : (c.revenue / 1e4).toFixed(0) + '万') : '—';
   const profit = c.net_profit ? (c.net_profit >= 1e8 ? (c.net_profit / 1e8).toFixed(0) + '亿' : (c.net_profit / 1e4).toFixed(0) + '万') : '—';
-  const mcap = c.market_cap ? (c.market_cap / 1e8).toFixed(0) + '亿' : '—';
+  const mcap = c.market_cap ? (c.market_cap >= 1e4 ? (c.market_cap / 1e4).toFixed(0) + '万亿' : c.market_cap.toFixed(0) + '亿') : '—';
 
-  // Rating from analyst result (if available)
+  // Auto-rating from analyst result or score-based
+  let rating = c.rating;
+  if (!rating) {
+    if (score >= 10) rating = 'strong_buy';
+    else if (score >= 8) rating = 'buy';
+    else if (score >= 6) rating = 'hold';
+    else rating = 'avoid';
+  }
   const ratingMap = {
-    'strong_buy': { label: '强烈买入', color: '#ef4444', bg: 'rgba(239,68,68,0.2)' },
-    'buy': { label: '买入', color: '#ef4444', bg: 'rgba(239,68,68,0.15)' },
+    'strong_buy': { label: '强烈推荐', color: '#ef4444', bg: 'rgba(239,68,68,0.2)' },
+    'buy': { label: '推荐买入', color: '#ef4444', bg: 'rgba(239,68,68,0.15)' },
     'hold': { label: '观望', color: '#eab308', bg: 'rgba(234,179,8,0.15)' },
     'avoid': { label: '回避', color: '#6b7280', bg: 'rgba(107,114,128,0.15)' },
   };
-  const rating = ratingMap[c.rating] || null;
+  const ratingInfo = ratingMap[rating] || ratingMap['hold'];
+
+  // Price change since screening (if currentPrice available from live data)
+  const screenPrice = c.price || 0;
+  const currentPrice = c.currentPrice || c.price || 0;
+  const pricePct = screenPrice ? ((currentPrice / screenPrice - 1) * 100) : 0;
+  const priceSign = pricePct > 0 ? '+' : '';
+  const priceColor = pricePct > 0 ? 'var(--red)' : pricePct < 0 ? 'var(--green)' : 'var(--muted)';
 
   return `
   <div class="stock-card" style="position:relative;">
@@ -957,9 +971,18 @@ function renderLongtermCard(c) {
         <div class="stock-code"><a href="https://quote.eastmoney.com/${c.code.startsWith('6') ? 'sh' : 'sz'}${c.code}.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">${c.code} ↗</a></div>
       </div>
       <div style="text-align:right;">
-        <div style="font-family:var(--mono);font-size:24px;font-weight:700;color:${scoreColor};">${score}</div>
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;color:${ratingInfo.color};background:${ratingInfo.bg};">${ratingInfo.label}</span>
+        <div style="font-family:var(--mono);font-size:24px;font-weight:700;color:${scoreColor};margin-top:4px;">${score}</div>
         <div style="font-size:10px;color:var(--muted);">基本面得分</div>
-        ${rating ? `<span style="display:inline-block;margin-top:4px;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;color:${rating.color};background:${rating.bg};">${rating.label}</span>` : ''}
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;">
+      <div>
+        <span style="font-family:var(--mono);font-size:24px;font-weight:700;">${currentPrice || '—'}</span>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-size:11px;color:var(--muted);">筛选以来</div>
+        <div style="font-family:var(--mono);font-size:16px;font-weight:600;color:${priceColor};">${priceSign}${pricePct.toFixed(2)}%</div>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 16px;margin-top:12px;font-size:12px;">
