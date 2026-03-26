@@ -8,7 +8,9 @@
       "currentChange": 4.64,
       "date": "2026-03-21",
       "reason": "龙虎榜净买1.86亿 涨停板 半导体",
-      "exitDate": null
+      "exitDate": null,
+      "rating": "hold",
+      "confidence": 0.5
     },
     {
       "code": "000862",
@@ -18,7 +20,9 @@
       "currentChange": -13.03,
       "date": "2026-03-21",
       "reason": "龙虎榜净买1.85亿 涨停板 光伏风电",
-      "exitDate": null
+      "exitDate": null,
+      "rating": "hold",
+      "confidence": 0.5
     },
     {
       "code": "000815",
@@ -28,7 +32,9 @@
       "currentChange": 6.17,
       "date": "2026-03-21",
       "reason": "龙虎榜净买5637万 主力逆势买入 算力概念",
-      "exitDate": null
+      "exitDate": null,
+      "rating": "hold",
+      "confidence": 0.5
     },
     {
       "code": "000899",
@@ -40,7 +46,19 @@
       "reason": "放量上涨 涨6.91% 换手11.91%",
       "exitDate": null,
       "targetPrice": 16.5,
-      "stopLoss": 14.4
+      "stopLoss": 14.4,
+      "rating": "buy",
+      "confidence": 0.72,
+      "reasons": [
+        "电力板块主线，连续放量上攻",
+        "PE仅15.65合理估值",
+        "5日K线量价齐升形态好"
+      ],
+      "risks": [
+        "今日涨幅已达9%接近涨停追高风险",
+        "电力板块整体过热可能回调"
+      ],
+      "holdDays": 3
     },
     {
       "code": "300342",
@@ -51,7 +69,16 @@
       "date": "2026-03-26",
       "reason": "放量上涨 涨6.67% 换手17.79%",
       "exitDate": "2026-03-26",
-      "exitReason": "LLM分析: avoid"
+      "exitReason": "LLM分析: avoid",
+      "rating": "avoid",
+      "confidence": 0.4,
+      "reasons": [],
+      "risks": [
+        "PE363倍极度高估",
+        "净利润同比降56%",
+        "控股股东减持"
+      ],
+      "holdDays": null
     },
     {
       "code": "300483",
@@ -61,7 +88,9 @@
       "currentChange": 0.0,
       "date": "2026-03-26",
       "reason": "放量上涨 涨6.62% 换手18.57%",
-      "exitDate": null
+      "exitDate": null,
+      "rating": "hold",
+      "confidence": 0.5
     },
     {
       "code": "300497",
@@ -72,7 +101,16 @@
       "date": "2026-03-26",
       "reason": "放量上涨 涨6.59% 换手26.65%",
       "exitDate": "2026-03-26",
-      "exitReason": "LLM分析: avoid"
+      "exitReason": "LLM分析: avoid",
+      "rating": "avoid",
+      "confidence": 0.35,
+      "reasons": [],
+      "risks": [
+        "亏损企业PE为负",
+        "3日拉升20%+超买",
+        "无催化剂纯炒作"
+      ],
+      "holdDays": null
     },
     {
       "code": "002108",
@@ -84,7 +122,19 @@
       "reason": "放量上涨 涨6.58% 换手10.08%",
       "exitDate": null,
       "targetPrice": 5.3,
-      "stopLoss": 4.6
+      "stopLoss": 4.6,
+      "rating": "buy",
+      "confidence": 0.65,
+      "reasons": [
+        "低位放巨量资金介入明显",
+        "低价股弹性大",
+        "定增14亿补流基本面改善预期"
+      ],
+      "risks": [
+        "PE51偏高",
+        "前4日连跌后单日暴拉可能游资一日游"
+      ],
+      "holdDays": 2
     }
   ]
 }

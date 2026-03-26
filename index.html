@@ -200,8 +200,8 @@
   /* Stock Grid */
   .stock-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 12px;
   }
 
   .stock-card {
@@ -745,11 +745,14 @@ function renderPicks(data) {
 
   // Stats
   const totalPicks = data.picks.length;
+  const activePicks = data.picks.filter(p => !p.exitDate);
   const wins = data.picks.filter(p => (p.currentChange || 0) > 0).length;
   const winRate = totalPicks ? (wins / totalPicks * 100).toFixed(0) : 0;
   const avgReturn = totalPicks
     ? (data.picks.reduce((s, p) => s + (p.currentChange || 0), 0) / totalPicks).toFixed(2)
     : 0;
+  const buyCount = data.picks.filter(p => p.rating === 'buy' && !p.exitDate).length;
+  const totalReturn = data.picks.reduce((s, p) => s + (p.currentChange || 0), 0).toFixed(2);
 
   html += `
   <div class="section">
@@ -757,8 +760,11 @@ function renderPicks(data) {
     <div class="card">
       <div class="content" style="display:flex;gap:32px;flex-wrap:wrap;">
         <div><strong>总推荐</strong><br><span style="font-family:var(--mono);font-size:20px;">${totalPicks}</span></div>
+        <div><strong>跟踪中</strong><br><span style="font-family:var(--mono);font-size:20px;color:var(--gold);">${activePicks.length}</span></div>
+        <div><strong>买入评级</strong><br><span style="font-family:var(--mono);font-size:20px;color:#ef4444;">${buyCount}</span></div>
         <div><strong>胜率</strong><br><span style="font-family:var(--mono);font-size:20px;color:${winRate >= 50 ? 'var(--red)' : 'var(--green)'};">${winRate}%</span></div>
         <div><strong>平均收益</strong><br><span style="font-family:var(--mono);font-size:20px;color:${avgReturn >= 0 ? 'var(--red)' : 'var(--green)'};">${avgReturn > 0 ? '+' : ''}${avgReturn}%</span></div>
+        <div><strong>累计收益</strong><br><span style="font-family:var(--mono);font-size:20px;color:${totalReturn >= 0 ? 'var(--red)' : 'var(--green)'};">${totalReturn > 0 ? '+' : ''}${totalReturn}%</span></div>
       </div>
     </div>
   </div>`;
@@ -773,23 +779,89 @@ function renderPickCard(p) {
   const sign = change > 0 ? '+' : '';
   const days = Math.floor((new Date() - new Date(p.date)) / 86400000);
 
+  // Rating badge
+  const ratingMap = {
+    'buy': { label: '买入', color: '#ef4444', bg: 'rgba(239,68,68,0.15)' },
+    'hold': { label: '观望', color: '#eab308', bg: 'rgba(234,179,8,0.15)' },
+    'avoid': { label: '回避', color: '#6b7280', bg: 'rgba(107,114,128,0.15)' },
+    'closed': { label: '已结束', color: '#6b7280', bg: 'rgba(107,114,128,0.15)' },
+  };
+  const rating = ratingMap[p.rating] || ratingMap['hold'];
+
+  // Confidence bar
+  const conf = p.confidence || 0;
+  const confPct = Math.round(conf * 100);
+  const confColor = conf >= 0.7 ? '#ef4444' : conf >= 0.5 ? '#eab308' : '#6b7280';
+
+  // Profit from pick price
+  const profitPct = p.pickPrice ? ((p.currentPrice || p.pickPrice) / p.pickPrice - 1) * 100 : 0;
+  const profitSign = profitPct > 0 ? '+' : '';
+  const profitColor = profitPct > 0 ? 'var(--red)' : profitPct < 0 ? 'var(--green)' : 'var(--muted)';
+
+  // Reasons & risks
+  const reasons = (p.reasons || []).slice(0, 3);
+  const risks = (p.risks || []).slice(0, 2);
+
+  // Target & stop loss progress
+  let targetHtml = '';
+  if (p.targetPrice && p.stopLoss && p.currentPrice) {
+    const range = p.targetPrice - p.stopLoss;
+    const pos = Math.max(0, Math.min(1, (p.currentPrice - p.stopLoss) / range));
+    const pickPos = Math.max(0, Math.min(1, (p.pickPrice - p.stopLoss) / range));
+    targetHtml = `
+      <div style="margin-top:10px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);">
+          <span>止损 ${p.stopLoss}</span>
+          <span>目标 ${p.targetPrice}</span>
+        </div>
+        <div style="position:relative;height:6px;background:rgba(255,255,255,0.08);border-radius:3px;margin-top:4px;">
+          <div style="position:absolute;left:${pickPos*100}%;top:-2px;width:2px;height:10px;background:var(--muted);border-radius:1px;" title="推荐价"></div>
+          <div style="position:absolute;left:0;top:0;height:100%;width:${pos*100}%;background:linear-gradient(90deg,var(--green),${pos > pickPos ? 'var(--red)' : 'var(--green)'});border-radius:3px;transition:width 0.3s;"></div>
+        </div>
+      </div>`;
+  }
+
   return `
-  <div class="stock-card ${cls}">
-    <div class="stock-top">
+  <div class="stock-card ${cls}" style="position:relative;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;">
       <div>
         <div class="stock-name">${p.name}</div>
         <div class="stock-code">${p.code}</div>
       </div>
-      <div>
-        <div class="stock-price">${p.currentPrice || p.pickPrice || '—'}</div>
-        <div class="stock-change">${sign}${change}%</div>
+      <div style="text-align:right;">
+        <span style="display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;color:${rating.color};background:${rating.bg};">${rating.label}</span>
+        ${conf ? `<div style="font-size:11px;color:var(--muted);margin-top:4px;">信心 <span style="color:${confColor};font-weight:600;">${confPct}%</span></div>` : ''}
       </div>
     </div>
-    <div class="stock-note">
-      推荐价 <strong>${p.pickPrice}</strong> · ${p.date} · ${days}天
-      ${p.reason ? `<br>${p.reason}` : ''}
-      ${p.exitDate ? `<br>🏁 ${p.exitDate} 退出` : ''}
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;">
+      <div>
+        <span style="font-family:var(--mono);font-size:28px;font-weight:700;">${p.currentPrice || p.pickPrice || '—'}</span>
+        <span class="stock-change" style="font-size:14px;margin-left:8px;">${sign}${change}%</span>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-size:11px;color:var(--muted);">推荐收益</div>
+        <div style="font-family:var(--mono);font-size:18px;font-weight:600;color:${profitColor};">${profitSign}${profitPct.toFixed(2)}%</div>
+      </div>
     </div>
+    <div style="display:flex;gap:12px;margin-top:8px;font-size:12px;color:var(--muted);">
+      <span>推荐价 <strong style="color:var(--text);">${p.pickPrice}</strong></span>
+      <span>${p.date}</span>
+      <span>${days}天</span>
+      ${p.holdDays ? `<span>建议持有${p.holdDays}天</span>` : ''}
+    </div>
+    ${targetHtml}
+    ${reasons.length ? `
+    <div style="margin-top:10px;">
+      <div style="font-size:11px;color:var(--gold);margin-bottom:4px;">📈 推荐理由</div>
+      ${reasons.map(r => `<div style="font-size:12px;color:var(--text);padding-left:8px;border-left:2px solid var(--gold);margin-bottom:3px;">${r}</div>`).join('')}
+    </div>` : ''}
+    ${risks.length ? `
+    <div style="margin-top:8px;">
+      <div style="font-size:11px;color:#ef4444;margin-bottom:4px;">⚠️ 风险提示</div>
+      ${risks.map(r => `<div style="font-size:12px;color:var(--muted);padding-left:8px;border-left:2px solid rgba(239,68,68,0.3);margin-bottom:3px;">${r}</div>`).join('')}
+    </div>` : ''}
+    ${p.reason && !reasons.length ? `<div style="margin-top:8px;font-size:12px;color:var(--muted);">${p.reason}</div>` : ''}
+    ${p.exitDate ? `<div style="margin-top:8px;padding:4px 8px;background:rgba(107,114,128,0.1);border-radius:4px;font-size:12px;color:var(--muted);">🏁 ${p.exitDate} 退出 ${p.exitReason ? '· ' + p.exitReason : ''}</div>` : ''}
   </div>`;
 }
 
