@@ -135,6 +135,26 @@
         "前4日连跌后单日暴拉可能游资一日游"
       ],
       "holdDays": 2
+    },
+    {
+      "code": "000695",
+      "name": "滨海能源",
+      "pickPrice": 12.8,
+      "currentPrice": 12.8,
+      "currentChange": 0.0,
+      "date": "2026-03-27",
+      "reason": "绿电项目5月通电催化+机构关注+RSI中性技术面健康",
+      "exitDate": null
+    },
+    {
+      "code": "300505",
+      "name": "川金诺",
+      "pickPrice": 29.5,
+      "currentPrice": 29.5,
+      "currentChange": 0.0,
+      "date": "2026-03-27",
+      "reason": "PE=19估值合理+超跌反弹+放量资金介入",
+      "exitDate": null
     }
   ]
 }
