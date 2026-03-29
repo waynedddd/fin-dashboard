@@ -509,8 +509,8 @@
     <button class="tab active" onclick="switchTab('pre')" id="tab-pre">☀ 盘前</button>
     <button class="tab" onclick="switchTab('post')" id="tab-post">☽ 盘后</button>
     <button class="tab" onclick="switchTab('macro')" id="tab-macro">🌐 宏观</button>
-    <button class="tab" onclick="switchTab('picks')" id="tab-picks">🎯 短线</button>
     <button class="tab" onclick="switchTab('watchlist')" id="tab-watchlist">👀 关注</button>
+    <button class="tab" onclick="switchTab('picks')" id="tab-picks">📋 历史推荐</button>
     <button class="tab" onclick="switchTab('longterm')" id="tab-longterm">🏦 中长线</button>
   </div>
 
@@ -577,7 +577,7 @@ async function loadReport() {
       const data = await resp.json();
       renderPicks(data);
       footer.style.display = 'flex';
-      document.getElementById('reportTimestamp').textContent = '短线推荐';
+      document.getElementById('reportTimestamp').textContent = '历史推荐记录';
       return;
     }
     if (currentTab === 'watchlist') {
@@ -617,8 +617,8 @@ async function loadReport() {
     if (currentTab === 'picks') {
       container.innerHTML = `
         <div class="empty-state">
-          <div class="empty-icon">🎯</div>
-          <p>短线推荐记录加载失败</p>
+          <div class="empty-icon">📋</div>
+          <p>历史推荐记录加载失败</p>
           <div class="hint">如使用 file:// 打开，请改用 http 服务：python3 -m http.server 8080</div>
         </div>`;
     } else if (currentTab === 'watchlist') {
@@ -748,9 +748,9 @@ function renderPicks(data) {
   if (!data.picks || !data.picks.length) {
     container.innerHTML = `
       <div class="empty-state">
-        <div class="empty-icon">🎯</div>
+        <div class="empty-icon">📋</div>
         <p>还没有推荐记录</p>
-        <div class="hint">短线选股筛选后会自动添加</div>
+        <div class="hint">盘前/盘中选股后会自动添加</div>
       </div>`;
     return;
   }
@@ -937,7 +937,12 @@ function renderWatchlist(data) {
 
   let html = `
   <div class="section">
-    <div class="section-header"><i data-lucide="eye"></i> 今日关注 (${stocks.length}只)</div>
+    <div class="section-header"><i data-lucide="eye"></i> 当前关注 (${stocks.length}只)</div>
+    <div class="card"><div class="content" style="display:flex;gap:32px;flex-wrap:wrap;">
+      <div><strong>买入信号</strong><br><span style="font-family:var(--mono);font-size:20px;color:var(--red);">${groups.buy.length}</span></div>
+      <div><strong>观察中</strong><br><span style="font-family:var(--mono);font-size:20px;color:var(--gold);">${groups.watch.length}</span></div>
+      <div><strong>来源</strong><br><span style="font-size:13px;color:var(--text-secondary);">盘前分析自动加入 · 中长线价格触发 · 手动添加</span></div>
+    </div></div>
   </div>`;
 
   for (const [rating, items] of Object.entries(groups)) {
