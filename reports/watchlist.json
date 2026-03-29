@@ -1,0 +1,57 @@
+{
+  "updated": "2026-03-30",
+  "stocks": [
+    {
+      "code": "002361",
+      "name": "神剑股份",
+      "addDate": "2026-03-30",
+      "addPrice": 13.64,
+      "source": "盘前龙虎榜",
+      "rating": "buy",
+      "reason": "RSI 57.8最健康+龙虎榜净买1.6亿+MACD转正",
+      "targetPrice": 15.0,
+      "stopLoss": 12.0,
+      "entryZone": [13.0, 13.3],
+      "status": "watching"
+    },
+    {
+      "code": "600227",
+      "name": "赤天化",
+      "addDate": "2026-03-30",
+      "addPrice": 4.27,
+      "source": "盘前龙虎榜",
+      "rating": "buy",
+      "reason": "RSI 58.5+布林0.61最低位+超跌反弹",
+      "targetPrice": 4.6,
+      "stopLoss": 3.7,
+      "entryZone": [4.0, 4.1],
+      "status": "watching"
+    },
+    {
+      "code": "600110",
+      "name": "诺德股份",
+      "addDate": "2026-03-30",
+      "addPrice": 8.66,
+      "source": "盘前龙虎榜",
+      "rating": "watch",
+      "reason": "锂电铜箔+净买2.75亿+RSI 63.5",
+      "targetPrice": 9.5,
+      "stopLoss": 7.5,
+      "entryZone": [8.0, 8.2],
+      "status": "watching"
+    },
+    {
+      "code": "002428",
+      "name": "云南锗业",
+      "addDate": "2026-03-30",
+      "addPrice": 51.36,
+      "source": "盘前龙虎榜",
+      "rating": "watch",
+      "reason": "稀缺战略资源+净买1.77亿+RSI 65.5",
+      "targetPrice": 58.0,
+      "stopLoss": 44.0,
+      "entryZone": [46.0, 48.0],
+      "status": "watching"
+    }
+  ]
+}
