@@ -155,6 +155,20 @@
       "date": "2026-03-27",
       "reason": "PE=19估值合理+超跌反弹+放量资金介入",
       "exitDate": null
+    },
+    {
+      "code": "002361",
+      "name": "神剑股份",
+      "pickPrice": 13.64,
+      "currentPrice": 13.64,
+      "currentChange": 0,
+      "date": "2026-03-30",
+      "reason": "龙虎榜净买1.6亿 RSI健康57.8 量比3.35爆量 MACD刚转正",
+      "exitDate": null,
+      "targetPrice": 15.0,
+      "stopLoss": 12.4,
+      "rating": "buy",
+      "confidence": 0.65
     }
   ]
 }
