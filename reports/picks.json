@@ -169,6 +169,26 @@
       "stopLoss": 12.4,
       "rating": "buy",
       "confidence": 0.65
+    },
+    {
+      "code": "002470",
+      "name": "金正大",
+      "pickPrice": 3.0,
+      "currentPrice": 3.0,
+      "currentChange": 0.0,
+      "date": "2026-03-30",
+      "reason": "磷矿项目下半年投产实质催化+出口订单涨30%+农化板块走强，回调到3.0元介入",
+      "exitDate": null
+    },
+    {
+      "code": "002149",
+      "name": "西部材料",
+      "pickPrice": 46.5,
+      "currentPrice": 46.5,
+      "currentChange": 0.0,
+      "date": "2026-03-30",
+      "reason": "重大资产重组+龙虎榜净买5419万机构介入+军工新材料+中东局势催化，回调到46.5元MA20支撑介入",
+      "exitDate": null
     }
   ]
 }
