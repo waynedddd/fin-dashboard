@@ -20,9 +20,10 @@
       "currentChange": -25.0,
       "date": "2026-03-21",
       "reason": "龙虎榜净买1.85亿 涨停板 光伏风电",
-      "exitDate": null,
+      "exitDate": "2026-03-30",
       "rating": "hold",
-      "confidence": 0.5
+      "confidence": 0.5,
+      "exitReason": "自动止损 -25.0%"
     },
     {
       "code": "000815",
@@ -44,7 +45,7 @@
       "currentChange": -11.54,
       "date": "2026-03-26",
       "reason": "放量上涨 涨6.91% 换手11.91%",
-      "exitDate": null,
+      "exitDate": "2026-03-30",
       "targetPrice": 16.5,
       "stopLoss": 14.4,
       "rating": "buy",
@@ -58,7 +59,8 @@
         "今日涨幅已达9%接近涨停追高风险",
         "电力板块整体过热可能回调"
       ],
-      "holdDays": 3
+      "holdDays": 3,
+      "exitReason": "自动止损 -11.5%"
     },
     {
       "code": "300342",
