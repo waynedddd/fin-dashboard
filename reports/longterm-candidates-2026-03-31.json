@@ -1,0 +1,218 @@
+[
+  {
+    "code": "300502",
+    "roe": 55.2,
+    "profit_growth": 284.37,
+    "rev_growth": 221.7,
+    "debt_ratio": 31.99,
+    "gross_margin": 47.25,
+    "eps": 6.37
+  },
+  {
+    "code": "688256",
+    "roe": 26.96,
+    "profit_growth": 555.24,
+    "rev_growth": 453.21,
+    "debt_ratio": 11.87,
+    "gross_margin": 55.15,
+    "eps": 4.93
+  },
+  {
+    "code": "300476",
+    "roe": 35.56,
+    "profit_growth": 273.52,
+    "rev_growth": 79.77,
+    "debt_ratio": 52.85,
+    "gross_margin": 35.22,
+    "eps": 5.01
+  },
+  {
+    "code": "300251",
+    "roe": 23.95,
+    "profit_growth": 406.78,
+    "rev_growth": 150.81,
+    "debt_ratio": 12.63,
+    "gross_margin": 73.24,
+    "eps": 0.8
+  },
+  {
+    "code": "300442",
+    "roe": 38.72,
+    "profit_growth": 210.74,
+    "rev_growth": 15.05,
+    "debt_ratio": 62.53,
+    "gross_margin": 48.11,
+    "eps": 2.74
+  },
+  {
+    "code": "300308",
+    "roe": 43.84,
+    "profit_growth": 108.78,
+    "rev_growth": 60.25,
+    "debt_ratio": 30.18,
+    "gross_margin": 42.04,
+    "eps": 9.8
+  },
+  {
+    "code": "600066",
+    "roe": 38.03,
+    "profit_growth": 34.94,
+    "rev_growth": 11.31,
+    "debt_ratio": 51.97,
+    "gross_margin": 24.14,
+    "eps": 2.51
+  },
+  {
+    "code": "300394",
+    "roe": 31.3,
+    "profit_growth": 50.07,
+    "rev_growth": 63.63,
+    "debt_ratio": 16.45,
+    "gross_margin": 51.87,
+    "eps": 1.8863
+  },
+  {
+    "code": "600160",
+    "roe": 16.87,
+    "profit_growth": 160.22,
+    "rev_growth": 13.89,
+    "debt_ratio": 32.97,
+    "gross_margin": 28.86,
+    "eps": 1.203
+  },
+  {
+    "code": "603893",
+    "roe": 19.59,
+    "profit_growth": 121.65,
+    "rev_growth": 45.46,
+    "debt_ratio": 17.08,
+    "gross_margin": 41.77,
+    "eps": 1.86
+  },
+  {
+    "code": "002463",
+    "roe": 28.57,
+    "profit_growth": 47.74,
+    "rev_growth": 42.0,
+    "debt_ratio": 46.46,
+    "gross_margin": 35.48,
+    "eps": 1.9875
+  },
+  {
+    "code": "000792",
+    "roe": 22.3,
+    "profit_growth": 81.76,
+    "rev_growth": 2.43,
+    "debt_ratio": 14.15,
+    "gross_margin": 57.86,
+    "eps": 1.6017
+  },
+  {
+    "code": "000792",
+    "roe": 22.3,
+    "profit_growth": 81.76,
+    "rev_growth": 2.43,
+    "debt_ratio": 14.15,
+    "gross_margin": 57.86,
+    "eps": 1.6017
+  },
+  {
+    "code": "000408",
+    "roe": 24.71,
+    "profit_growth": 49.32,
+    "rev_growth": 10.03,
+    "debt_ratio": 8.35,
+    "gross_margin": 59.24,
+    "eps": 2.46
+  },
+  {
+    "code": "000975",
+    "roe": 21.56,
+    "profit_growth": 36.75,
+    "rev_growth": 25.86,
+    "debt_ratio": 18.65,
+    "gross_margin": 31.82,
+    "eps": 1.0705
+  },
+  {
+    "code": "000807",
+    "roe": 19.7,
+    "profit_growth": 37.24,
+    "rev_growth": 10.27,
+    "debt_ratio": 19.84,
+    "gross_margin": 16.79,
+    "eps": 1.75
+  },
+  {
+    "code": "300866",
+    "roe": 20.27,
+    "profit_growth": 31.34,
+    "rev_growth": 27.79,
+    "debt_ratio": 49.52,
+    "gross_margin": 44.68,
+    "eps": 3.63
+  },
+  {
+    "code": "002920",
+    "roe": 21.67,
+    "profit_growth": 22.38,
+    "rev_growth": 17.88,
+    "debt_ratio": 47.86,
+    "gross_margin": 19.07,
+    "eps": 4.35
+  },
+  {
+    "code": "002920",
+    "roe": 21.67,
+    "profit_growth": 22.38,
+    "rev_growth": 17.88,
+    "debt_ratio": 47.86,
+    "gross_margin": 19.07,
+    "eps": 4.35
+  },
+  {
+    "code": "600415",
+    "roe": 15.96,
+    "profit_growth": 48.45,
+    "rev_growth": 23.07,
+    "debt_ratio": 50.86,
+    "gross_margin": 37.23,
+    "eps": 0.63
+  },
+  {
+    "code": "002028",
+    "roe": 16.11,
+    "profit_growth": 46.94,
+    "rev_growth": 32.86,
+    "debt_ratio": 45.94,
+    "gross_margin": 32.32,
+    "eps": 2.81
+  },
+  {
+    "code": "688082",
+    "roe": 14.82,
+    "profit_growth": 21.05,
+    "rev_growth": 20.8,
+    "debt_ratio": 28.71,
+    "gross_margin": 48.32,
+    "eps": 3.1
+  },
+  {
+    "code": "600489",
+    "roe": 12.86,
+    "profit_growth": 39.18,
+    "rev_growth": 17.23,
+    "debt_ratio": 45.19,
+    "gross_margin": 17.44,
+    "eps": 0.76
+  },
+  {
+    "code": "601872",
+    "roe": 14.55,
+    "profit_growth": 17.71,
+    "rev_growth": 9.22,
+    "debt_ratio": 46.68,
+    "gross_margin": 26.47,
+    "eps": 0.74
+  }
+]

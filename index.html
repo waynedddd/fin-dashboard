@@ -937,11 +937,11 @@ function renderWatchlist(data) {
 
   let html = `
   <div class="section">
-    <div class="section-header"><i data-lucide="eye"></i> 当前关注 (${stocks.length}只)</div>
+    <div class="section-header"><i data-lucide="eye"></i> TradingAgents v3 关注列表 (${stocks.length}只)</div>
     <div class="card"><div class="content" style="display:flex;gap:32px;flex-wrap:wrap;">
       <div><strong>买入信号</strong><br><span style="font-family:var(--mono);font-size:20px;color:var(--red);">${groups.buy.length}</span></div>
       <div><strong>观察中</strong><br><span style="font-family:var(--mono);font-size:20px;color:var(--gold);">${groups.watch.length}</span></div>
-      <div><strong>来源</strong><br><span style="font-size:13px;color:var(--text-secondary);">盘前分析自动加入 · 中长线价格触发 · 手动添加</span></div>
+      <div><strong>分析流程</strong><br><span style="font-size:12px;color:var(--text-secondary);">4分析师→Bull/Bear辩论→交易员→风控→基金经理</span></div>
     </div></div>
   </div>`;
 
@@ -998,7 +998,9 @@ function renderWatchCard(s) {
       </div>
       <div style="font-family:var(--mono);font-size:16px;font-weight:600;color:${priceColor};">${priceSign}${pricePct.toFixed(2)}%</div>
     </div>
-    ${s.reason ? `<div style="margin-top:8px;padding:6px 10px;border-left:3px solid var(--gold);background:var(--gold-glow);border-radius:0 4px 4px 0;font-size:12px;color:var(--text-secondary);">${s.reason}</div>` : ''}
+    ${s.catalyst ? `<div style="margin-top:8px;padding:6px 10px;border-left:3px solid var(--gold);background:var(--gold-glow);border-radius:0 4px 4px 0;font-size:12px;color:var(--text-secondary);">🔥 ${s.catalyst}</div>` : ''}
+    ${s.reason ? `<div style="margin-top:4px;padding:6px 10px;border-left:3px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.03);border-radius:0 4px 4px 0;font-size:11px;color:var(--text-secondary);">${s.reason}</div>` : ''}
+    ${s.risks ? `<div style="margin-top:4px;padding:6px 10px;border-left:3px solid var(--red);background:rgba(239,83,80,0.05);border-radius:0 4px 4px 0;font-size:11px;color:var(--text-secondary);">⚠️ ${s.risks}</div>` : ''}
     ${tp && sl ? `
     <div style="margin-top:10px;">
       <div style="display:flex;justify-content:space-between;font-size:11px;color:var(--muted);">
@@ -1011,8 +1013,17 @@ function renderWatchCard(s) {
         <div style="position:absolute;left:0;top:0;height:100%;width:${pos*100}%;background:linear-gradient(90deg,var(--green),var(--red));border-radius:3px;"></div>
       </div>
     </div>` : ''}
-    <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:11px;color:var(--muted);">
-      <span>来源: ${s.source || '—'}</span>
+    ${s.entry_strategy ? `<div style="margin-top:8px;padding:6px 10px;background:rgba(255,255,255,0.03);border-radius:4px;font-size:11px;"><span style="color:var(--gold);">📥 入场:</span> <span style="color:var(--text-secondary);">${s.entry_strategy}</span></div>` : ''}
+    ${s.exit_strategy ? `<div style="margin-top:2px;padding:6px 10px;background:rgba(255,255,255,0.03);border-radius:4px;font-size:11px;"><span style="color:var(--red);">📤 退出:</span> <span style="color:var(--text-secondary);">${s.exit_strategy}</span></div>` : ''}
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;">
+      ${s.debate_winner ? `<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:10px;background:rgba(255,255,255,0.06);color:var(--text-secondary);">🗣️ ${s.debate_winner}</span>` : ''}
+      ${s.risk_verdict ? `<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:10px;background:rgba(255,255,255,0.06);color:var(--text-secondary);">🛡️ ${s.risk_verdict}</span>` : ''}
+      ${s.confidence ? `<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:10px;background:rgba(255,255,255,0.06);color:var(--gold);">信心 ${(s.confidence*100).toFixed(0)}%</span>` : ''}
+      ${s.position_pct ? `<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:10px;background:rgba(255,255,255,0.06);color:var(--text-secondary);">仓位 ${s.position_pct}%</span>` : ''}
+      ${s.strategy ? `<span style="display:inline-block;padding:2px 6px;border-radius:3px;font-size:10px;background:rgba(255,255,255,0.06);color:var(--text-secondary);">${s.strategy}</span>` : ''}
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-top:6px;font-size:10px;color:var(--muted);">
+      <span>${s.source || '—'}</span>
       <span>${s.addDate || ''}</span>
     </div>
   </div>`;
