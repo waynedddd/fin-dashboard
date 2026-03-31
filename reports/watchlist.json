@@ -6,10 +6,13 @@
       "rating": "buy",
       "confidence": 0.78,
       "addPrice": 30.99,
-      "currentPrice": 30.99,
+      "currentPrice": 29.13,
       "targetPrice": 33.5,
       "stopLoss": 28.0,
-      "entryZone": [30.0, 30.5],
+      "entryZone": [
+        30.0,
+        30.5
+      ],
       "position_pct": 5,
       "holdDays": 10,
       "entry_strategy": "30.0-30.5分批建仓。低于29.5加仓。高开超31.5放弃。",
@@ -32,10 +35,13 @@
       "rating": "buy",
       "confidence": 0.68,
       "addPrice": 48.17,
-      "currentPrice": 48.17,
+      "currentPrice": 46.0,
       "targetPrice": 53.0,
       "stopLoss": 43.0,
-      "entryZone": [45.0, 46.0],
+      "entryZone": [
+        45.0,
+        46.0
+      ],
       "position_pct": 3,
       "holdDays": 7,
       "entry_strategy": "等回调到45-46（MA5附近）低吸。高开超49放弃。",
@@ -58,10 +64,13 @@
       "rating": "watch",
       "confidence": 0.55,
       "addPrice": 31.8,
-      "currentPrice": 31.8,
+      "currentPrice": 30.8,
       "targetPrice": 34.0,
       "stopLoss": 28.5,
-      "entryZone": [30.0, 30.5],
+      "entryZone": [
+        30.0,
+        30.5
+      ],
       "position_pct": 0,
       "holdDays": 14,
       "entry_strategy": "等回调到30-30.5确认支撑后入场。需确认铝价。",
