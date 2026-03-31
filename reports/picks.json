@@ -191,6 +191,34 @@
       "date": "2026-03-30",
       "reason": "重大资产重组+龙虎榜净买5419万机构介入+军工新材料+中东局势催化，回调到46.5元MA20支撑介入",
       "exitDate": null
+    },
+    {
+      "code": "600502",
+      "name": "安徽建工",
+      "pickPrice": 5.12,
+      "currentPrice": 5.12,
+      "currentChange": 0.0,
+      "date": "2026-03-31",
+      "reason": "PE仅5.76严重低估+市值管理催化+ROE9%利润增13%基本面扎实+龙虎榜涨停换手仅3.62%筹码锁定",
+      "exitDate": null,
+      "targetPrice": 5.6,
+      "stopLoss": 4.7,
+      "rating": "buy",
+      "confidence": 0.72
+    },
+    {
+      "code": "601388",
+      "name": "怡球资源",
+      "pickPrice": 3.94,
+      "currentPrice": 3.94,
+      "currentChange": 0.0,
+      "date": "2026-03-31",
+      "reason": "中东地缘催化铝价+RSI54低位安全+利润增26%负债率仅27%+量比2.83资金突然涌入",
+      "exitDate": null,
+      "targetPrice": 4.3,
+      "stopLoss": 3.6,
+      "rating": "buy",
+      "confidence": 0.65
     }
   ]
 }
