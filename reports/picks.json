@@ -207,6 +207,20 @@
       "confidence": 0.72
     },
     {
+      "code": "002218",
+      "name": "拓日新能",
+      "pickPrice": 6.93,
+      "currentPrice": 6.93,
+      "currentChange": 0.0,
+      "date": "2026-04-01",
+      "reason": "龙虎榜净买2亿+回调充分后涨停反包+RSI56技术面健康+光伏多晶硅涨价催化",
+      "exitDate": null,
+      "targetPrice": 7.6,
+      "stopLoss": 6.2,
+      "rating": "buy",
+      "confidence": 0.6
+    },
+    {
       "code": "601388",
       "name": "怡球资源",
       "pickPrice": 3.94,
