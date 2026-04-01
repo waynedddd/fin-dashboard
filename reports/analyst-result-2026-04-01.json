@@ -1,0 +1,115 @@
+{
+  "date": "2026-04-01",
+  "analyst": "Fin",
+  "market_context": "AI算力/液冷概念持续活跃，风电板块景气上行，游资炒作低价妖股活跃",
+  "recommendations": [
+    {
+      "code": "300113",
+      "name": "顺网科技",
+      "rating": "hold",
+      "current_price": 28.08,
+      "entry_price": 27.0,
+      "stop_loss": 25.5,
+      "target_price": 30.5,
+      "confidence": 0.65,
+      "reason": "AI算力基本面扎实(ROE13.6%/利润+52.6%)+主力持续流入1.65亿，但短期均线空头+MACD死叉未修复，等站稳28.2确认再介入"
+    },
+    {
+      "code": "300846",
+      "name": "首都在线",
+      "rating": "avoid",
+      "current_price": 30.2,
+      "confidence": 0.85,
+      "reason": "持续亏损ROE=-19.81%+主力狂抛3.46亿+MACD深度死叉，三杀格局无介入价值"
+    },
+    {
+      "code": "603248",
+      "name": "锡华科技",
+      "rating": "hold",
+      "current_price": 29.48,
+      "entry_price": 27.5,
+      "stop_loss": 26.0,
+      "target_price": 33.0,
+      "confidence": 0.60,
+      "reason": "风电龙头基本面优秀(营收+35%/利润+55%)+主力流入2.79亿，但换手率偏高短线资金多，等回调至MA20(27.6)附近更安全"
+    },
+    {
+      "code": "003018",
+      "name": "金富科技",
+      "rating": "avoid",
+      "current_price": 31.28,
+      "confidence": 0.90,
+      "reason": "5日涨21.95%严重超买+基本面双降+PE68高估+无主力参与，纯概念炒作追高陷阱"
+    },
+    {
+      "code": "301128",
+      "name": "强瑞技术",
+      "rating": "avoid",
+      "current_price": 156.14,
+      "confidence": 0.85,
+      "reason": "RSI(6)=80极端超买+10日涨20%+PE120泡沫+主力流出6234万边拉边出，好公司但已无好价格"
+    },
+    {
+      "code": "300042",
+      "name": "朗科科技",
+      "rating": "avoid",
+      "current_price": 44.02,
+      "confidence": 0.90,
+      "reason": "10日暴跌28%下降趋势+持续亏损+毛利率7.9%极低+MACD深度死叉，接飞刀"
+    },
+    {
+      "code": "601133",
+      "name": "柏诚股份",
+      "rating": "avoid",
+      "current_price": 18.25,
+      "confidence": 0.75,
+      "reason": "营收利润双降+毛利率11%极薄+PE51高估+缩量严重，催化弱基本面差"
+    },
+    {
+      "code": "002272",
+      "name": "川润股份",
+      "rating": "hold",
+      "current_price": 17.95,
+      "entry_price": 16.5,
+      "stop_loss": 15.3,
+      "target_price": 20.0,
+      "confidence": 0.55,
+      "reason": "2026年1-2月业绩暴增10倍是真实拐点，但主力5日狂抛4.06亿利好出尽信号强烈，等主力止流出后回调至16.5介入"
+    },
+    {
+      "code": "300900",
+      "name": "广联航空",
+      "rating": "avoid",
+      "current_price": 40.7,
+      "confidence": 0.90,
+      "reason": "5日涨21.25%超买+利润暴跌66%+负债率68%+无主力支撑的暴涨=纯炒作"
+    },
+    {
+      "code": "300383",
+      "name": "光环新网",
+      "rating": "buy",
+      "current_price": 17.9,
+      "entry_price": 17.2,
+      "stop_loss": 16.3,
+      "target_price": 20.0,
+      "confidence": 0.60,
+      "reason": "字节跳动核心合作伙伴+AI数据中心爆发受益+MA多头排列+MACD金叉，回调至17.1-17.3介入，目标20"
+    },
+    {
+      "code": "000008",
+      "name": "神州高铁",
+      "rating": "avoid",
+      "current_price": 3.6,
+      "confidence": 0.95,
+      "reason": "5日涨31%妖股+RSI(6)=86.67极端超买+2025年预亏6.5-8.8亿+公司自发异动公告，零基本面支撑的赌博"
+    },
+    {
+      "code": "000070",
+      "name": "特发信息",
+      "rating": "avoid",
+      "current_price": 18.47,
+      "confidence": 0.85,
+      "reason": "5日涨16.46%超买+主力流出9853万边涨边出+利润仅799万基本面为零+游资接力不可持续"
+    }
+  ]
+}
