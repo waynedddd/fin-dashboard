@@ -243,6 +243,20 @@
       "date": "2026-04-01",
       "reason": "字节跳动核心合作伙伴+AI数据中心爆发受益+MA多头排列+MACD金叉，回调至17.1-17.3介入，止损16.3，目标20",
       "exitDate": null
+    },
+    {
+      "code": "603248",
+      "name": "锡华科技",
+      "pickPrice": 30.07,
+      "currentPrice": 30.07,
+      "currentChange": 0.0,
+      "date": "2026-04-02",
+      "reason": "龙虎榜净买7234万+主力5日净流入2.79亿+ROE12.8%营收增35%净利增55%+风电内外需共振",
+      "exitDate": null,
+      "targetPrice": 33.0,
+      "stopLoss": 27.3,
+      "rating": "buy",
+      "confidence": 0.72
     }
   ]
 }
