@@ -1,6 +1,18 @@
 {
   "picks": [
     {
+      "code": "601083",
+      "name": "锦江航运",
+      "pickPrice": 13.16,
+      "currentPrice": 13.16,
+      "currentChange": 0,
+      "date": "2026-04-03",
+      "reason": "龙虎榜净买5218万 量比5.23爆量 ROE16.6% PE11.35 航运景气",
+      "exitDate": null,
+      "rating": "buy",
+      "confidence": 0.72
+    },
+    {
       "code": "000670",
       "name": "盈方微",
       "pickPrice": 8.83,
