@@ -1,6 +1,30 @@
 {
   "picks": [
     {
+      "code": "003031",
+      "name": "中瓷电子",
+      "pickPrice": 88.57,
+      "currentPrice": 88.57,
+      "currentChange": 0,
+      "date": "2026-04-06",
+      "reason": "龙虎榜涨停 AI算力+卫星+三代半 业绩+20% 机构看好估值修复",
+      "exitDate": null,
+      "rating": "buy",
+      "confidence": 0.68
+    },
+    {
+      "code": "002222",
+      "name": "福晶科技",
+      "pickPrice": 75.46,
+      "currentPrice": 75.46,
+      "currentChange": 0,
+      "date": "2026-04-06",
+      "reason": "龙虎榜净买+主力净流入1.79亿 业绩+20% ROE13% AI光学晶体龙头",
+      "exitDate": null,
+      "rating": "buy",
+      "confidence": 0.72
+    },
+    {
       "code": "601083",
       "name": "锦江航运",
       "pickPrice": 13.16,

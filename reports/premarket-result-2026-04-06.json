@@ -1,0 +1,214 @@
+{
+  "analysis_date": "2026-04-06",
+  "strategy": "pre_market",
+  "lhb_date": "20260403",
+  "recommendations": [
+    {
+      "code": "002222",
+      "name": "福晶科技",
+      "rating": "buy",
+      "confidence": 0.72,
+      "entry_strategy": "涨停板次日，预计高开。若竞价高开3%以内可半仓介入；若高开5%以上等回踩MA5(70.2附近)再接。不追高开7%以上",
+      "target_price": 82.0,
+      "stop_loss": 68.5,
+      "reasons": [
+        "业绩扎实：2025全年净利润+19.88%，营收+32%，ROE13%，低负债19.5%",
+        "光学晶体龙头，AI算力光模块上游核心材料",
+        "龙虎榜净买入+近5日主力净流入1.79亿，资金一致看多",
+        "MACD金叉放量，均线多头排列"
+      ],
+      "risks": [
+        "PE135倍偏高，涨停次日追高风险",
+        "布林已突破上轨，短期有回调压力",
+        "5日涨15%获利盘较多"
+      ],
+      "hold_days": 3,
+      "position_pct": 3
+    },
+    {
+      "code": "003031",
+      "name": "中瓷电子",
+      "rating": "buy",
+      "confidence": 0.68,
+      "entry_strategy": "涨停次日高开概率大。竞价观察，若高开2-4%可轻仓介入；若冲高回落至85附近可加仓。放量滞涨则离场",
+      "target_price": 96.0,
+      "stop_loss": 80.0,
+      "reasons": [
+        "AI算力+卫星互联网+第三代半导体三重逻辑，机构给2026PE37-40倍有修复空间",
+        "业绩增长20%，ROE7%，低负债18%，基本面在题材股中属上乘",
+        "MACD金叉放量突破布林上轨，技术形态强势"
+      ],
+      "risks": [
+        "近5日主力净流出8562万，筹码有分歧",
+        "RSI6=72.5已偏高，涨停次日回调概率不低",
+        "换手率偏低5.56%，流动性一般"
+      ],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "601872",
+      "name": "招商轮船",
+      "rating": "watch",
+      "confidence": 0.55,
+      "entry_strategy": "连涨后缩量，等回调至MA5(18.2)附近再考虑。不追现价。若今日放量突破21.3前高可小仓跟进",
+      "target_price": 22.5,
+      "stop_loss": 18.0,
+      "reasons": [
+        "油运景气周期，机构预测2026年EPS+30%",
+        "ROE14.5%，基本面在本批最扎实",
+        "中长期逻辑清晰，航运周期向上"
+      ],
+      "risks": [
+        "近5日主力净流出5404万",
+        "RSI6=77已超买，连涨后获利盘重",
+        "10日涨21.5%短期透支"
+      ],
+      "hold_days": 5,
+      "position_pct": 2
+    },
+    {
+      "code": "002792",
+      "name": "通宇通讯",
+      "rating": "watch",
+      "confidence": 0.50,
+      "entry_strategy": "卫星互联网概念活跃时跟进，等开盘确认方向。若板块整体强势+个股放量突破45.3可轻仓。否则观望",
+      "target_price": 50.0,
+      "stop_loss": 41.0,
+      "reasons": [
+        "卫星互联网+低空经济双概念，主力净流入2亿",
+        "RSI55偏中性，技术上还有空间",
+        "MACD底部金叉形态"
+      ],
+      "risks": [
+        "基本面极差：ROE1%，利润-51%，PE1565倍",
+        "纯概念驱动，无业绩支撑",
+        "涨停次日高开低走概率不低"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "603538",
+      "name": "美诺华",
+      "rating": "avoid",
+      "confidence": 0.75,
+      "entry_strategy": "7天6板后进入高位震荡，换手率41%说明筹码充分换手，风险极大。回避",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["创新药概念有逻辑，业绩增长51%"],
+      "risks": [
+        "10日涨44%，7天6板后高位巨量震荡",
+        "昨日高开低走收阴，主力出货迹象",
+        "RSI14=71超买，换手率41%极端"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "300436",
+      "name": "广生堂",
+      "rating": "avoid",
+      "confidence": 0.80,
+      "entry_strategy": "回避。亏损公司被爆炒，RSI超买，主力净流出2.2亿",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["创新药突破性治疗品种催化"],
+      "risks": [
+        "ROE-37%，净利润亏损1.12亿，PE为负",
+        "RSI6=80严重超买",
+        "近5日主力净流出2.24亿，机构在跑",
+        "负债率69%偏高"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "301312",
+      "name": "智立方",
+      "rating": "avoid",
+      "confidence": 0.70,
+      "entry_strategy": "10日涨36%已透支，RSI6=80超买。等充分回调至MA20(88)附近再考虑",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["业绩增速57%不错，半导体设备+机器人双概念"],
+      "risks": [
+        "RSI6=80超买，10日涨36%",
+        "布林严重突破上轨",
+        "近5日主力净流出2124万"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600602",
+      "name": "云赛智联",
+      "rating": "avoid",
+      "confidence": 0.72,
+      "entry_strategy": "回避。涨停但主力净流出1.6亿，基本面不支持，纯题材",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["云服务涨价概念映射"],
+      "risks": [
+        "ROE仅4%，利润负增长，PE172倍",
+        "近5日主力净流出1.6亿，资金在撤",
+        "纯概念无业绩支撑"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603123",
+      "name": "翠微股份",
+      "rating": "avoid",
+      "confidence": 0.78,
+      "entry_strategy": "回避。亏损股+主力净流出，涨停疑似游资一日游",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["L3自动驾驶概念催化"],
+      "risks": [
+        "ROE-25%，年度亏损4.81亿",
+        "主力净流出，量比4.57异常但非持续性",
+        "负债率73%，基本面极差"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "000720",
+      "name": "新能泰山",
+      "rating": "avoid",
+      "confidence": 0.82,
+      "entry_strategy": "妖股博弈品种，10日涨51%，大幅波动。非超短选手回避",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["国网4万亿投资概念"],
+      "risks": [
+        "亏损公司，ROE为负，PE为负",
+        "日K线大幅波动(+19%/-7%/-10%交替)，纯游资博弈",
+        "10日涨51%已极端超涨"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002796",
+      "name": "世嘉科技",
+      "rating": "avoid",
+      "confidence": 0.70,
+      "entry_strategy": "回避。MACD死叉+基本面极差，龙虎榜反弹不可持续",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["龙虎榜净买6559万"],
+      "risks": [
+        "ROE-6%，利润暴跌-282%，亏损5100万",
+        "MACD死叉，布林0.39处于弱势区",
+        "10日跌8.3%，下降趋势中的反弹"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "节后首个交易日，清明假期后资金回流预期。上周五龙虎榜活跃度高，AI算力(福晶科技、中瓷电子)和卫星互联网(通宇通讯)是主线方向。但多数涨停股基本面较差，需警惕题材股高开低走。建议聚焦有业绩支撑的科技股，回避纯概念炒作品种。",
+  "top_picks": ["002222", "003031"]
+}
