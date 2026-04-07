@@ -1,0 +1,170 @@
+{
+  "analysis_date": "2026-04-07",
+  "strategy": "pre_market",
+  "lhb_date": "20260403",
+  "recommendations": [
+    {
+      "code": "003031",
+      "name": "中瓷电子",
+      "rating": "buy",
+      "confidence": 0.72,
+      "entry_strategy": "开盘若高开3%以内可半仓介入，若高开5%+则等回调至85附近再低吸；集合竞价量能若超昨日50%以上说明资金认可",
+      "target_price": 97.0,
+      "stop_loss": 82.0,
+      "reasons": [
+        "AI算力+卫星互联网+第三代半导体三重主线交汇，题材确定性高",
+        "基本面扎实：ROE7.15%，利润增20%，低负债18%，毛利率37%",
+        "RSI14=61适中未超买，MACD金叉放量，技术形态健康",
+        "中信给出2026年PE37-40倍目标，当前PE65倍对应业绩高增长有修复空间"
+      ],
+      "risks": [
+        "近5日主力净流出8562万，需盘中确认资金回流",
+        "涨停板次日高开低走概率不低，追高风险存在"
+      ],
+      "hold_days": 5,
+      "position_pct": 3
+    },
+    {
+      "code": "002222",
+      "name": "福晶科技",
+      "rating": "buy",
+      "confidence": 0.68,
+      "entry_strategy": "高开5%以上不追，等分时回调至73-74区间低吸；若开盘缩量回踩MA5(70)附近是更好的买点",
+      "target_price": 83.0,
+      "stop_loss": 69.0,
+      "reasons": [
+        "2025年净利润同比增长19.88%，业绩兑现确认成长性",
+        "基本面优秀：ROE13%，利润增速30%，低负债19.5%，毛利率53%",
+        "近5日主力净流入1.79亿，龙虎榜净买2.1亿，资金高度认可",
+        "光学+现金分红题材，3月24日已有涨停先例，主线逻辑清晰"
+      ],
+      "risks": [
+        "5日已涨15%，布林位置1.16突破上轨，短期有获利回吐压力",
+        "PE135倍偏高，若业绩增速不及预期有杀估值风险"
+      ],
+      "hold_days": 5,
+      "position_pct": 2
+    },
+    {
+      "code": "002792",
+      "name": "通宇通讯",
+      "rating": "watch",
+      "confidence": 0.55,
+      "entry_strategy": "盘中观察，若回调至43以下且放量企稳可轻仓试探；涨停板不追",
+      "target_price": 50.0,
+      "stop_loss": 40.0,
+      "reasons": [
+        "卫星互联网+低空经济题材，近5日主力净流入2.07亿为全场最大",
+        "RSI14=56偏低，MACD刚金叉，技术面有上行空间",
+        "布林位置1.02刚触上轨，还未过热"
+      ],
+      "risks": [
+        "基本面极差：PE1566倍，利润下滑51%，营收负增长",
+        "纯题材驱动，一旦板块退潮杀跌猛烈",
+        "涨停次日高位震荡概率大"
+      ],
+      "hold_days": 3,
+      "position_pct": 1
+    },
+    {
+      "code": "601872",
+      "name": "招商轮船",
+      "rating": "watch",
+      "confidence": 0.50,
+      "entry_strategy": "已连涨多日，RSI14接近70，不宜追高；若回调至19元附近可考虑低吸，盘中观察量能",
+      "target_price": 22.5,
+      "stop_loss": 18.5,
+      "reasons": [
+        "油运景气上行，Q4归母净利同比+56%，机构给出96.7亿利润预期",
+        "基本面稳健：ROE14.5%，PE27倍在航运板块合理"
+      ],
+      "risks": [
+        "近5日主力净流出5404万，资金有分歧",
+        "RSI6=77偏高，5日涨19%短期追高风险大",
+        "地缘因素变化可能导致运价快速回落"
+      ],
+      "hold_days": 5,
+      "position_pct": 2
+    },
+    {
+      "code": "600602",
+      "name": "云赛智联",
+      "rating": "avoid",
+      "confidence": 0.35,
+      "entry_strategy": "不参与。PE172倍，利润负增长，主力净流出1.6亿，涨停板纯资金博弈",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["智算概念联动涨停"],
+      "risks": ["基本面不支撑", "主力大幅流出", "高PE无业绩锚"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603538",
+      "name": "美诺华",
+      "rating": "avoid",
+      "confidence": 0.25,
+      "entry_strategy": "不参与。7天6板后已进入剧烈分歧阶段，换手41%，当日跌5.5%，高位博弈风险极大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["减肥药题材前期龙头"],
+      "risks": ["高位巨量分歧，风险收益比极差", "公司已发风险提示公告"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "300436",
+      "name": "广生堂",
+      "rating": "avoid",
+      "confidence": 0.30,
+      "entry_strategy": "不参与。RSI6=80超买，基本面亏损(ROE-37%)，主力净流出2.2亿，高位接力风险大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["创新药突破性治疗品种催化"],
+      "risks": ["基本面极差，纯题材炒作", "超买区域追高风险极大"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "301312",
+      "name": "智立方",
+      "rating": "avoid",
+      "confidence": 0.35,
+      "entry_strategy": "不参与。10日涨36%，RSI6=80超买，虽然基本面尚可但短期涨幅过大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["半导体设备+机器人双题材", "业绩增速57%不错"],
+      "risks": ["短期涨幅过大，获利盘沉重", "追高大概率吃面"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603123",
+      "name": "翠微股份",
+      "rating": "avoid",
+      "confidence": 0.20,
+      "entry_strategy": "不参与。亏损股借自动驾驶题材一字涨停，量比4.57异常，主力净流出，纯投机",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["L3自动驾驶概念"],
+      "risks": ["全年亏损4.8亿", "ROE-25%", "一字板次日大概率核按钮"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "000720",
+      "name": "新能泰山",
+      "rating": "avoid",
+      "confidence": 0.20,
+      "entry_strategy": "不参与。典型妖股，10日涨51%，日内振幅极大(前几日分别涨停、跌7%、涨11%)，非专业选手勿碰",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["电缆+国网投资题材"],
+      "risks": ["妖股波动剧烈，随时可能大阴线", "基本面亏损"],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "节后首日(清明假期后)，龙虎榜显示节前最后一日资金集中在卫星通信(通宇通讯)、光学半导体(福晶/中瓷)、油运(招商轮船)方向。多数个股短期涨幅已大，追高风险偏高。建议重点关注基本面扎实+技术面未过热的品种，回调低吸为主，不追涨停板。",
+  "top_picks": ["003031", "002222"]
+}
