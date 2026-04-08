@@ -1,6 +1,34 @@
 {
   "picks": [
     {
+      "code": "002025",
+      "name": "航天电器",
+      "pickPrice": 66.72,
+      "currentPrice": 66.72,
+      "currentChange": 0,
+      "date": "2026-04-08",
+      "reason": "龙虎榜净买1.8亿+RSI60布林0.86技术面健康+军工连接器龙头营收增16%",
+      "exitDate": null,
+      "targetPrice": 72.0,
+      "stopLoss": 61.0,
+      "rating": "buy",
+      "confidence": 0.65
+    },
+    {
+      "code": "000062",
+      "name": "深圳华强",
+      "pickPrice": 27.03,
+      "currentPrice": 27.03,
+      "currentChange": 0,
+      "date": "2026-04-08",
+      "reason": "龙虎榜净买1.59亿+净利润增117%+RSI55技术面健康+半导体分销AI概念",
+      "exitDate": null,
+      "targetPrice": 29.5,
+      "stopLoss": 25.0,
+      "rating": "buy",
+      "confidence": 0.7
+    },
+    {
       "code": "003031",
       "name": "中瓷电子",
       "pickPrice": 88.57,

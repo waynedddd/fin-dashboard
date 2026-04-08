@@ -1,0 +1,153 @@
+{
+  "analysis_date": "2026-04-08",
+  "strategy": "pre_market",
+  "lhb_date": "20260407",
+  "recommendations": [
+    {
+      "code": "000062",
+      "name": "深圳华强",
+      "rating": "buy",
+      "confidence": 0.7,
+      "entry_strategy": "开盘若高开3%以内可半仓介入，若高开5%以上等回调至26.5附近再进；涨停开一字则放弃",
+      "target_price": 29.5,
+      "stop_loss": 25.0,
+      "reasons": [
+        "净利润增长117%，基本面扎实",
+        "龙虎榜净买1.59亿，资金认可",
+        "RSI 55/布林0.69技术面健康，远未超买",
+        "MACD柱为负说明刚启动，空间充足",
+        "半导体分销+AI概念，题材持续性好"
+      ],
+      "risks": [
+        "近5日主力净流出1.52亿，与龙虎榜信号矛盾",
+        "负债率58%偏高",
+        "毛利率仅8.2%，盈利质量一般"
+      ],
+      "hold_days": 3,
+      "position_pct": 3
+    },
+    {
+      "code": "002025",
+      "name": "航天电器",
+      "rating": "buy",
+      "confidence": 0.65,
+      "entry_strategy": "昨日涨停，今日关注开盘竞价量能。若高开2-4%且量能放大可轻仓试多；若高开后快速回落至64以下则观望",
+      "target_price": 72.0,
+      "stop_loss": 61.0,
+      "reasons": [
+        "龙虎榜净买1.8亿，资金大举进场",
+        "技术面健康：RSI 60、布林0.86均在合理区间",
+        "MACD金叉在即(DIF略高于DEA)，趋势转多",
+        "军工连接器龙头，营收增15.8%"
+      ],
+      "risks": [
+        "净利润下滑47%，PE 166倍估值很贵",
+        "昨日涨停今日可能冲高回落",
+        "军工板块近期波动大"
+      ],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "002222",
+      "name": "福晶科技",
+      "rating": "watch",
+      "confidence": 0.6,
+      "entry_strategy": "不追高！10日已涨35%，若今日回调至75-76区间(布林上轨附近)可轻仓试多，不回调则放弃",
+      "target_price": 85.0,
+      "stop_loss": 73.0,
+      "reasons": [
+        "龙虎榜净买最高(2.19亿)，机构看好",
+        "基本面最佳：ROE 13%，利润+30%，负债率仅19.5%",
+        "光学器件+业绩增长双重逻辑"
+      ],
+      "risks": [
+        "RSI(6)=78.8接近超买，布林1.18已突破上轨",
+        "10日涨幅35%，短期获利盘巨大",
+        "PE 142倍，估值透支严重"
+      ],
+      "hold_days": 2,
+      "position_pct": 2
+    },
+    {
+      "code": "002491",
+      "name": "通鼎互联",
+      "rating": "avoid",
+      "confidence": 0.75,
+      "entry_strategy": "不参与。10日涨47%、RSI(6)=82严重超买，追高风险极大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "光纤+AI算力题材强势",
+        "业绩预告扭亏(2.7-3.5亿)"
+      ],
+      "risks": [
+        "10日暴涨47%，RSI(6)=82严重超买",
+        "布林1.14远超上轨，随时可能大幅回调",
+        "PE 4541倍，纯情绪博弈"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "601133",
+      "name": "柏诚股份",
+      "rating": "avoid",
+      "confidence": 0.7,
+      "entry_strategy": "放弃。换手29%+RSI(6)=81超买，基本面差，短线见顶概率大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买1.2亿",
+        "中标京东方大单有催化剂"
+      ],
+      "risks": [
+        "RSI(6)=81严重超买，换手率29%过热",
+        "营收-15%、利润-16%基本面恶化",
+        "5日涨18%追高风险大"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603123",
+      "name": "翠微股份",
+      "rating": "avoid",
+      "confidence": 0.8,
+      "entry_strategy": "放弃。亏损股纯题材炒作，连续涨停后风险极高",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "自动驾驶概念题材"
+      ],
+      "risks": [
+        "2025年亏损4.81亿，ROE=-25%",
+        "5日涨18%，主力近5日净流出7000万",
+        "公司已发风险提示公告"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600227",
+      "name": "赤天化",
+      "rating": "avoid",
+      "confidence": 0.75,
+      "entry_strategy": "放弃。亏损股反弹，5日跌12%后的超跌反弹不具持续性",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "超跌反弹，布林0.3处于低位"
+      ],
+      "risks": [
+        "ROE=-6%，利润暴跌340%",
+        "MACD柱为负，均线空头排列",
+        "无明确催化剂"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "昨日龙虎榜净买入集中在光学(福晶)、军工(航天电器)、半导体分销(深圳华强)、光纤(通鼎)等方向，资金偏好科技+国产替代主线。但多数标的短期涨幅已大，RSI普遍偏高，今日需警惕获利回吐。操作上宜低吸不追高，重点关注技术面尚未超买的深圳华强和航天电器。",
+  "top_picks": ["000062", "002025"]
+}
