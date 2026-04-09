@@ -321,6 +321,20 @@
       "stopLoss": 27.3,
       "rating": "buy",
       "confidence": 0.72
+    },
+    {
+      "code": "600126",
+      "name": "杭钢股份",
+      "pickPrice": 9.31,
+      "currentPrice": 9.31,
+      "currentChange": 0,
+      "date": "2026-04-09",
+      "reason": "龙虎榜净买1.15亿+算力IDC转型Q1预计扭亏+670%+阿里云涨价催化+RSI57技术面健康",
+      "exitDate": null,
+      "targetPrice": 10.5,
+      "stopLoss": 8.8,
+      "rating": "buy",
+      "confidence": 0.72
     }
   ]
 }
