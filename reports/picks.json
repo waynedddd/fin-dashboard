@@ -1,6 +1,34 @@
 {
   "picks": [
     {
+      "code": "600629",
+      "name": "华建集团",
+      "pickPrice": 22.18,
+      "currentPrice": 22.18,
+      "currentChange": 0,
+      "date": "2026-04-10",
+      "reason": "近5日主力净流入4.66亿+布林0.91技术面健康+MACD金叉放量突破",
+      "exitDate": null,
+      "targetPrice": 24.5,
+      "stopLoss": 20.0,
+      "rating": "buy",
+      "confidence": 0.6
+    },
+    {
+      "code": "002636",
+      "name": "金安国纪",
+      "pickPrice": 37.19,
+      "currentPrice": 37.19,
+      "currentChange": 0,
+      "date": "2026-04-10",
+      "reason": "覆铜板涨价Q4业绩爆发+龙虎榜净买1.13亿+近5日主力净流入3亿",
+      "exitDate": null,
+      "targetPrice": 41.0,
+      "stopLoss": 33.5,
+      "rating": "buy",
+      "confidence": 0.7
+    },
+    {
       "code": "002025",
       "name": "航天电器",
       "pickPrice": 66.72,
