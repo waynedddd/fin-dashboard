@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-04-10 08:00",
+  "indicators": "<h3>⚠️ 数据获取失败</h3><p>Tavily API Key 和 Brave Search API Key 均未配置，web_fetch 被 DNS 策略阻断（resolves to private IP），无法获取实时宏观数据。</p><p>需要配置以下任一搜索 API：</p><ul><li><strong>Tavily:</strong> 在 <code>~/.openclaw/.env</code> 中设置 <code>TAVILY_API_KEY</code></li><li><strong>Brave:</strong> 运行 <code>openclaw configure --section web</code> 设置 BRAVE_API_KEY</li></ul>",
+  "sentiment": "<h3>暂无数据</h3><p>等待搜索 API 配置后自动恢复。</p>",
+  "policy": "<h3>暂无数据</h3><p>等待搜索 API 配置后自动恢复。</p>",
+  "conclusion": "<h3>今日无法生成分析</h3><p>网络搜索工具不可用，请先配置 API Key。配置完成后下次 cron 将自动恢复正常分析。</p>",
+  "risks": "<h3>风险提示</h3><ul><li>宏观分析 cron 任务中断，需尽快修复以恢复每日监控</li></ul>"
+}
