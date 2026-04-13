@@ -1,6 +1,20 @@
 {
   "picks": [
     {
+      "code": "002074",
+      "name": "国轩高科",
+      "pickPrice": 38.81,
+      "currentPrice": 38.81,
+      "currentChange": 0,
+      "date": "2026-04-13",
+      "reason": "龙虎榜涨停+净利润增514%PE仅21倍+RSI60技术面健康+量比3.71放量突破+锂电固态电池概念",
+      "exitDate": null,
+      "targetPrice": 42.0,
+      "stopLoss": 36.5,
+      "rating": "buy",
+      "confidence": 0.75
+    },
+    {
       "code": "600629",
       "name": "华建集团",
       "pickPrice": 22.18,

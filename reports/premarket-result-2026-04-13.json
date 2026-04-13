@@ -1,0 +1,157 @@
+{
+  "analysis_date": "2026-04-13",
+  "strategy": "pre_market",
+  "lhb_date": "20260410",
+  "recommendations": [
+    {
+      "code": "002074",
+      "name": "国轩高科",
+      "rating": "buy",
+      "confidence": 0.75,
+      "entry_strategy": "开盘若高开3%以内可直接建半仓；若高开5%+则等回调至39附近再接；集合竞价量能若超昨日均量2倍以上注意追高风险",
+      "target_price": 42.0,
+      "stop_loss": 36.5,
+      "reasons": [
+        "净利润同比+514%，基本面扎实，PE仅21倍估值合理",
+        "RSI(14)仅60，MACD刚金叉，技术面健康无超买",
+        "量比3.71放量涨停，突破布林上轨，短期动能强",
+        "锂电龙头+固态电池概念，机构买入评级"
+      ],
+      "risks": [
+        "近5日主力净流出5.3亿，需关注今日资金是否持续",
+        "涨停次日高开低走概率不低，控制仓位"
+      ],
+      "hold_days": 3,
+      "position_pct": 3
+    },
+    {
+      "code": "001309",
+      "name": "德明利",
+      "rating": "watch",
+      "confidence": 0.55,
+      "entry_strategy": "不追高开，等盘中回调至430以下低吸；若直接高开5%+放弃本次机会",
+      "target_price": 480.0,
+      "stop_loss": 420.0,
+      "reasons": [
+        "Q1业绩爆发：营收+483%，净利润31.5-36.5亿扭亏，催化剂极强",
+        "ROE 24%，营收增速126%，基本面在候选中最优"
+      ],
+      "risks": [
+        "RSI(6)已达81.5，5日涨24%，短期超买明显",
+        "PE 147倍，即使业绩兑现估值仍偏高",
+        "近5日主力净流出1.1亿，机构可能在出货"
+      ],
+      "hold_days": 2,
+      "position_pct": 2
+    },
+    {
+      "code": "600103",
+      "name": "青山纸业",
+      "rating": "watch",
+      "confidence": 0.5,
+      "entry_strategy": "一字涨停次日大概率有溢价，若能在4.0以下接到可轻仓试；高开5%+不追",
+      "target_price": 4.3,
+      "stop_loss": 3.7,
+      "reasons": [
+        "近5日主力净流入4.5亿，资金面最强",
+        "RSI(14)仅60，技术面未超买，低位启动特征",
+        "低价股+龙虎榜净买入近1.9亿"
+      ],
+      "risks": [
+        "基本面差：营收-12%，利润-25%，ROE仅1.64%",
+        "一字板后次日抛压大，无研报覆盖，纯资金博弈"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "603306",
+      "name": "华懋科技",
+      "rating": "avoid",
+      "confidence": 0.4,
+      "entry_strategy": "已发异常波动公告，3日涨幅26.9%，短期回调风险大，观望",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "有券商首次覆盖买入评级"
+      ],
+      "risks": [
+        "RSI(6)达84，严重超买",
+        "基本面一般：利润-12%，ROE仅5.1%",
+        "连续3日异常波动已公告，监管关注"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002263",
+      "name": "大东南",
+      "rating": "avoid",
+      "confidence": 0.3,
+      "entry_strategy": "纯游资接力，换手22%，追高风险极大，放弃",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [],
+      "risks": [
+        "ROE 0.44%，EPS 0.006元，基本面极差",
+        "10日涨32%，高换手率典型游资炒作",
+        "K线大阴大阳交替，波动剧烈难操作"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002213",
+      "name": "大为股份",
+      "rating": "avoid",
+      "confidence": 0.3,
+      "entry_strategy": "已发异常波动公告，ROE为负，放弃",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [],
+      "risks": [
+        "PE为负，ROE为负，连续亏损",
+        "异常波动公告+换手32%，监管风险",
+        "主力近5日净流出近6千万"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "000762",
+      "name": "西藏矿业",
+      "rating": "avoid",
+      "confidence": 0.3,
+      "entry_strategy": "基本面极差，纯题材涨停，不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [],
+      "risks": [
+        "营收-43%，净利润亏损3千万，ROE为负",
+        "主力近5日净流出1.28亿",
+        "RSI(6)达78.7，追高风险大"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002082",
+      "name": "万邦德",
+      "rating": "avoid",
+      "confidence": 0.2,
+      "entry_strategy": "高位放量下跌-7.63%，典型见顶信号，远离",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [],
+      "risks": [
+        "4月10日大跌-7.63%，前日-8.7%，连续两日放量杀跌",
+        "5日跌幅-13.72%，趋势已反转",
+        "基本面差：利润-90%，ROE仅0.17%"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "上周五龙虎榜涨停较多，但多数为游资炒作的低质量标的（PE为负、基本面差）。真正值得关注的仅国轩高科（基本面+技术面共振）和德明利（业绩爆发但需等回调）。整体市场情绪偏热但分化严重，今日操作以防守为主，优选有业绩支撑的品种，回避纯题材炒作。",
+  "top_picks": ["002074", "001309"]
+}
