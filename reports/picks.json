@@ -1,6 +1,34 @@
 {
   "picks": [
     {
+      "code": "002240",
+      "name": "盛新锂能",
+      "pickPrice": 44.86,
+      "currentPrice": 44.86,
+      "currentChange": 0,
+      "date": "2026-04-14",
+      "reason": "锂矿供给收缩+宁德涨价+一季报扭亏预期+主力净流入3038万+RSI66技术面健康",
+      "exitDate": null,
+      "targetPrice": 49.0,
+      "stopLoss": 41.5,
+      "rating": "buy",
+      "confidence": 0.65
+    },
+    {
+      "code": "301292",
+      "name": "海科新源",
+      "pickPrice": 89.05,
+      "currentPrice": 89.05,
+      "currentChange": 0,
+      "date": "2026-04-14",
+      "reason": "主力5日净流入9287万最强+RSI64布林0.7技术面健康+锂电溶剂龙头储能需求共振",
+      "exitDate": null,
+      "targetPrice": 95.0,
+      "stopLoss": 80.0,
+      "rating": "buy",
+      "confidence": 0.6
+    },
+    {
       "code": "002074",
       "name": "国轩高科",
       "pickPrice": 38.81,
