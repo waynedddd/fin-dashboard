@@ -405,6 +405,20 @@
       "stopLoss": 8.8,
       "rating": "buy",
       "confidence": 0.72
+    },
+    {
+      "code": "603026",
+      "name": "石大胜华",
+      "pickPrice": 98.52,
+      "currentPrice": 98.52,
+      "currentChange": 0,
+      "date": "2026-04-15",
+      "reason": "一季度扭亏为盈2.6-3.1亿+龙虎榜净买3.16亿+六氟磷酸锂景气回升+RSI70技术面尚可",
+      "exitDate": null,
+      "targetPrice": 108.0,
+      "stopLoss": 89.0,
+      "rating": "buy",
+      "confidence": 0.72
     }
   ]
 }
