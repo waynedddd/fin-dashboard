@@ -407,6 +407,20 @@
       "confidence": 0.72
     },
     {
+      "code": "301682",
+      "name": "宏明电子",
+      "pickPrice": 125.71,
+      "currentPrice": 125.71,
+      "currentChange": 0,
+      "date": "2026-04-16",
+      "reason": "军工MLCC龙头+毛利率47%ROE12%+龙虎榜5日主力净流入7.1亿+5日涨幅11%未超买",
+      "exitDate": null,
+      "targetPrice": 140.0,
+      "stopLoss": 115.0,
+      "rating": "buy",
+      "confidence": 0.65
+    },
+    {
       "code": "603026",
       "name": "石大胜华",
       "pickPrice": 98.52,
