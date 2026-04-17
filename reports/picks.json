@@ -433,6 +433,20 @@
       "stopLoss": 89.0,
       "rating": "buy",
       "confidence": 0.72
+    },
+    {
+      "code": "000657",
+      "name": "中钨高新",
+      "pickPrice": 51.9,
+      "currentPrice": 51.9,
+      "currentChange": 0,
+      "date": "2026-04-17",
+      "reason": "一季报净利增256-276%业绩爆发+龙虎榜净买9.56亿全场最强+RSI53未超买+钨原料供给偏紧",
+      "exitDate": null,
+      "targetPrice": 57.0,
+      "stopLoss": 48.5,
+      "rating": "buy",
+      "confidence": 0.78
     }
   ]
 }
