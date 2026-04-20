@@ -1,6 +1,20 @@
 {
   "picks": [
     {
+      "code": "002281",
+      "name": "光迅科技",
+      "pickPrice": 116.83,
+      "currentPrice": 116.83,
+      "currentChange": 0,
+      "date": "2026-04-20",
+      "reason": "光通信龙头+磷化铟出口管制利好+营收+58%净利+54%+龙虎榜净买+主力5日净流入1.9亿",
+      "exitDate": null,
+      "targetPrice": 125.0,
+      "stopLoss": 108.0,
+      "rating": "buy",
+      "confidence": 0.65
+    },
+    {
       "code": "002240",
       "name": "盛新锂能",
       "pickPrice": 44.86,
