@@ -461,6 +461,34 @@
       "stopLoss": 48.5,
       "rating": "buy",
       "confidence": 0.78
+    },
+    {
+      "code": "002812",
+      "name": "恩捷股份",
+      "pickPrice": 77.18,
+      "currentPrice": 77.18,
+      "currentChange": 0,
+      "date": "2026-04-27",
+      "reason": "Q1净利+901%隔膜涨价+龙虎榜净买7.8亿最强+RSI63技术面健康",
+      "exitDate": null,
+      "targetPrice": 84.9,
+      "stopLoss": 72.0,
+      "rating": "buy",
+      "confidence": 0.75
+    },
+    {
+      "code": "002407",
+      "name": "多氟多",
+      "pickPrice": 33.04,
+      "currentPrice": 33.04,
+      "currentChange": 0,
+      "date": "2026-04-27",
+      "reason": "Q1净利+480%六氟磷酸锂量价齐升+龙虎榜净买7.2亿+换手18%筹码干净",
+      "exitDate": null,
+      "targetPrice": 36.3,
+      "stopLoss": 30.0,
+      "rating": "buy",
+      "confidence": 0.72
     }
   ]
 }
