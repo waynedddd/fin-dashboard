@@ -1,0 +1,77 @@
+{
+  "analysis_date": "2026-04-27",
+  "strategy": "long_term_value",
+  "pool": "CSI300",
+  "total_screened": 300,
+  "passed_screening": 138,
+  "deep_analyzed": 13,
+  "recommendations": [
+    {
+      "code": "603369", "name": "今世缘", "rating": "strong_buy", "confidence": 0.85,
+      "current_price": 26.08, "fair_value": 34.5, "target_price_6m": 31.0, "target_price_12m": 36.0,
+      "entry_zone": [24.0, 27.0], "stop_loss": 22.5, "upside_pct": 38, "hold_months": 9, "position_pct": 8,
+      "reasons": ["PE仅11倍白酒板块最低估", "ROE 24%+毛利75%顶级财务质量", "江苏省内深耕+全国化扩张"],
+      "risks": ["白酒消费降级", "省外扩张不及预期"], "moat": "江苏省内白酒龙头+婚宴场景绑定",
+      "catalyst": "Q2-Q3旺季+全国化放量+估值修复", "valuation_method": "15倍PE×2026E EPS 2.3元≈34.5元"
+    },
+    {
+      "code": "000999", "name": "华润三九", "rating": "strong_buy", "confidence": 0.82,
+      "current_price": 25.99, "fair_value": 33.5, "target_price_6m": 31.0, "target_price_12m": 35.0,
+      "entry_zone": [24.0, 26.5], "stop_loss": 22.0, "upside_pct": 35, "hold_months": 9, "position_pct": 8,
+      "reasons": ["PE 13倍显著低估OTC龙头", "ROE 16%+毛利54%+低负债35%", "现金流充沛经营质量高"],
+      "risks": ["集采扩展到OTC", "净利增速仅1.6%"], "moat": "OTC品牌矩阵+华润渠道网络",
+      "catalyst": "消费医疗复苏+品牌提价+并购整合", "valuation_method": "18倍PE×2026E EPS 1.94元≈35元"
+    },
+    {
+      "code": "000596", "name": "古井贡酒", "rating": "strong_buy", "confidence": 0.83,
+      "current_price": 106.18, "fair_value": 140.0, "target_price_6m": 125.0, "target_price_12m": 145.0,
+      "entry_zone": [98.0, 110.0], "stop_loss": 92.0, "upside_pct": 37, "hold_months": 9, "position_pct": 7,
+      "reasons": ["PE 12倍严重低估", "ROE 24%+毛利80%+净利增20%", "安徽龙头+古20大单品放量"],
+      "risks": ["安徽竞争激烈", "宏观消费疲软"], "moat": "安徽省内渠道深度+品牌历史底蕴",
+      "catalyst": "古20全国化+高分红+白酒估值回归", "valuation_method": "15倍PE×2026E EPS 9.5元≈142元"
+    },
+    {
+      "code": "600660", "name": "福耀玻璃", "rating": "buy", "confidence": 0.78,
+      "current_price": 59.45, "fair_value": 72.0, "target_price_6m": 66.0, "target_price_12m": 74.0,
+      "entry_zone": [55.0, 60.0], "stop_loss": 52.0, "upside_pct": 24, "hold_months": 8, "position_pct": 6,
+      "reasons": ["全球汽车玻璃龙头ROE 26%", "营收增17%+净利增24%量价齐升", "海外产能扩张提升全球份额"],
+      "risks": ["汽车行业景气度下行", "海外建厂成本超预期"], "moat": "全球汽车玻璃市占率第一+规模成本优势",
+      "catalyst": "智能汽车渗透+AR-HUD+海外产能投产", "valuation_method": "20倍PE×2026E EPS 3.6元≈72元"
+    },
+    {
+      "code": "300832", "name": "新产业", "rating": "buy", "confidence": 0.76,
+      "current_price": 46.62, "fair_value": 56.0, "target_price_6m": 52.0, "target_price_12m": 58.0,
+      "entry_zone": [42.0, 47.0], "stop_loss": 39.0, "upside_pct": 24, "hold_months": 8, "position_pct": 5,
+      "reasons": ["IVD化学发光龙头ROE 23%+毛利72%", "负债率仅11%财务极度健康", "海外收入持续提升"],
+      "risks": ["集采降价压力", "IVD行业竞争加剧"], "moat": "化学发光全产业链自研+装机基数试剂粘性",
+      "catalyst": "海外加速放量+新检测项目获批+基层医疗扩容", "valuation_method": "26倍PE×2026E EPS 2.15元≈56元"
+    },
+    {
+      "code": "600989", "name": "宝丰能源", "rating": "buy", "confidence": 0.75,
+      "current_price": 30.08, "fair_value": 36.0, "target_price_6m": 34.0, "target_price_12m": 38.0,
+      "entry_zone": [27.0, 30.5], "stop_loss": 25.5, "upside_pct": 26, "hold_months": 8, "position_pct": 5,
+      "reasons": ["营收增46%+净利增79%爆发增长", "ROE 25%+PE 18估值匹配度高", "内蒙项目带来产能翻倍"],
+      "risks": ["煤化工产品价格周期波动", "环保政策趋严"], "moat": "宁夏煤炭资源成本优势+煤制烯烃技术领先",
+      "catalyst": "内蒙古项目投产+油价支撑煤化工价差", "valuation_method": "20倍PE×2026E EPS 1.85元≈37元"
+    },
+    {
+      "code": "603259", "name": "药明康德", "rating": "buy", "confidence": 0.72,
+      "current_price": 100.52, "fair_value": 120.0, "target_price_6m": 110.0, "target_price_12m": 125.0,
+      "entry_zone": [90.0, 102.0], "stop_loss": 85.0, "upside_pct": 24, "hold_months": 6, "position_pct": 5,
+      "reasons": ["CRO全球龙头ROE 29%+毛利48%", "净利翻倍增长低基数恢复", "PE 15倍历史低位地缘风险已price in"],
+      "risks": ["美国生物安全法案", "全球biotech融资收缩"], "moat": "全球CRO一体化平台+成本优势+客户高转换成本",
+      "catalyst": "美国政策利空出尽+创新药管线回暖", "valuation_method": "18倍PE×2026E EPS 6.8元≈122元"
+    },
+    {
+      "code": "000975", "name": "山金国际", "rating": "buy", "confidence": 0.74,
+      "current_price": 27.45, "fair_value": 33.0, "target_price_6m": 30.0, "target_price_12m": 34.0,
+      "entry_zone": [25.0, 28.0], "stop_loss": 23.0, "upside_pct": 24, "hold_months": 8, "position_pct": 5,
+      "reasons": ["黄金+铜双主线ROE 22%+净利增37%", "负债率仅19%财务安全", "双金属价格共振"],
+      "risks": ["金价回调风险", "海外矿山运营风险"], "moat": "山东黄金海外资源平台+多矿种布局",
+      "catalyst": "金价维持高位+铜价上行+新矿投产", "valuation_method": "22倍PE×2026E EPS 1.5元≈33元"
+    }
+  ],
+  "sector_view": "超配：白酒（低估值+高ROE）、医药CRO/IVD（复苏+国产替代）、资源（金铜煤景气）。标配：消费品。低配：银行券商",
+  "market_view": "沪深300 PE 12-13倍处历史中低位，稳增长+利率下行利好权益，但外部风险并存，建议精选个股分批建仓",
+  "portfolio_suggestion": "只买3只：今世缘30% + 华润三九30% + 福耀玻璃25%，留15%现金等回调"
+}
