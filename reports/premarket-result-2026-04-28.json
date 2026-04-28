@@ -1,0 +1,150 @@
+{
+  "analysis_date": "2026-04-28",
+  "strategy": "pre_market",
+  "lhb_date": "20260427",
+  "recommendations": [
+    {
+      "code": "002560",
+      "name": "通达股份",
+      "rating": "buy",
+      "confidence": 0.6,
+      "entry_strategy": "集合竞价观察，若高开3%以内可轻仓介入；若低开至14.8-15.0区间回踩MA5支撑可建半仓。涨停板打开则离场",
+      "target_price": 17.2,
+      "stop_loss": 14.2,
+      "reasons": [
+        "龙虎榜净买1.74亿，游资合力明显",
+        "净利润增速81%基本面有支撑",
+        "RSI(14)=69适中未超买，MACD金叉向上",
+        "布林位置0.92仍在通道内有空间"
+      ],
+      "risks": [
+        "换手率26.9%极高，筹码松动",
+        "4/21曾单日跌12%，波动剧烈",
+        "负债率51%偏高，毛利率仅8%"
+      ],
+      "hold_days": 2,
+      "position_pct": 2
+    },
+    {
+      "code": "002706",
+      "name": "良信股份",
+      "rating": "buy",
+      "confidence": 0.55,
+      "entry_strategy": "开盘观察5分钟，若缩量高开回落至10.8-11.0可轻仓低吸；若放量突破11.4前高则追涨半仓。跌破10.25止损",
+      "target_price": 12.5,
+      "stop_loss": 10.25,
+      "reasons": [
+        "龙虎榜净买1.9亿力度大",
+        "RSI(14)=58最健康，MACD刚金叉",
+        "布林位置0.98刚触上轨有突破潜力",
+        "量比1.76放量涨停质量高"
+      ],
+      "risks": [
+        "净利润增速-45%基本面恶化",
+        "PE=58估值偏高",
+        "资金流向数据缺失无法确认主力态度"
+      ],
+      "hold_days": 2,
+      "position_pct": 2
+    },
+    {
+      "code": "600338",
+      "name": "西藏珠峰",
+      "rating": "watch",
+      "confidence": 0.45,
+      "entry_strategy": "不追高！观察开盘是否大幅高开，若冲高回落至23.0-23.5区间企稳可轻仓试探。连板股需严格止损",
+      "target_price": 27.3,
+      "stop_loss": 22.0,
+      "reasons": [
+        "龙虎榜净买6.4亿居首，资金最青睐",
+        "营收+48%利润+43%基本面扎实",
+        "连续2日涨停有趋势惯性"
+      ],
+      "risks": [
+        "RSI(14)=71偏高，布林1.08已超上轨",
+        "5日主力净流出1.18亿与龙虎榜矛盾",
+        "10日涨幅35%追高风险极大",
+        "连板股开板后杀跌凶猛"
+      ],
+      "hold_days": 1,
+      "position_pct": 1
+    },
+    {
+      "code": "002484",
+      "name": "江海股份",
+      "rating": "watch",
+      "confidence": 0.4,
+      "entry_strategy": "等盘中回调，若缩量回踩36.0-36.5(前期平台)企稳可轻仓。不追涨停价",
+      "target_price": 40.0,
+      "stop_loss": 34.5,
+      "reasons": [
+        "龙虎榜净买2.7亿",
+        "股价刚突破布林上轨有加速迹象"
+      ],
+      "risks": [
+        "RSI(6)=78接近超买",
+        "5日主力净流出1.42亿",
+        "利润增速仅6.6%基本面平庸",
+        "PE=47估值不低"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "002606",
+      "name": "大连电瓷",
+      "rating": "avoid",
+      "confidence": 0.7,
+      "entry_strategy": "不参与。RSI(6)=87.6严重超买，布林1.19远超上轨，短期回调概率大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "利润增速194%基本面确实强"
+      ],
+      "risks": [
+        "RSI(6)=87.6极度超买",
+        "布林位置1.19严重偏离",
+        "换手率28%筹码极度松散",
+        "5日涨幅19%追高必套"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002217",
+      "name": "合力泰",
+      "rating": "avoid",
+      "confidence": 0.75,
+      "entry_strategy": "不参与。PE=1137，利润暴跌80%，纯游资炒作无安全边际",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [],
+      "risks": [
+        "PE=1137估值荒谬",
+        "净利润增速-80%基本面崩塌",
+        "ROE仅0.04%几乎不赚钱"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600152",
+      "name": "维科技术",
+      "rating": "avoid",
+      "confidence": 0.8,
+      "entry_strategy": "不参与。亏损股+负PE，纯题材炒作，波动巨大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [],
+      "risks": [
+        "ROE=-5.64%持续亏损",
+        "净利润增速-237%",
+        "10日涨幅32%短期透支严重"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "昨日龙虎榜涨停股集中，游资活跃度高，但多数标的已处于超买区间。今日大概率分化——强势股可能继续冲高但追高风险大，建议以低吸回调为主，不追涨停。整体仓位控制在轻仓试探。",
+  "top_picks": ["002560", "002706"]
+}

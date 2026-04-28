@@ -489,6 +489,34 @@
       "stopLoss": 30.0,
       "rating": "buy",
       "confidence": 0.72
+    },
+    {
+      "code": "002560",
+      "name": "通达股份",
+      "pickPrice": 15.68,
+      "currentPrice": 15.68,
+      "currentChange": 0,
+      "date": "2026-04-28",
+      "reason": "龙虎榜净买1.74亿+净利增81%+RSI69未超买+MACD金叉",
+      "exitDate": null,
+      "targetPrice": 17.2,
+      "stopLoss": 14.2,
+      "rating": "buy",
+      "confidence": 0.6
+    },
+    {
+      "code": "002706",
+      "name": "良信股份",
+      "pickPrice": 11.39,
+      "currentPrice": 11.39,
+      "currentChange": 0,
+      "date": "2026-04-28",
+      "reason": "龙虎榜净买1.9亿+RSI58最健康+MACD刚金叉+量比1.76放量涨停",
+      "exitDate": null,
+      "targetPrice": 12.5,
+      "stopLoss": 10.25,
+      "rating": "buy",
+      "confidence": 0.55
     }
   ]
 }
