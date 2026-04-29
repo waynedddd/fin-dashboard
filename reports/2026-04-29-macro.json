@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-04-29 08:00",
+  "indicators": "<h3>⚠️ 数据获取失败</h3><p>Tavily API 返回 432 错误，Brave Search 未配置 API Key，web_fetch 被网络策略阻断。本次无法获取实时宏观数据。</p><p><strong>需要修复：</strong></p><ul><li>检查 TAVILY_API_KEY 是否有效/过期</li><li>或配置 BRAVE_API_KEY: <code>openclaw configure --section web</code></li></ul>",
+  "sentiment": "<h3>无数据</h3><p>因搜索工具不可用，无法评估当前市场情绪。</p>",
+  "policy": "<h3>无数据</h3><p>无法获取最新政策动向。</p>",
+  "conclusion": "<h3>今日无法生成结论</h3><p>所有外部数据源均不可用，无法进行有效分析。建议手动检查：</p><ul><li>美联储5月FOMC会议预期</li><li>中国4月PMI（通常月底发布）</li><li>美债10Y收益率、美元指数DXY、VIX水平</li></ul>",
+  "risks": "<h3>系统风险提示</h3><ul><li><strong>数据源中断：</strong>自动化分析依赖的API均失效，需尽快修复</li><li><strong>盲区风险：</strong>在无数据期间可能错过重要宏观变化</li></ul>"
+}
