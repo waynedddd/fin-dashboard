@@ -517,6 +517,20 @@
       "stopLoss": 10.25,
       "rating": "buy",
       "confidence": 0.55
+    },
+    {
+      "code": "301666",
+      "name": "大普微",
+      "pickPrice": 252.81,
+      "currentPrice": 252.81,
+      "currentChange": 0,
+      "date": "2026-04-29",
+      "reason": "龙虎榜净买1.56亿+ROE60%营收增341%利润增399%+RSI58未超买",
+      "exitDate": null,
+      "targetPrice": 275.0,
+      "stopLoss": 232.0,
+      "rating": "buy",
+      "confidence": 0.7
     }
   ]
 }
