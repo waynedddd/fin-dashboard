@@ -1,0 +1,100 @@
+{
+  "analysis_date": "2026-04-30",
+  "strategy": "pre_market",
+  "lhb_date": "20260429",
+  "recommendations": [
+    {
+      "code": "002378",
+      "name": "章源钨业",
+      "rating": "buy",
+      "confidence": 0.72,
+      "entry_strategy": "涨停板打开后观察承接力度,若开盘小幅高开(33-34区间)回踩MA5(30.87)不破可半仓介入;若一字板则等次日",
+      "target_price": 36.2,
+      "stop_loss": 30.0,
+      "reasons": ["龙虎榜净买3.3亿强力看多", "基本面最优:ROE 15%+利润增795%", "RSI 52.7技术面健康无超买", "钨价上涨逻辑+业绩兑现"],
+      "risks": ["涨停次日抛压", "负债率70%偏高"],
+      "hold_days": 3,
+      "position_pct": 3
+    },
+    {
+      "code": "000657",
+      "name": "中钨高新",
+      "rating": "buy",
+      "confidence": 0.68,
+      "entry_strategy": "与章源钨业同为钨概念龙头,若高开5%以内(57-60)且量能放大可轻仓跟进;封板则不追",
+      "target_price": 63.0,
+      "stop_loss": 53.0,
+      "reasons": ["龙虎榜净买3.6亿居首", "业绩爆发:营收增106%利润增264%", "RSI 57.8+MACD金叉技术健康", "钨板块共振"],
+      "risks": ["PE 67倍估值不低", "昨日涨停今日可能高开低走"],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "301292",
+      "name": "海科新源",
+      "rating": "watch",
+      "confidence": 0.55,
+      "entry_strategy": "RSI健康但MACD死叉,需盘中确认反转。若回调至85-87区间企稳放量可试仓,不追高开",
+      "target_price": 98.0,
+      "stop_loss": 79.0,
+      "reasons": ["利润增1922%业绩爆发", "RSI 55技术位置舒适", "龙虎榜净买1.26亿"],
+      "risks": ["PE 633倍极高", "MACD柱-3.7死叉中", "近5日跌7.5%趋势偏弱"],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "002709",
+      "name": "天赐材料",
+      "rating": "watch",
+      "confidence": 0.5,
+      "entry_strategy": "RSI 72+布林超轨,短期超买明显。若大幅高开不追;若回调至55以下可关注,否则观望",
+      "target_price": 65.0,
+      "stop_loss": 53.0,
+      "reasons": ["利润增1005%业绩炸裂", "锂电龙头辨识度高", "龙虎榜净买2.7亿"],
+      "risks": ["RSI 72超买区", "布林位置1.12已超上轨", "连续放量涨停后获利盘巨大"],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "002081",
+      "name": "金螳螂",
+      "rating": "avoid",
+      "confidence": 0.6,
+      "entry_strategy": "10日涨59%严重超涨,RSI 70.6+布林0.96逼近上轨,追高风险极大。观望不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["龙虎榜净买3.2亿"],
+      "risks": ["10日涨59%严重超涨", "营收利润双降基本面不支撑", "布林0.96接近极限"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600714",
+      "name": "金瑞矿业",
+      "rating": "avoid",
+      "confidence": 0.55,
+      "entry_strategy": "RSI 76偏高+布林超轨1.15,基本面亏损,不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["钨概念跟风"],
+      "risks": ["基本面亏损", "RSI 76+布林1.15超买", "PE 407倍"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002361",
+      "name": "神剑股份",
+      "rating": "avoid",
+      "confidence": 0.5,
+      "entry_strategy": "5日跌15%趋势破位,基本面亏损,龙虎榜买入可能是超跌反弹资金,风险大于机会",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["龙虎榜净买4.1亿"],
+      "risks": ["5日跌15%趋势恶化", "基本面亏损PE为负", "换手30%筹码松动"],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "昨日龙虎榜钨概念(中钨高新+章源钨业+金瑞矿业)集体涨停,钨价上涨+业绩兑现驱动明确。天赐材料代表锂电/新能源方向同样活跃。今日关注钨概念能否延续,但需警惕涨停次日分歧风险。操作上优先选RSI未超买+基本面强的标的低吸,不追一字板。",
+  "top_picks": ["002378", "000657"]
+}

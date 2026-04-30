@@ -1,0 +1,22 @@
+[
+  {
+    "code": "002378",
+    "name": "章源钨业",
+    "source": "premarket-2026-04-30",
+    "rating": "buy",
+    "entry_strategy": "高开33-34回踩MA5不破半仓;一字板等次日",
+    "target_price": 36.2,
+    "stop_loss": 30.0,
+    "added": "2026-04-30"
+  },
+  {
+    "code": "000657",
+    "name": "中钨高新",
+    "source": "premarket-2026-04-30",
+    "rating": "buy",
+    "entry_strategy": "高开5%以内且放量可轻仓;封板不追",
+    "target_price": 63.0,
+    "stop_loss": 53.0,
+    "added": "2026-04-30"
+  }
+]
