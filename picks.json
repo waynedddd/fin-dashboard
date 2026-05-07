@@ -18,5 +18,25 @@
     "target_price": 63.0,
     "stop_loss": 53.0,
     "added": "2026-04-30"
+  },
+  {
+    "code": "001257",
+    "name": "盛龙股份",
+    "source": "premarket-2026-05-07",
+    "rating": "buy",
+    "entry_strategy": "高开3%以内直接建仓;高开5%以上等回调至24.0附近半仓",
+    "target_price": 27.0,
+    "stop_loss": 23.0,
+    "added": "2026-05-07"
+  },
+  {
+    "code": "603459",
+    "name": "红板科技",
+    "source": "premarket-2026-05-07",
+    "rating": "buy",
+    "entry_strategy": "集合竞价观察量能,开盘65-67轻仓试探,突破68加仓",
+    "target_price": 75.0,
+    "stop_loss": 62.0,
+    "added": "2026-05-07"
   }
 ]
