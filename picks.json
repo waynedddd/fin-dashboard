@@ -1,5 +1,16 @@
 [
   {
+    "code": "000815",
+    "name": "美利云",
+    "source": "premarket-2026-05-08",
+    "date": "2026-05-08",
+    "rating": "buy",
+    "confidence": 0.65,
+    "entry": "回踩21.0-21.5建半仓",
+    "target": 24.5,
+    "stop_loss": 20.0
+  },
+  {
     "code": "002378",
     "name": "章源钨业",
     "source": "premarket-2026-04-30",
