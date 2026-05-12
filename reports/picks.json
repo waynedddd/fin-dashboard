@@ -38,5 +38,15 @@
     "target_price": 75.0,
     "stop_loss": 62.0,
     "added": "2026-05-07"
+  },
+  {
+    "code": "000062",
+    "name": "深圳华强",
+    "source": "premarket-2026-05-12",
+    "rating": "buy",
+    "entry_strategy": "高开3%以内轻仓介入;回踩不破38.5可加仓;高开超5%等回调",
+    "target_price": 42.5,
+    "stop_loss": 36.5,
+    "added": "2026-05-12"
   }
 ]

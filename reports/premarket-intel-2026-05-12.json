@@ -1,0 +1,838 @@
+{
+  "date": "2026-05-12 08:30",
+  "lhb_date": "20260511",
+  "candidates": [
+    {
+      "code": "000062",
+      "name": "深圳华强",
+      "source": "lhb"
+    },
+    {
+      "code": "002865",
+      "name": "钧达股份",
+      "source": "lhb"
+    },
+    {
+      "code": "002361",
+      "name": "神剑股份",
+      "source": "lhb"
+    },
+    {
+      "code": "601609",
+      "name": "金田股份",
+      "source": "lhb"
+    },
+    {
+      "code": "002655",
+      "name": "共达电声",
+      "source": "lhb"
+    },
+    {
+      "code": "600545",
+      "name": "卓郎智能",
+      "source": "lhb"
+    },
+    {
+      "code": "600589",
+      "name": "大位科技",
+      "source": "lhb"
+    },
+    {
+      "code": "600130",
+      "name": "波导股份",
+      "source": "lhb"
+    },
+    {
+      "code": "605389",
+      "name": "长龄液压",
+      "source": "lhb"
+    },
+    {
+      "code": "301687",
+      "name": "新广益",
+      "source": "lhb"
+    },
+    {
+      "code": "600379",
+      "name": "宝光股份",
+      "source": "lhb"
+    }
+  ],
+  "intel": [
+    {
+      "code": "000062",
+      "name": "深圳华强",
+      "quote": {
+        "name": "深圳华强",
+        "price": 39.09,
+        "change": 9.99,
+        "turnover": 8.32,
+        "amount": 328262.0,
+        "pe": "73.24",
+        "market_cap": 408.85
+      },
+      "kline_recent": [
+        {
+          "date": "2026-04-23",
+          "open": 33.0,
+          "close": 31.12,
+          "high": 33.0,
+          "low": 30.79,
+          "volume": 766479.0
+        },
+        {
+          "date": "2026-04-24",
+          "open": 30.71,
+          "close": 34.24,
+          "high": 34.24,
+          "low": 30.35,
+          "volume": 1121346.0
+        },
+        {
+          "date": "2026-04-27",
+          "open": 35.27,
+          "close": 37.67,
+          "high": 37.67,
+          "low": 34.24,
+          "volume": 1075115.0
+        },
+        {
+          "date": "2026-04-28",
+          "open": 38.18,
+          "close": 36.1,
+          "high": 39.1,
+          "low": 35.64,
+          "volume": 1451837.0
+        },
+        {
+          "date": "2026-04-29",
+          "open": 35.12,
+          "close": 35.65,
+          "high": 36.44,
+          "low": 34.66,
+          "volume": 1020952.0
+        },
+        {
+          "date": "2026-04-30",
+          "open": 35.75,
+          "close": 36.92,
+          "high": 37.7,
+          "low": 35.2,
+          "volume": 1169854.0
+        },
+        {
+          "date": "2026-05-06",
+          "open": 37.99,
+          "close": 36.88,
+          "high": 40.13,
+          "low": 36.22,
+          "volume": 1284890.0
+        },
+        {
+          "date": "2026-05-07",
+          "open": 35.95,
+          "close": 37.46,
+          "high": 38.2,
+          "low": 35.53,
+          "volume": 1099820.0
+        },
+        {
+          "date": "2026-05-08",
+          "open": 36.05,
+          "close": 35.54,
+          "high": 36.36,
+          "low": 35.2,
+          "volume": 910752.0
+        },
+        {
+          "date": "2026-05-11",
+          "open": 36.19,
+          "close": 39.09,
+          "high": 39.09,
+          "low": 36.19,
+          "volume": 869726.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 68.82,
+        "rsi_6": 71.05,
+        "macd_dif": 2.874,
+        "macd_dea": 2.46,
+        "macd_hist": 0.827,
+        "boll_mid": 32.72,
+        "boll_upper": 40.28,
+        "boll_lower": 25.15,
+        "ma5": 37.18,
+        "ma10": 36.07,
+        "ma20": 32.72,
+        "volume_ratio": 0.79,
+        "chg_5d": 9.65,
+        "chg_10d": 20.13,
+        "current_price": 39.09,
+        "boll_position": 0.92
+      },
+      "fundamentals": {
+        "roe": 2.95,
+        "eps": 0.1921,
+        "nav_per_share": 6.57,
+        "rev_growth": 47.28,
+        "profit_growth": 90.28,
+        "debt_ratio": 56.99,
+        "gross_margin": 8.07,
+        "net_margin": 2.99,
+        "net_profit": 2.01,
+        "revenue": 77.01,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {
+        "recent_days": [
+          {
+            "date": "2025-11-07",
+            "main_net": -49460106.0
+          },
+          {
+            "date": "2025-11-10",
+            "main_net": 11754882.0
+          },
+          {
+            "date": "2025-11-11",
+            "main_net": -44482975.0
+          },
+          {
+            "date": "2025-11-12",
+            "main_net": -5928629.0
+          },
+          {
+            "date": "2025-11-13",
+            "main_net": 13241967.0
+          }
+        ],
+        "total_main_net_5d": -74874861.0,
+        "trend": "outflow"
+      },
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 475076685.44
+    },
+    {
+      "code": "002361",
+      "name": "神剑股份",
+      "quote": {
+        "name": "神剑股份",
+        "price": 22.25,
+        "change": 1.6,
+        "turnover": 34.09,
+        "amount": 601590.0,
+        "pe": "-5514.61",
+        "market_cap": 211.61
+      },
+      "kline_recent": [
+        {
+          "date": "2026-04-23",
+          "open": 23.65,
+          "close": 22.99,
+          "high": 23.8,
+          "low": 22.05,
+          "volume": 3155846.0
+        },
+        {
+          "date": "2026-04-24",
+          "open": 22.77,
+          "close": 21.46,
+          "high": 23.39,
+          "low": 21.2,
+          "volume": 3219717.0
+        },
+        {
+          "date": "2026-04-27",
+          "open": 20.39,
+          "close": 21.66,
+          "high": 21.98,
+          "low": 20.39,
+          "volume": 2545697.0
+        },
+        {
+          "date": "2026-04-28",
+          "open": 20.66,
+          "close": 20.02,
+          "high": 21.91,
+          "low": 19.9,
+          "volume": 3065126.0
+        },
+        {
+          "date": "2026-04-29",
+          "open": 19.86,
+          "close": 20.05,
+          "high": 20.82,
+          "low": 19.62,
+          "volume": 2425719.0
+        },
+        {
+          "date": "2026-04-30",
+          "open": 20.41,
+          "close": 20.55,
+          "high": 20.82,
+          "low": 19.91,
+          "volume": 2257121.0
+        },
+        {
+          "date": "2026-05-06",
+          "open": 20.7,
+          "close": 21.21,
+          "high": 21.69,
+          "low": 20.7,
+          "volume": 2336376.0
+        },
+        {
+          "date": "2026-05-07",
+          "open": 21.21,
+          "close": 21.6,
+          "high": 21.7,
+          "low": 20.98,
+          "volume": 2451728.0
+        },
+        {
+          "date": "2026-05-08",
+          "open": 21.5,
+          "close": 21.9,
+          "high": 23.55,
+          "low": 21.14,
+          "volume": 3367630.0
+        },
+        {
+          "date": "2026-05-11",
+          "open": 21.65,
+          "close": 22.25,
+          "high": 22.64,
+          "low": 21.04,
+          "volume": 2758260.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 66.31,
+        "rsi_6": 68.62,
+        "macd_dif": 1.635,
+        "macd_dea": 1.723,
+        "macd_hist": -0.175,
+        "boll_mid": 20.18,
+        "boll_upper": 24.6,
+        "boll_lower": 15.77,
+        "ma5": 21.5,
+        "ma10": 21.37,
+        "ma20": 20.18,
+        "volume_ratio": 1.07,
+        "chg_5d": 10.97,
+        "chg_10d": -5.92,
+        "current_price": 22.25,
+        "boll_position": 0.73
+      },
+      "fundamentals": {
+        "roe": -0.24,
+        "eps": -0.0055,
+        "nav_per_share": 2.3,
+        "rev_growth": -5.49,
+        "profit_growth": -144.39,
+        "debt_ratio": 51.73,
+        "gross_margin": 8.26,
+        "net_margin": -1.35,
+        "net_profit": -526.79,
+        "revenue": 4.91,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {
+        "recent_days": [
+          {
+            "date": "2025-11-07",
+            "main_net": -15305055.0
+          },
+          {
+            "date": "2025-11-10",
+            "main_net": 23927717.0
+          },
+          {
+            "date": "2025-11-11",
+            "main_net": 12503490.0
+          },
+          {
+            "date": "2025-11-12",
+            "main_net": 11985700.0
+          },
+          {
+            "date": "2025-11-13",
+            "main_net": 6654492.0
+          }
+        ],
+        "total_main_net_5d": 39766344.0,
+        "trend": "inflow"
+      },
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 235246170.12
+    },
+    {
+      "code": "601609",
+      "name": "金田股份",
+      "quote": {
+        "name": "金田股份",
+        "price": 11.41,
+        "change": 10.03,
+        "turnover": 6.19,
+        "amount": 118880.0,
+        "pe": "25.55",
+        "market_cap": 197.24
+      },
+      "kline_recent": [
+        {
+          "date": "2026-04-23",
+          "open": 11.01,
+          "close": 10.66,
+          "high": 11.02,
+          "low": 10.6,
+          "volume": 283738.0
+        },
+        {
+          "date": "2026-04-24",
+          "open": 10.5,
+          "close": 10.42,
+          "high": 10.56,
+          "low": 10.17,
+          "volume": 273465.0
+        },
+        {
+          "date": "2026-04-27",
+          "open": 10.41,
+          "close": 10.37,
+          "high": 10.53,
+          "low": 10.36,
+          "volume": 185255.0
+        },
+        {
+          "date": "2026-04-28",
+          "open": 10.37,
+          "close": 10.13,
+          "high": 10.38,
+          "low": 10.08,
+          "volume": 202947.0
+        },
+        {
+          "date": "2026-04-29",
+          "open": 10.13,
+          "close": 10.39,
+          "high": 10.42,
+          "low": 10.1,
+          "volume": 191135.0
+        },
+        {
+          "date": "2026-04-30",
+          "open": 10.3,
+          "close": 10.14,
+          "high": 10.42,
+          "low": 10.08,
+          "volume": 212397.0
+        },
+        {
+          "date": "2026-05-06",
+          "open": 10.14,
+          "close": 10.33,
+          "high": 10.36,
+          "low": 10.14,
+          "volume": 249036.0
+        },
+        {
+          "date": "2026-05-07",
+          "open": 10.39,
+          "close": 10.4,
+          "high": 10.43,
+          "low": 10.28,
+          "volume": 197565.0
+        },
+        {
+          "date": "2026-05-08",
+          "open": 10.34,
+          "close": 10.37,
+          "high": 10.46,
+          "low": 10.21,
+          "volume": 242914.0
+        },
+        {
+          "date": "2026-05-11",
+          "open": 10.5,
+          "close": 11.41,
+          "high": 11.41,
+          "low": 10.5,
+          "volume": 1070313.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 65.52,
+        "rsi_6": 78.41,
+        "macd_dif": 0.065,
+        "macd_dea": 0.006,
+        "macd_hist": 0.119,
+        "boll_mid": 10.5,
+        "boll_upper": 11.19,
+        "boll_lower": 9.82,
+        "ma5": 10.53,
+        "ma10": 10.46,
+        "ma20": 10.5,
+        "volume_ratio": 4.9,
+        "chg_5d": 9.82,
+        "chg_10d": 3.73,
+        "current_price": 11.41,
+        "boll_position": 1.16
+      },
+      "fundamentals": {
+        "roe": 1.64,
+        "eps": 0.1,
+        "nav_per_share": 5.85,
+        "rev_growth": 33.68,
+        "profit_growth": 12.91,
+        "debt_ratio": 68.71,
+        "gross_margin": 2.18,
+        "net_margin": 0.47,
+        "net_profit": 1.7,
+        "revenue": 364.76,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {
+        "recent_days": [
+          {
+            "date": "2025-11-07",
+            "main_net": -23931584.0
+          },
+          {
+            "date": "2025-11-10",
+            "main_net": -17369700.0
+          },
+          {
+            "date": "2025-11-11",
+            "main_net": -9476766.0
+          },
+          {
+            "date": "2025-11-12",
+            "main_net": -46966458.0
+          },
+          {
+            "date": "2025-11-13",
+            "main_net": 22074181.0
+          }
+        ],
+        "total_main_net_5d": -75670327.0,
+        "trend": "outflow"
+      },
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 108410939.7
+    },
+    {
+      "code": "605389",
+      "name": "长龄液压",
+      "quote": {
+        "name": "长龄液压",
+        "price": 115.4,
+        "change": -8.78,
+        "turnover": 4.43,
+        "amount": 72948.0,
+        "pe": "124.93",
+        "market_cap": 166.28
+      },
+      "kline_recent": [
+        {
+          "date": "2026-04-23",
+          "open": 84.8,
+          "close": 85.84,
+          "high": 86.95,
+          "low": 82.82,
+          "volume": 18806.0
+        },
+        {
+          "date": "2026-04-24",
+          "open": 87.56,
+          "close": 90.65,
+          "high": 90.99,
+          "low": 86.2,
+          "volume": 27639.0
+        },
+        {
+          "date": "2026-04-27",
+          "open": 90.5,
+          "close": 95.34,
+          "high": 95.44,
+          "low": 89.13,
+          "volume": 27895.0
+        },
+        {
+          "date": "2026-04-28",
+          "open": 93.59,
+          "close": 99.25,
+          "high": 100.88,
+          "low": 93.59,
+          "volume": 35263.0
+        },
+        {
+          "date": "2026-04-29",
+          "open": 98.98,
+          "close": 106.5,
+          "high": 107.0,
+          "low": 98.98,
+          "volume": 39270.0
+        },
+        {
+          "date": "2026-04-30",
+          "open": 106.2,
+          "close": 116.98,
+          "high": 117.15,
+          "low": 104.07,
+          "volume": 44208.0
+        },
+        {
+          "date": "2026-05-06",
+          "open": 119.95,
+          "close": 122.34,
+          "high": 125.0,
+          "low": 105.32,
+          "volume": 55586.0
+        },
+        {
+          "date": "2026-05-07",
+          "open": 119.48,
+          "close": 126.78,
+          "high": 129.0,
+          "low": 118.1,
+          "volume": 34629.0
+        },
+        {
+          "date": "2026-05-08",
+          "open": 126.75,
+          "close": 126.51,
+          "high": 132.58,
+          "low": 124.0,
+          "volume": 36152.0
+        },
+        {
+          "date": "2026-05-11",
+          "open": 128.56,
+          "close": 115.4,
+          "high": 129.9,
+          "low": 114.78,
+          "volume": 60357.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 72.49,
+        "rsi_6": 63.45,
+        "macd_dif": 12.783,
+        "macd_dea": 8.925,
+        "macd_hist": 7.715,
+        "boll_mid": 91.63,
+        "boll_upper": 131.59,
+        "boll_lower": 51.67,
+        "ma5": 121.6,
+        "ma10": 108.56,
+        "ma20": 91.63,
+        "volume_ratio": 1.44,
+        "chg_5d": 8.36,
+        "chg_10d": 36.1,
+        "current_price": 115.4,
+        "boll_position": 0.8
+      },
+      "fundamentals": {
+        "roe": 1.78,
+        "eps": 0.26,
+        "nav_per_share": 14.97,
+        "rev_growth": 20.23,
+        "profit_growth": 22.29,
+        "debt_ratio": 10.55,
+        "gross_margin": 30.1,
+        "net_margin": 14.1,
+        "net_profit": 3769.44,
+        "revenue": 2.64,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {
+        "recent_days": [
+          {
+            "date": "2025-11-06",
+            "main_net": -1023282.0
+          },
+          {
+            "date": "2025-11-07",
+            "main_net": -8066874.0
+          },
+          {
+            "date": "2025-11-10",
+            "main_net": -15880422.0
+          },
+          {
+            "date": "2025-11-11",
+            "main_net": -5349187.0
+          },
+          {
+            "date": "2025-11-12",
+            "main_net": -2188340.0
+          }
+        ],
+        "total_main_net_5d": -32508105.0,
+        "trend": "outflow"
+      },
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 80752042.08
+    },
+    {
+      "code": "600379",
+      "name": "宝光股份",
+      "quote": {
+        "name": "宝光股份",
+        "price": 18.43,
+        "change": 10.03,
+        "turnover": 28.74,
+        "amount": 170503.0,
+        "pe": "145.68",
+        "market_cap": 60.86
+      },
+      "kline_recent": [
+        {
+          "date": "2026-04-23",
+          "open": 11.66,
+          "close": 12.22,
+          "high": 12.47,
+          "low": 11.41,
+          "volume": 160186.0
+        },
+        {
+          "date": "2026-04-24",
+          "open": 12.09,
+          "close": 12.9,
+          "high": 13.44,
+          "low": 12.01,
+          "volume": 316064.0
+        },
+        {
+          "date": "2026-04-27",
+          "open": 12.65,
+          "close": 12.6,
+          "high": 12.9,
+          "low": 12.38,
+          "volume": 212048.0
+        },
+        {
+          "date": "2026-04-28",
+          "open": 12.51,
+          "close": 13.86,
+          "high": 13.86,
+          "low": 12.3,
+          "volume": 242792.0
+        },
+        {
+          "date": "2026-04-29",
+          "open": 14.6,
+          "close": 15.25,
+          "high": 15.25,
+          "low": 14.08,
+          "volume": 665113.0
+        },
+        {
+          "date": "2026-04-30",
+          "open": 16.5,
+          "close": 16.78,
+          "high": 16.78,
+          "low": 16.48,
+          "volume": 438344.0
+        },
+        {
+          "date": "2026-05-06",
+          "open": 18.25,
+          "close": 18.46,
+          "high": 18.46,
+          "low": 18.0,
+          "volume": 268149.0
+        },
+        {
+          "date": "2026-05-07",
+          "open": 20.31,
+          "close": 17.85,
+          "high": 20.31,
+          "low": 17.13,
+          "volume": 1100442.0
+        },
+        {
+          "date": "2026-05-08",
+          "open": 17.6,
+          "close": 16.75,
+          "high": 17.6,
+          "low": 16.51,
+          "volume": 749524.0
+        },
+        {
+          "date": "2026-05-11",
+          "open": 17.09,
+          "close": 18.43,
+          "high": 18.43,
+          "low": 16.81,
+          "volume": 948855.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 73.38,
+        "rsi_6": 75.3,
+        "macd_dif": 1.445,
+        "macd_dea": 0.813,
+        "macd_hist": 1.262,
+        "boll_mid": 13.81,
+        "boll_upper": 18.59,
+        "boll_lower": 9.04,
+        "ma5": 17.65,
+        "ma10": 15.51,
+        "ma20": 13.81,
+        "volume_ratio": 1.47,
+        "chg_5d": 20.85,
+        "chg_10d": 58.2,
+        "current_price": 18.43,
+        "boll_position": 0.98
+      },
+      "fundamentals": {
+        "roe": 1.18,
+        "eps": 0.0279,
+        "nav_per_share": 2.38,
+        "rev_growth": -5.16,
+        "profit_growth": -50.8,
+        "debt_ratio": 58.4,
+        "gross_margin": 20.37,
+        "net_margin": 5.01,
+        "net_profit": 922.25,
+        "revenue": 3.02,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {
+        "recent_days": [
+          {
+            "date": "2025-11-07",
+            "main_net": -44870246.0
+          },
+          {
+            "date": "2025-11-10",
+            "main_net": 498556.0
+          },
+          {
+            "date": "2025-11-11",
+            "main_net": -20558681.0
+          },
+          {
+            "date": "2025-11-12",
+            "main_net": -15770869.0
+          },
+          {
+            "date": "2025-11-13",
+            "main_net": -596370.0
+          }
+        ],
+        "total_main_net_5d": -81297610.0,
+        "trend": "outflow"
+      },
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 73974027.55
+    }
+  ]
+}
