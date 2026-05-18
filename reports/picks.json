@@ -60,5 +60,16 @@
     "target_price": 35.0,
     "stop_loss": 30.5,
     "added": "2026-05-15"
+  },
+  {
+    "code": "002407",
+    "name": "多氟多",
+    "source": "premarket-2026-05-18",
+    "date": "2026-05-18",
+    "rating": "buy",
+    "confidence": 0.65,
+    "entry": "高开3%以内半仓;高开5%以上等回调37.0-37.5低吸",
+    "target": 40.0,
+    "stop_loss": 34.0
   }
 ]
