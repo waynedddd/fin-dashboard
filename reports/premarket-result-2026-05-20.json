@@ -1,0 +1,100 @@
+{
+  "analysis_date": "2026-05-20",
+  "strategy": "pre_market",
+  "lhb_date": "20260519",
+  "recommendations": [
+    {
+      "code": "301696",
+      "name": "三瑞智能",
+      "rating": "watch",
+      "confidence": 0.65,
+      "entry_strategy": "开盘大概率高开，不追。若盘中回调至150-155区间（MA5附近）可试探性半仓，放量突破170再加仓",
+      "target_price": 180.0,
+      "stop_loss": 145.0,
+      "reasons": ["基本面最优：ROE 10%+利润增速57%+营收增速72%+低负债15.7%", "主力近5日净流入9.88亿，资金持续加仓", "毛利率58.6%高壁垒业务"],
+      "risks": ["10日涨幅69.5%严重超涨，RSI 82/74双高", "布林位置1.08已突破上轨", "换手率45.7%过高，获利盘抛压大"],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "603083",
+      "name": "剑桥科技",
+      "rating": "watch",
+      "confidence": 0.55,
+      "entry_strategy": "昨日涨停封板，今日关注集合竞价量能。若高开3%以内且首5分钟不破200可轻仓；若高开5%+直接放弃",
+      "target_price": 220.0,
+      "stop_loss": 188.0,
+      "reasons": ["净利润增速276%业绩爆发", "营收增速44%趋势确认", "龙虎榜净买入近2亿，资金认可"],
+      "risks": ["RSI 73.6偏高，布林0.91接近上轨", "PE 203倍估值不低", "昨日涨停今日追高风险大"],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "600396",
+      "name": "华电辽能",
+      "rating": "avoid",
+      "confidence": 0.4,
+      "entry_strategy": "10日涨幅62.8%过于疯狂，不参与。除非大幅回调至13-14元区间（MA10下方）再考虑",
+      "target_price": 18.0,
+      "stop_loss": 14.5,
+      "reasons": ["ROE 10.87%基本面尚可", "龙虎榜净买入1.53亿"],
+      "risks": ["10日暴涨62.8%严重透支", "RSI 72.7高位", "短期均线发散过大，回调风险极高"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603773",
+      "name": "沃格光电",
+      "rating": "avoid",
+      "confidence": 0.35,
+      "entry_strategy": "连续跌停后反弹，属于超跌反抽而非趋势反转。MACD死叉，5日跌幅-13.5%，不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["龙虎榜净买入2.45亿有抄底资金"],
+      "risks": ["ROE -4.74%亏损企业", "MACD死叉柱-1.627", "前期88→67连续暴跌，反弹是出货机会", "负债率71.6%偏高"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002272",
+      "name": "川润股份",
+      "rating": "avoid",
+      "confidence": 0.3,
+      "entry_strategy": "布林位置1.17严重超买+负ROE+连板后追高风险极大，放弃",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["龙虎榜净买入1.7亿"],
+      "risks": ["ROE -2.09%亏损", "布林1.17突破上轨", "5日涨幅16.9%+10日涨幅31%过快", "基本面无支撑的纯游资票"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600481",
+      "name": "双良节能",
+      "rating": "avoid",
+      "confidence": 0.25,
+      "entry_strategy": "毛利率为负、利润暴跌144%，纯投机票，不碰",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["龙虎榜净买入1.39亿"],
+      "risks": ["ROE -10.24%巨亏", "毛利率-11%业务恶化", "负债率80.7%极高", "布林1.18超买"],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600246",
+      "name": "万通发展",
+      "rating": "avoid",
+      "confidence": 0.3,
+      "entry_strategy": "负利润增长-218%+涨停后追高，纯概念炒作，不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": ["龙虎榜净买入1.09亿"],
+      "risks": ["ROE -2.44%亏损", "利润增速-218%恶化", "毛利率仅3.49%", "主力近5日净流出2.6亿，昨日是对倒"],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "今日龙虎榜候选整体质量偏低：7只中5只基本面亏损，多数是游资击鼓传花。仅三瑞智能和剑桥科技有业绩支撑但短期涨幅已大。建议今日以观望为主，不追高，耐心等回调机会。市场短线情绪偏热但持续性存疑。",
+  "top_picks": ["301696", "603083"]
+}
