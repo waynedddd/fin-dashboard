@@ -64,23 +64,23 @@
   {
     "code": "002407",
     "name": "多氟多",
-    "source": "premarket-2026-05-18",
-    "date": "2026-05-18",
+    "source": "premarket-2026-05-21",
+    "date": "2026-05-21",
     "rating": "buy",
-    "confidence": 0.65,
-    "entry": "高开3%以内半仓;高开5%以上等回调37.0-37.5低吸",
-    "target": 40.0,
-    "stop_loss": 34.0
+    "confidence": 0.72,
+    "entry": "高开3%以内可轻仓;回落至39-40企稳放量加半仓;高开5%以上不追",
+    "target": 44.5,
+    "stop_loss": 37.5
   },
   {
     "code": "000988",
     "name": "华工科技",
-    "source": "premarket-2026-05-19",
-    "date": "2026-05-19",
-    "rating": "buy",
-    "confidence": 0.72,
-    "entry": "回调至142-144低吸半仓;直接封板放弃追高",
-    "target": 158.0,
-    "stop_loss": 136.0
+    "source": "premarket-2026-05-21",
+    "date": "2026-05-21",
+    "rating": "watch",
+    "confidence": 0.6,
+    "entry": "回调至155-158(MA5附近)企稳轻仓低吸;不回调则观望",
+    "target": 175.0,
+    "stop_loss": 150.0
   }
 ]
