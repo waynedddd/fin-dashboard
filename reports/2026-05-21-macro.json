@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-21 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><ul><li><strong>上证综指</strong>：4162.18（-0.18%），窄幅震荡</li><li><strong>USD/CNY</strong>：6.82，人民币维持相对强势</li><li><strong>加密市场恐惧贪婪指数</strong>：29（恐惧区间）</li><li><strong>美联储政策</strong>：5月FOMC维持利率不变（4.25-4.50%），鲍威尔强调数据依赖，市场预期6月仍按兵不动</li><li><strong>美债10Y收益率</strong>：约4.3-4.4%区间震荡，近期略有回落</li><li><strong>美元指数DXY</strong>：约103附近，偏弱运行</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>A股</strong>：沪指4100-4200区间盘整，成交量温和，市场等待方向选择</li><li><strong>美股</strong>：高位震荡，AI主题仍有支撑但估值偏高</li><li><strong>加密市场</strong>：恐惧情绪（FGI=29），风险偏好回落</li><li><strong>VIX</strong>：预计维持15-18区间，市场波动率偏低</li></ul><p>整体情绪：<strong>中性偏谨慎</strong>，缺乏明确催化剂。</p>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储</strong>：维持紧缩偏中性立场，关注6月点阵图指引。通胀粘性仍是核心关注</li><li><strong>中国</strong>：4月社融数据平稳，5月PMI待公布（月底）。央行维持适度宽松，LPR预计短期不变</li><li><strong>中美关系</strong>：贸易谈判持续，关税政策边际缓和但不确定性犹存</li><li><strong>财政政策</strong>：特别国债发行节奏稳定，地方债加速落地</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>宏观环境评级：中性</strong></p><p>当前A股处于4100-4200点区间震荡格局，宏观面无明显利空也缺乏强催化：</p><ul><li>人民币稳定+美元走弱 → 外资流出压力不大（偏利好）</li><li>美联储按兵不动 → 全球流动性未进一步收紧（中性）</li><li>国内经济复苏斜率放缓 → 盈利预期修复需要时间（偏中性）</li></ul><p><strong>仓位建议</strong>：维持当前75%仓位不变，暂不加仓。等待5月底PMI数据和6月FOMC会议明确方向后再做调整。</p><p>结构上可关注：红利低波（防御）+ AI算力（进攻），均衡配置。</p>",
+  "risks": "<h3>⚠️ 风险提示</h3><ul><li><strong>6月FOMC</strong>：若点阵图暗示年内不降息，可能引发全球风险资产回调</li><li><strong>中国5月PMI</strong>：若低于49.5，市场可能下修经济预期</li><li><strong>中美贸易</strong>：关税谈判反复可能冲击出口链</li><li><strong>A股技术面</strong>：沪指4200上方套牢盘密集，突破需要量能配合</li><li><strong>地缘风险</strong>：台海、中东局势需持续关注</li></ul>"
+}
