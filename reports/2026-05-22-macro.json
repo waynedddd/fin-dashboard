@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-22 08:00",
+  "indicators": "<h3>⚠️ 数据获取失败</h3><p>今日宏观数据未能自动抓取（网络连接异常：Tavily SSL证书错误 + web_fetch DNS阻断）。</p><ul><li><strong>美联储：</strong>数据不可用，请手动确认最新利率决议</li><li><strong>中国PMI/CPI：</strong>数据不可用</li><li><strong>美债10Y收益率：</strong>数据不可用</li><li><strong>美元指数DXY：</strong>数据不可用</li><li><strong>VIX：</strong>数据不可用</li></ul>",
+  "sentiment": "<h3>市场情绪</h3><p>因数据源不可用，无法评估当前市场情绪。建议手动查看：</p><ul><li>A股两融余额变化</li><li>北向资金流向</li><li>ETF申赎数据</li></ul>",
+  "policy": "<h3>政策动向</h3><p>数据源不可用。关注要点：</p><ul><li>美联储5月FOMC会议纪要（如已发布）</li><li>国内稳增长政策（财政/货币）</li><li>中美关系最新动态</li></ul>",
+  "conclusion": "<h3>综合判断</h3><p><strong>今日状态：数据缺失，无法给出有效判断。</strong></p><p>建议Wayne手动检查关键指标后再做仓位调整。当前75%仓位维持不变，等待数据恢复后再评估。</p>",
+  "risks": "<h3>风险提示</h3><ul><li><strong>数据盲区风险：</strong>自动化数据抓取失败，可能遗漏重要市场变化</li><li>建议手动关注：东方财富/同花顺行情、央行公告、美股隔夜表现</li></ul>"
+}
