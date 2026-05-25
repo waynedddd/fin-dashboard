@@ -21,16 +21,6 @@
     "added": "2026-04-30"
   },
   {
-    "code": "000657",
-    "name": "中钨高新",
-    "source": "premarket-2026-04-30",
-    "rating": "buy",
-    "entry_strategy": "高开5%以内且放量可轻仓;封板不追",
-    "target_price": 63.0,
-    "stop_loss": 53.0,
-    "added": "2026-04-30"
-  },
-  {
     "code": "001257",
     "name": "盛龙股份",
     "source": "premarket-2026-05-07",
@@ -93,5 +83,27 @@
     "entry": "高开不超3%直接半仓;高开超5%等回踩104-105低吸",
     "target": 112.0,
     "stop_loss": 100.0
+  },
+  {
+    "code": "000657",
+    "name": "中钨高新",
+    "source": "premarket-2026-05-25",
+    "date": "2026-05-25",
+    "rating": "buy",
+    "confidence": 0.75,
+    "entry": "高开3%以内半仓介入;高开5%以上等回调至60附近",
+    "target": 68.5,
+    "stop_loss": 57.0
+  },
+  {
+    "code": "002273",
+    "name": "水晶光电",
+    "source": "premarket-2026-05-25",
+    "date": "2026-05-25",
+    "rating": "buy",
+    "confidence": 0.7,
+    "entry": "回调至39以下建半仓;高开5%以上不追",
+    "target": 44.0,
+    "stop_loss": 37.0
   }
 ]
