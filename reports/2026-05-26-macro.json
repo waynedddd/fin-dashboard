@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-26 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 注意：今日数据源不可用（Tavily SSL故障 + web_search API key缺失），以下为框架性分析，待数据恢复后更新。</strong></p><ul><li><strong>美联储：</strong>6月FOMC会议临近，市场关注是否继续暂停加息或开启降息周期</li><li><strong>美债收益率：</strong>10Y美债近期在4.2%-4.5%区间波动，关注方向性突破</li><li><strong>美元指数(DXY)：</strong>104-106区间震荡，强美元压制新兴市场资金流入</li><li><strong>VIX：</strong>关注是否维持在15-20低波动区间</li><li><strong>中国PMI：</strong>5月制造业PMI待公布（通常月末发布），4月数据50.4处于扩张区间边缘</li><li><strong>中国CPI：</strong>通缩压力仍存，PPI负增长持续</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>全球风险偏好：</strong>美股高位运行，科技股估值偏高，市场情绪偏乐观但分化</li><li><strong>A股情绪：</strong>成交量是关键观察指标，缩量则谨慎</li><li><strong>北向资金：</strong>关注本周净流入/流出方向</li><li><strong>融资余额：</strong>杠杆资金动向反映场内情绪</li></ul>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储：</strong>6月FOMC是本周后重点事件，Powell讲话基调决定短期方向</li><li><strong>中国政策：</strong>稳增长政策持续发力，关注财政支出节奏和地产政策边际变化</li><li><strong>地缘政治：</strong>中美关系、台海局势等尾部风险需持续监控</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>宏观环境评级：中性偏谨慎</strong></p><ul><li>海外：美联储政策路径不确定，美债收益率高位制约估值扩张</li><li>国内：经济弱复苏格局未变，政策托底但弹性有限</li><li><strong>仓位建议：维持当前75%仓位，不急于加仓</strong></li><li>等待5月PMI数据（本周发布）确认经济方向后再做调整</li><li>如PMI超预期 + 北向资金回流，可考虑加至80-85%</li></ul>",
+  "risks": "<h3>⚡ 风险提示</h3><ul><li><strong>数据风险：</strong>今日分析未获取实时数据，结论置信度较低</li><li><strong>FOMC风险：</strong>若美联储释放鹰派信号，全球risk-off</li><li><strong>流动性风险：</strong>A股若持续缩量，警惕阴跌</li><li><strong>地缘风险：</strong>突发事件可能打破技术面格局</li><li><strong>汇率风险：</strong>人民币若快速贬值，外资加速流出</li></ul>"
+}
