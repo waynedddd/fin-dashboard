@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-27 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 注意：今日数据获取失败（网络受限），以下为框架性分析，待数据修复后更新。</strong></p><ul><li><strong>美联储：</strong>2026年上半年维持利率不变概率较高，市场预期下半年可能有1-2次降息窗口</li><li><strong>美债10Y收益率：</strong>近期区间约4.2%-4.5%，反映通胀预期回落但仍有韧性</li><li><strong>美元指数DXY：</strong>预计在103-106区间震荡</li><li><strong>VIX：</strong>Q2通常波动率较低，预计15-20区间</li><li><strong>中国PMI：</strong>5月官方制造业PMI待27日公布（通常月末发布）</li><li><strong>中国CPI：</strong>4月CPI同比预计仍在低位（0-0.5%），通缩压力持续</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>A股情绪：</strong>5月通常为\"Sell in May\"效应期，但政策预期可能提供支撑</li><li><strong>北向资金：</strong>需关注外资流向，美元走弱利好北向流入</li><li><strong>融资余额：</strong>杠杆资金活跃度是短期情绪风向标</li></ul><p>整体判断：<strong>中性偏谨慎</strong>，等待PMI数据确认经济复苏动能。</p>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储：</strong>6月FOMC会议是关键节点，关注点阵图和经济预测摘要</li><li><strong>中国：</strong>稳增长政策持续发力，关注财政支出进度和地产政策边际变化</li><li><strong>贸易：</strong>中美关税博弈仍是外部不确定性主要来源</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>宏观环境对A股：中性</strong></p><ul><li>国内经济弱复苏 + 政策托底 = 下有底</li><li>外部美联储按兵不动 + 美元未大幅走强 = 外部压力可控</li><li>但缺乏强催化，上攻动力不足</li></ul><h3>仓位建议</h3><p>当前75%仓位<strong>维持不变</strong>，不宜追高。</p><ul><li>若PMI超预期（>50.5），可考虑加至80%</li><li>若PMI不及预期（<49.5），减仓至65%防守</li><li>25%现金留作应对6月FOMC前后波动</li></ul>",
+  "risks": "<h3>⚡ 风险提示</h3><ul><li><strong>数据风险：</strong>今日报告因网络问题未能获取实时数据，结论基于框架推演，需人工验证</li><li><strong>6月FOMC：</strong>若美联储释放鹰派信号，全球risk-off</li><li><strong>中国PMI：</strong>若连续收缩，市场信心可能再度走弱</li><li><strong>地缘政治：</strong>台海、中美贸易随时可能成为黑天鹅</li><li><strong>流动性：</strong>6月末银行间流动性季节性收紧</li></ul>"
+}
