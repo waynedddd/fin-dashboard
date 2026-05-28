@@ -23,12 +23,16 @@
   {
     "code": "001257",
     "name": "盛龙股份",
-    "source": "premarket-2026-05-07",
+    "source": "premarket-2026-05-28",
     "rating": "buy",
     "entry_strategy": "高开3%以内直接建仓;高开5%以上等回调至24.0附近半仓",
     "target_price": 27.0,
-    "stop_loss": 23.0,
-    "added": "2026-05-07"
+    "stop_loss": 26.5,
+    "added": "2026-05-07",
+    "date": "2026-05-28",
+    "confidence": 0.65,
+    "entry": "若非一字板，高开5-7%回调不破27元可轻仓;封板放弃",
+    "target": 31.2
   },
   {
     "code": "603459",
@@ -138,5 +142,16 @@
     "entry": "高开不超3%半仓介入;高开5%以上等回踩7.4-7.5再进",
     "target": 8.4,
     "stop_loss": 7.1
+  },
+  {
+    "code": "000539",
+    "name": "粤电力A",
+    "source": "premarket-2026-05-28",
+    "date": "2026-05-28",
+    "rating": "buy",
+    "confidence": 0.72,
+    "entry": "竞价未大幅高开(<5%)，回调至7.1-7.2建半仓;高开7%以上放弃",
+    "target": 7.9,
+    "stop_loss": 6.7
   }
 ]
