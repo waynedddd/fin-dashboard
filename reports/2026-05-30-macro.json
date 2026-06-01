@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-30 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 注意：</strong>今日搜索工具不可用（Tavily SSL故障 + web_search API key缺失），以下基于近期趋势框架分析，非实时数据。</p><ul><li><strong>美联储：</strong>2026年上半年维持观望态势，市场预期6月FOMC可能释放降息信号，但具体行动取决于通胀回落速度</li><li><strong>美债10Y收益率：</strong>近期在4.0%-4.3%区间波动，反映市场对降息节奏的分歧</li><li><strong>美元指数(DXY)：</strong>103-105区间震荡，美元走弱趋势有利于新兴市场资金流入</li><li><strong>中国PMI：</strong>制造业PMI预计在50附近徘徊，服务业PMI相对稳健</li><li><strong>中国CPI：</strong>低通胀环境延续，为货币政策宽松提供空间</li><li><strong>社融：</strong>关注5月社融数据（通常6月中旬公布），信贷脉冲是A股关键领先指标</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>VIX：</strong>预计维持在15-20区间，全球风险偏好中性偏暖</li><li><strong>北向资金：</strong>关注月末外资流向，人民币汇率稳定有助于吸引配置资金</li><li><strong>A股成交额：</strong>若维持万亿以上水平，说明市场活跃度尚可</li><li><strong>融资余额：</strong>杠杆资金动向反映内资信心</li></ul>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>国内：</strong>稳增长政策持续发力，关注房地产政策边际变化、消费刺激措施落地情况</li><li><strong>货币政策：</strong>低通胀+经济弱复苏组合下，降准降息窗口仍在</li><li><strong>产业政策：</strong>科技自主（AI/半导体）、新能源、数字经济仍是政策主线</li><li><strong>外部：</strong>中美关系、关税政策变化需持续跟踪</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>宏观环境评级：中性偏暖</strong></p><ul><li>国内低通胀+政策宽松空间 = 流动性友好</li><li>美联储若6月转鸽，全球风险资产受益</li><li>经济复苏力度偏弱，限制了大幅上攻空间</li></ul><h3>仓位建议</h3><ul><li><strong>当前仓位75%：</strong>维持不变，等待6月FOMC和5月经济数据明朗</li><li><strong>加仓条件：</strong>社融超预期 / 美联储明确转鸽 / PMI连续回升</li><li><strong>减仓条件：</strong>外部黑天鹅 / 人民币急贬 / 成交量持续萎缩</li><li><strong>结构上：</strong>偏向政策受益+业绩确定性方向（科技、高股息）</li></ul>",
+  "risks": "<h3>⚠️ 风险提示</h3><ul><li><strong>数据缺失风险：</strong>今日无法获取实时数据，以上为框架分析，请结合盘面验证</li><li><strong>美联储意外鹰派：</strong>若通胀反弹，降息预期落空将冲击全球资产</li><li><strong>地缘政治：</strong>台海、中东局势升温可能触发避险</li><li><strong>国内经济不及预期：</strong>若5月数据全面走弱，市场信心受挫</li><li><strong>流动性陷阱：</strong>宽货币未能传导至宽信用，企业投资意愿不足</li></ul>"
+}

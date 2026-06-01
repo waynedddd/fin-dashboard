@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-05-31 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 注意：今日搜索工具不可用，以下为基于近期趋势的框架性判断，非实时数据。</strong></p><ul><li><strong>美联储：</strong>2026年上半年大概率维持利率不变（4.25-4.50%区间），6月FOMC会议关注点为是否释放降息信号</li><li><strong>美债10Y收益率：</strong>预计在4.2-4.5%区间波动，高利率环境持续</li><li><strong>美元指数(DXY)：</strong>预计在103-106区间，美元仍偏强</li><li><strong>中国5月PMI：</strong>制造业PMI预计在49.5-50.5临界值附近，经济复苏动能待观察</li><li><strong>中国CPI：</strong>预计同比0-0.5%，通缩压力仍存</li><li><strong>社融：</strong>政策驱动下信贷有望季节性回升</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>VIX：</strong>预计15-20区间，美股波动率偏低</li><li><strong>A股情绪：</strong>5月整体震荡偏弱，成交量萎缩，市场等待催化剂</li><li><strong>北向资金：</strong>近期流入流出交替，外资态度偏谨慎</li><li><strong>融资余额：</strong>杠杆资金活跃度一般</li></ul>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>国内：</strong>稳增长政策持续发力，关注财政支出进度和地产政策边际变化</li><li><strong>货币政策：</strong>央行维持宽松基调，降准降息窗口仍存</li><li><strong>产业政策：</strong>科技自主、新能源、AI算力为主线方向</li><li><strong>外部：</strong>中美关系、关税政策仍是核心变量</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>宏观环境评级：中性偏谨慎</strong></p><ul><li>海外高利率环境压制估值扩张，但降息预期逐步形成支撑</li><li>国内经济弱复苏，政策托底但弹性不足</li><li>A股处于底部震荡区域，结构性机会为主</li></ul><h3>仓位建议</h3><ul><li><strong>当前建议仓位：60-70%</strong>（较当前75%可小幅减仓观望）</li><li>保留现金等待6月FOMC和国内经济数据落地</li><li>方向：偏向高股息防御 + 科技成长（AI/半导体）的哑铃策略</li></ul>",
+  "risks": "<h3>⚡ 风险提示</h3><ul><li><strong>数据真空风险：</strong>本报告因搜索工具故障，未获取实时数据，仅供框架参考</li><li><strong>美联储超预期鹰派：</strong>若6月点阵图上移，全球风险资产承压</li><li><strong>中国经济数据不及预期：</strong>PMI跌破荣枯线将触发市场悲观情绪</li><li><strong>地缘风险：</strong>台海、中美关税升级</li><li><strong>流动性风险：</strong>6月季末资金面可能边际收紧</li></ul>"
+}
