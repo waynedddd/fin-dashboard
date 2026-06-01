@@ -6,7 +6,7 @@
       "rating": "buy",
       "confidence": 0.78,
       "addPrice": 30.99,
-      "currentPrice": 21.06,
+      "currentPrice": 21.13,
       "targetPrice": 33.5,
       "stopLoss": 28.0,
       "entryZone": [
@@ -28,8 +28,8 @@
       "status": "watching",
       "fundamental": "ROE 16.67% | 利润+157% | PE 18.77 | 负债率30.9%",
       "technical": "RSI 46.6 | 布林0.24 | MACD待金叉 | 支撑28.6-29.0",
-      "todayChange": -0.38,
-      "totalChange": -32.04
+      "todayChange": 0.33,
+      "totalChange": -31.82
     },
     {
       "code": "002709",
@@ -37,7 +37,7 @@
       "rating": "buy",
       "confidence": 0.68,
       "addPrice": 48.17,
-      "currentPrice": 52.03,
+      "currentPrice": 51.73,
       "targetPrice": 53.0,
       "stopLoss": 43.0,
       "entryZone": [
@@ -59,8 +59,8 @@
       "status": "watching",
       "fundamental": "ROE 9.79% | 利润+181% | PE 72 | 负债率33%",
       "technical": "RSI 63.2 | MACD金叉 | 布林0.84偏高 | 放量上涨",
-      "todayChange": 0.27,
-      "totalChange": 8.01
+      "todayChange": -0.58,
+      "totalChange": 7.39
     },
     {
       "code": "000933",
@@ -68,7 +68,7 @@
       "rating": "watch",
       "confidence": 0.55,
       "addPrice": 31.8,
-      "currentPrice": 29.05,
+      "currentPrice": 30.25,
       "targetPrice": 34.0,
       "stopLoss": 28.5,
       "entryZone": [
@@ -90,9 +90,9 @@
       "status": "watching",
       "fundamental": "ROE 17.49% | 利润-7% | PE 17.86 | 负债率42%",
       "technical": "RSI 48.5 | MACD死叉 | 布林0.36 | 等MA20突破",
-      "todayChange": 0.38,
-      "totalChange": -8.65
+      "todayChange": 4.13,
+      "totalChange": -4.87
     }
   ],
-  "updated": "2026-05-29 15:35"
+  "updated": "2026-06-01 15:35"
 }
