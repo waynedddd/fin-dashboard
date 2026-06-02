@@ -23,16 +23,12 @@
   {
     "code": "001257",
     "name": "盛龙股份",
-    "source": "premarket-2026-05-28",
+    "source": "premarket-2026-05-07",
     "rating": "buy",
     "entry_strategy": "高开3%以内直接建仓;高开5%以上等回调至24.0附近半仓",
     "target_price": 27.0,
-    "stop_loss": 26.5,
-    "added": "2026-05-07",
-    "date": "2026-05-28",
-    "confidence": 0.65,
-    "entry": "若非一字板，高开5-7%回调不破27元可轻仓;封板放弃",
-    "target": 31.2
+    "stop_loss": 23.0,
+    "added": "2026-05-07"
   },
   {
     "code": "603459",
@@ -144,17 +140,6 @@
     "stop_loss": 7.1
   },
   {
-    "code": "000539",
-    "name": "粤电力A",
-    "source": "premarket-2026-05-28",
-    "date": "2026-05-28",
-    "rating": "buy",
-    "confidence": 0.72,
-    "entry": "竞价未大幅高开(<5%)，回调至7.1-7.2建半仓;高开7%以上放弃",
-    "target": 7.9,
-    "stop_loss": 6.7
-  },
-  {
     "code": "000063",
     "name": "中兴通讯",
     "source": "premarket-2026-05-29",
@@ -164,5 +149,38 @@
     "entry": "高开3%以内半仓介入;高开5%以上等回落至38元附近再接",
     "target": 41.0,
     "stop_loss": 36.5
+  },
+  {
+    "code": "603618",
+    "name": "杭电股份",
+    "source": "premarket-2026-06-01",
+    "date": "2026-06-01",
+    "rating": "buy",
+    "confidence": 0.7,
+    "entry": "高开不超5%半仓介入;高开超7%等回调至40-41区间再进",
+    "target": 47.0,
+    "stop_loss": 38.0
+  },
+  {
+    "code": "002384",
+    "name": "东山精密",
+    "source": "premarket-2026-06-02",
+    "date": "2026-06-02",
+    "rating": "buy",
+    "confidence": 0.65,
+    "entry": "低开2-3%在186-188区间半仓;竞价高开等回踩190支撑再进",
+    "target": 205.0,
+    "stop_loss": 183.0
+  },
+  {
+    "code": "002080",
+    "name": "中材科技",
+    "source": "premarket-2026-06-02",
+    "date": "2026-06-02",
+    "rating": "buy",
+    "confidence": 0.6,
+    "entry": "低开在61-63区间轻仓试探;开盘30分钟缩量企稳加仓",
+    "target": 70.0,
+    "stop_loss": 59.5
   }
 ]
