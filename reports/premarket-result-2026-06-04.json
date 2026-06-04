@@ -1,0 +1,153 @@
+{
+  "analysis_date": "2026-06-04",
+  "strategy": "pre_market",
+  "lhb_date": "20260603",
+  "recommendations": [
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "rating": "buy",
+      "confidence": 0.72,
+      "entry_strategy": "集合竞价观察量能,若高开3%以内可半仓介入;若高开5%以上等开盘5分钟回调至68-69区间再低吸",
+      "target_price": 75.0,
+      "stop_loss": 66.0,
+      "reasons": [
+        "龙虎榜净买入16.2亿居首,主力资金强势介入",
+        "Q1净利润增长224%,业绩拐点确认",
+        "RSI 62.7适中,布林0.83未超买,技术上从底部反弹",
+        "半导体封测龙头,AI芯片需求催化"
+      ],
+      "risks": [
+        "PE 73.7偏高,若业绩不及预期回调空间大",
+        "负债率64.9%较高",
+        "昨日已涨停,今日追高需控制仓位"
+      ],
+      "hold_days": 3,
+      "position_pct": 3
+    },
+    {
+      "code": "002046",
+      "name": "国机精工",
+      "rating": "watch",
+      "confidence": 0.5,
+      "entry_strategy": "不追涨,若盘中回调至53-54区间(MA5附近)可轻仓试探,放量突破57则顺势加仓",
+      "target_price": 60.0,
+      "stop_loss": 50.0,
+      "reasons": [
+        "龙虎榜净买3.7亿,资金态度明确",
+        "RSI 56.5最低,布林0.71空间充足,技术面最健康",
+        "量比1.43放量突破,动能向上"
+      ],
+      "risks": [
+        "基本面极差:Q1亏损,营收下滑8.7%",
+        "PE 187高估值,纯游资炒作特征",
+        "无明确题材催化,持续性存疑"
+      ],
+      "hold_days": 2,
+      "position_pct": 2
+    },
+    {
+      "code": "301236",
+      "name": "软通动力",
+      "rating": "watch",
+      "confidence": 0.45,
+      "entry_strategy": "5日涨19%追高风险大,等盘中缩量回调至41-42区间再考虑,不追高开",
+      "target_price": 47.0,
+      "stop_loss": 39.5,
+      "reasons": [
+        "MACD金叉向上,趋势转多",
+        "AI/数字化概念有题材支撑",
+        "龙虎榜净买2.2亿确认资金关注"
+      ],
+      "risks": [
+        "5日涨幅19.4%已较大,短期获利盘重",
+        "Q1亏损3.5亿,基本面不支撑估值",
+        "PE 837极度高估,纯情绪驱动"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "000700",
+      "name": "模塑科技",
+      "rating": "watch",
+      "confidence": 0.48,
+      "entry_strategy": "连续2日涨停后大概率高开,不追;若冲高回落至15.5以下可关注,否则放弃",
+      "target_price": 18.0,
+      "stop_loss": 14.8,
+      "reasons": [
+        "PE 30.6估值合理,ROE 4.17%尚可",
+        "龙虎榜净买1.8亿,机构认可",
+        "汽车零部件板块有政策催化可能"
+      ],
+      "risks": [
+        "布林1.11已突破上轨,短期超买",
+        "营收下滑12%,成长性存疑",
+        "连板后追高被套概率大"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "002167",
+      "name": "东方锆业",
+      "rating": "avoid",
+      "confidence": 0.35,
+      "entry_strategy": "布林严重超买+RSI(6)达77,今日大概率冲高回落,不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买1.88亿有资金关注"
+      ],
+      "risks": [
+        "布林1.12严重超买,10日涨22%",
+        "RSI(6)=77.5进入超买区",
+        "PE 210高估,基本面平庸",
+        "追高被套风险极大"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600310",
+      "name": "广西能源",
+      "rating": "avoid",
+      "confidence": 0.3,
+      "entry_strategy": "亏损股+高负债+超买,不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买1.55亿"
+      ],
+      "risks": [
+        "布林1.12超买,PE为负(亏损)",
+        "负债率78.25%极高",
+        "纯投机品种,风险收益比差"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002421",
+      "name": "达实智能",
+      "rating": "avoid",
+      "confidence": 0.3,
+      "entry_strategy": "换手38%博弈激烈,昨日冲高回落收平,多空分歧大,不适合短线介入",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买1.49亿"
+      ],
+      "risks": [
+        "换手率38%极高,筹码松动",
+        "昨日冲高5.1回落至4.88收平,上方抛压重",
+        "亏损企业,PE为负",
+        "RSI 68.7偏高"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "昨日龙虎榜净买入集中在半导体(通富微电)、AI(软通动力)、汽车(模塑科技)方向,资金偏好科技成长。但多数标的已超布林上轨,市场短期情绪偏热,今日需警惕高开低走风险。操作上以通富微电为核心关注,其余等回调机会。",
+  "top_picks": ["002156"]
+}
