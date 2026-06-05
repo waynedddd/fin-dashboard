@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-05 08:00",
+  "indicators": "<h3>⚠️ 数据获取失败</h3><p>今日宏观数据未能通过自动化渠道获取（Tavily SSL证书错误 + web_search API key缺失 + web_fetch DNS阻断）。</p><h3>基于近期趋势的框架判断</h3><ul><li><strong>美联储：</strong>2026年上半年维持谨慎立场，市场预期6月FOMC可能按兵不动或释放降息信号</li><li><strong>美债10Y收益率：</strong>近期在4.0-4.5%区间波动</li><li><strong>美元指数DXY：</strong>震荡偏弱格局</li><li><strong>中国5月PMI：</strong>待确认（通常6月初公布）</li><li><strong>中国CPI：</strong>低通胀环境持续</li></ul>",
+  "sentiment": "<h3>市场情绪（估计）</h3><ul><li><strong>VIX：</strong>数据不可用，近期若无重大事件预计在15-20区间</li><li><strong>A股成交额：</strong>需人工确认</li><li><strong>北向资金：</strong>需人工确认</li></ul><p>⚠️ 以上为框架性判断，非实时数据。</p>",
+  "policy": "<h3>政策动向</h3><ul><li><strong>美联储6月FOMC：</strong>关注点在于是否暗示Q3降息路径</li><li><strong>中国政策：</strong>稳增长政策延续，关注是否有新一轮刺激措施</li><li><strong>中美关系：</strong>需持续跟踪贸易/科技领域动态</li></ul>",
+  "conclusion": "<h3>综合判断</h3><p><strong>宏观环境对A股：中性偏积极（低确定性）</strong></p><ul><li>全球流动性预期改善（美联储转鸽倾向）对A股估值有支撑</li><li>国内低通胀为政策宽松提供空间</li><li>但外部不确定性仍存</li></ul><h3>仓位建议</h3><p>当前75%仓位<strong>维持不变</strong>，等待6月FOMC和国内经济数据落地后再做调整。若数据超预期，可加仓至80-85%。</p>",
+  "risks": "<h3>风险提示</h3><ul><li>⚠️ <strong>本报告数据缺失：</strong>今日未能获取实时数据，判断基于趋势外推，确定性较低</li><li>美联储鹰派超预期风险</li><li>中美贸易摩擦升级</li><li>国内经济数据不及预期</li><li>地缘政治黑天鹅（台海、中东）</li></ul>"
+}
