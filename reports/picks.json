@@ -164,13 +164,13 @@
   {
     "code": "002384",
     "name": "东山精密",
-    "source": "premarket-2026-06-02",
-    "date": "2026-06-02",
+    "source": "premarket-2026-06-05",
+    "date": "2026-06-05",
     "rating": "buy",
-    "confidence": 0.65,
-    "entry": "低开2-3%在186-188区间半仓;竞价高开等回踩190支撑再进",
-    "target": 205.0,
-    "stop_loss": 183.0
+    "confidence": 0.72,
+    "entry": "回调至230-235区间半仓,站稳240加仓;高开冲250以上放弃",
+    "target": 255.0,
+    "stop_loss": 220.0
   },
   {
     "code": "002080",
