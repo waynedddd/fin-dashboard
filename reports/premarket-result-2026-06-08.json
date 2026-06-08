@@ -1,0 +1,214 @@
+{
+  "analysis_date": "2026-06-08",
+  "strategy": "pre_market",
+  "lhb_date": "20260605",
+  "recommendations": [
+    {
+      "code": "002251",
+      "name": "步步高",
+      "rating": "buy",
+      "confidence": 0.7,
+      "entry_strategy": "集合竞价观察，若开盘未涨停且回调至4.6-4.7区间可建半仓，放量突破4.86追加",
+      "target_price": 5.3,
+      "stop_loss": 4.35,
+      "reasons": [
+        "龙虎榜净买2.26亿，资金认可度高",
+        "RSI(14)仅62，未超买，布林位置0.85仍有空间",
+        "5日涨幅-0.41%说明近期震荡洗盘充分，非一字连板追高",
+        "零售消费板块有政策催化预期"
+      ],
+      "risks": [
+        "PE 118偏高，基本面利润微降2%",
+        "负债率59%偏高",
+        "近10日已涨31%，获利盘压力"
+      ],
+      "hold_days": 3,
+      "position_pct": 3
+    },
+    {
+      "code": "603938",
+      "name": "三孚股份",
+      "rating": "buy",
+      "confidence": 0.65,
+      "entry_strategy": "开盘观察5分钟，若高开不超5%且量能持续，可在50-51区间低吸；若高开7%以上放弃",
+      "target_price": 58.0,
+      "stop_loss": 47.5,
+      "reasons": [
+        "龙虎榜净买1.19亿",
+        "基本面扎实：营收+31%，利润+44%，负债率仅27%",
+        "布林位置0.92尚未到顶，RSI(14) 68.3可接受",
+        "化工板块近期有涨价逻辑支撑"
+      ],
+      "risks": [
+        "连续2日涨停后获利回吐压力大",
+        "RSI(6) 74.5接近超买",
+        "PE 219较高"
+      ],
+      "hold_days": 2,
+      "position_pct": 2
+    },
+    {
+      "code": "002132",
+      "name": "恒星科技",
+      "rating": "watch",
+      "confidence": 0.55,
+      "entry_strategy": "今日若回调至5.5以下且缩量企稳可轻仓试探，不追高开",
+      "target_price": 6.5,
+      "stop_loss": 5.1,
+      "reasons": [
+        "利润增速899%，基本面大幅改善",
+        "龙虎榜净买1.27亿",
+        "布林位置0.79处于中上段，非极端位置"
+      ],
+      "risks": [
+        "RSI(6) 74.6偏高",
+        "5日涨21%短期涨幅较大",
+        "负债率54%偏高"
+      ],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "603516",
+      "name": "淳中科技",
+      "rating": "watch",
+      "confidence": 0.5,
+      "entry_strategy": "等盘中回调至128-130区间再考虑，追高风险大",
+      "target_price": 148.0,
+      "stop_loss": 120.0,
+      "reasons": [
+        "利润增速112%，低负债9.5%，质地优良",
+        "MACD柱大幅转正，中期趋势转强",
+        "龙虎榜净买1.07亿"
+      ],
+      "risks": [
+        "RSI(6) 78.2接近超买",
+        "5日涨21%，短线获利盘丰厚",
+        "昨日冲高回落（最高139最终135），有顶部信号"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "002735",
+      "name": "王子新材",
+      "rating": "avoid",
+      "confidence": 0.8,
+      "entry_strategy": "不参与，等回调至15元附近再关注",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "RSI(6) 82.2明确超买",
+        "布林位置1.19远超上轨",
+        "5日涨22%，10日涨35%，极度过热"
+      ],
+      "risks": [
+        "PE为负，基本面不支撑",
+        "追高被套概率极大"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600255",
+      "name": "鑫科材料",
+      "rating": "avoid",
+      "confidence": 0.7,
+      "entry_strategy": "不参与，虽然龙虎榜有净买但昨日放量滞涨(-7%大阴线)，资金分歧严重",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "昨日高位放天量且收跌7%，典型见顶信号",
+        "5日涨27%后出大阴线",
+        "布林0.99在上轨位置"
+      ],
+      "risks": [
+        "换手率33%筹码松动",
+        "毛利率仅8%，业务质量一般"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002896",
+      "name": "中大力德",
+      "rating": "watch",
+      "confidence": 0.45,
+      "entry_strategy": "观望为主，若开盘大幅低开至82以下可关注，否则不追",
+      "target_price": 92.0,
+      "stop_loss": 78.0,
+      "reasons": [
+        "龙虎榜净买最高2.87亿",
+        "RSI(14) 59.8尚可"
+      ],
+      "risks": [
+        "利润增速-36%基本面走弱",
+        "PE 302极高估值",
+        "昨日涨停后追高风险大"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "600382",
+      "name": "广东明珠",
+      "rating": "watch",
+      "confidence": 0.5,
+      "entry_strategy": "等回调至9.2以下再考虑，追涨停板风险大",
+      "target_price": 10.5,
+      "stop_loss": 8.8,
+      "reasons": [
+        "低负债15.5%+高毛利57%，质地优秀",
+        "龙虎榜净买1.25亿"
+      ],
+      "risks": [
+        "RSI(6) 75.5偏高",
+        "布林1.09已超上轨",
+        "5日涨19%短线过热"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "002585",
+      "name": "双星新材",
+      "rating": "avoid",
+      "confidence": 0.65,
+      "entry_strategy": "不参与，昨日从12.98暴跌至11.82（-8.9%），波动率极大难以操作",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "昨日高开低走暴跌9%，典型多杀多",
+        "PE为负，基本面亏损"
+      ],
+      "risks": [
+        "日内振幅超10%，风险极高",
+        "换手率33%筹码极度混乱"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "002361",
+      "name": "神剑股份",
+      "rating": "avoid",
+      "confidence": 0.7,
+      "entry_strategy": "不参与，基本面极差+技术面弱势反弹，属于垃圾股投机",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "ROE为负，利润暴跌144%",
+        "MACD柱-0.49仍在空头区域",
+        "价格在MA20(17.5)以下，仅是超跌反弹"
+      ],
+      "risks": [
+        "基本面持续恶化",
+        "反弹不改下跌趋势"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "上周五龙虎榜活跃度高(91条)，显示资金博弈激烈。多只涨停股出现在龙虎榜，但净买入为正的仅18只，说明分歧较大。今日周一开盘需关注：1)上周五涨停股能否连板；2)化工/消费/科技三条主线的延续性。建议控制仓位，以低吸为主，不追高开。",
+  "top_picks": ["002251", "603938"]
+}

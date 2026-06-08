@@ -193,5 +193,27 @@
     "entry": "高开3%以内半仓介入;高开5%以上等回调至68-69区间低吸",
     "target": 75.0,
     "stop_loss": 66.0
+  },
+  {
+    "code": "002251",
+    "name": "步步高",
+    "source": "premarket-2026-06-08",
+    "date": "2026-06-08",
+    "rating": "buy",
+    "confidence": 0.7,
+    "entry": "集合竞价观察，回调至4.6-4.7区间建半仓，放量突破4.86追加",
+    "target": 5.3,
+    "stop_loss": 4.35
+  },
+  {
+    "code": "603938",
+    "name": "三孚股份",
+    "source": "premarket-2026-06-08",
+    "date": "2026-06-08",
+    "rating": "buy",
+    "confidence": 0.65,
+    "entry": "高开不超5%且量能持续，50-51区间低吸；高开7%以上放弃",
+    "target": 58.0,
+    "stop_loss": 47.5
   }
 ]
