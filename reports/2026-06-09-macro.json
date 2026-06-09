@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-09 08:00",
+  "indicators": "<h3>⚠️ 数据获取失败</h3><p>今日宏观数据未能自动抓取（网络访问受限：Tavily SSL证书错误 + web_search API key缺失 + web_fetch IP阻断）。</p><h3>需手动确认的关键指标</h3><ul><li><strong>美联储：</strong>6月FOMC会议（6/10-11）即将召开，市场关注点评利率路径</li><li><strong>美债10Y收益率：</strong>待确认（近期区间约4.0-4.5%）</li><li><strong>美元指数DXY：</strong>待确认</li><li><strong>中国5月PMI：</strong>已于6月初发布，待确认具体数值</li><li><strong>中国5月CPI/PPI：</strong>6月9日发布日，关注通缩压力</li><li><strong>社融/M2：</strong>预计6月中旬发布</li><li><strong>VIX：</strong>待确认</li></ul>",
+  "sentiment": "<h3>市场情绪（推断）</h3><ul><li><strong>美股：</strong>FOMC前夕通常偏谨慎观望</li><li><strong>A股：</strong>6月历来流动性偏紧（半年末MPA考核），但政策托底预期存在</li><li><strong>港股：</strong>关注南向资金动向</li></ul><p>⚠️ 以上为框架性判断，非实时数据。</p>",
+  "policy": "<h3>政策动向（框架）</h3><ul><li><strong>美联储：</strong>6/10-11 FOMC会议，若维持利率不变+鸽派指引，利好风险资产</li><li><strong>中国：</strong>关注是否有增量稳增长政策（降准/降息预期、地产政策、消费刺激）</li><li><strong>中美关系：</strong>关税/贸易谈判最新进展待确认</li></ul>",
+  "conclusion": "<h3>综合判断</h3><p><strong>⚠️ 本日分析因网络问题无法获取实时数据，仅提供框架参考。</strong></p><p>关键事件窗口：今明两天FOMC会议，建议短期控制仓位，等待结果落地。</p><h3>仓位建议</h3><ul><li>当前建议仓位：<strong>60-70%</strong>（较当前75%略降）</li><li>逻辑：FOMC结果未出 + 6月流动性季节性偏紧，适当留余地</li><li>若FOMC鸽派超预期，可加回至75-80%</li></ul>",
+  "risks": "<h3>风险提示</h3><ul><li>🔴 <strong>FOMC鹰派意外：</strong>若点阵图上移或鲍威尔偏鹰，全球风险资产承压</li><li>🟡 <strong>中国CPI持续低迷：</strong>通缩叙事压制市场情绪</li><li>🟡 <strong>半年末流动性：</strong>6月资金面季节性收紧</li><li>🟡 <strong>数据真空期交易清淡：</strong>容易被外部事件冲击放大波动</li><li>🔴 <strong>本报告数据缺失：</strong>建议Wayne手动查看实时行情确认</li></ul>"
+}
