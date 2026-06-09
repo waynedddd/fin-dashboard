@@ -215,5 +215,27 @@
     "entry": "高开不超5%且量能持续，50-51区间低吸；高开7%以上放弃",
     "target": 58.0,
     "stop_loss": 47.5
+  },
+  {
+    "code": "603678",
+    "name": "火炬电子",
+    "source": "premarket-2026-06-09",
+    "date": "2026-06-09",
+    "rating": "buy",
+    "confidence": 0.72,
+    "entry": "低开企稳56-58区间半仓,放量站上60加仓",
+    "target": 65.0,
+    "stop_loss": 54.0
+  },
+  {
+    "code": "002164",
+    "name": "宁波东力",
+    "source": "premarket-2026-06-09",
+    "date": "2026-06-09",
+    "rating": "buy",
+    "confidence": 0.68,
+    "entry": "回调至13.5-14.0区间可建仓,量比维持2以上",
+    "target": 16.0,
+    "stop_loss": 12.8
   }
 ]
