@@ -237,5 +237,27 @@
     "entry": "回调至13.5-14.0区间可建仓,量比维持2以上",
     "target": 16.0,
     "stop_loss": 12.8
+  },
+  {
+    "code": "002409",
+    "name": "雅克科技",
+    "source": "premarket-2026-06-11",
+    "date": "2026-06-11",
+    "rating": "buy",
+    "confidence": 0.72,
+    "entry": "高开5-7%可轻仓追入;竞价过高(>8%)等分歧回落至118-120区间低吸",
+    "target": 134.0,
+    "stop_loss": 115.0
+  },
+  {
+    "code": "603002",
+    "name": "宏昌电子",
+    "source": "premarket-2026-06-11",
+    "date": "2026-06-11",
+    "rating": "buy",
+    "confidence": 0.65,
+    "entry": "竞价缩量高开可追入;放量低开等企稳17.5以上再介入",
+    "target": 20.0,
+    "stop_loss": 16.5
   }
 ]
