@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-12 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 注意：今日搜索工具不可用（Tavily SSL故障 + web_search API key缺失），以下为基于近期趋势的框架分析，数据需人工验证。</strong></p><ul><li><strong>美联储：</strong>6月FOMC会议（6/11-12）为本周焦点。市场此前预期维持利率不变（4.25-4.50%），关注点阵图和鲍威尔讲话中的降息信号</li><li><strong>美债10Y收益率：</strong>近期在4.2-4.5%区间波动，反映降息预期反复</li><li><strong>美元指数（DXY）：</strong>103-105区间震荡</li><li><strong>VIX：</strong>需确认是否处于低位（<15为低波动环境）</li><li><strong>中国5月PMI：</strong>此前公布数据需确认是否站稳荣枯线上方</li><li><strong>中国5月CPI/PPI：</strong>CPI温和、PPI可能仍为负值区间</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>全球风险偏好：</strong>FOMC决议前市场偏谨慎观望</li><li><strong>A股情绪：</strong>成交量和北向资金流向为关键指标</li><li><strong>中美关系：</strong>关税谈判进展影响风险溢价</li></ul><p>情绪面中性偏谨慎，等待FOMC结果落地。</p>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储（6/12凌晨）：</strong>大概率按兵不动，但点阵图若显示年内仍有1-2次降息空间，对风险资产友好</li><li><strong>中国政策：</strong>稳增长基调延续，关注是否有增量财政/货币政策出台</li><li><strong>人民币汇率：</strong>中间价指引方向，若美元走弱则人民币有升值空间，利好A股外资流入</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>宏观环境对A股：中性偏积极（待FOMC确认）</strong></p><ul><li>若美联储释放鸽派信号（年内降息预期不变）→ 利好成长股和流动性敏感板块</li><li>若偏鹰（推迟降息）→ 短期承压，但国内政策对冲空间充足</li></ul><h3>仓位建议</h3><ul><li><strong>当前建议维持 70-75% 仓位</strong>，等FOMC结果明确后再加减</li><li>结构上偏向：科技（AI/半导体）、消费复苏、高股息防御</li><li>FOMC若鸽派落地，可考虑加仓至80%</li></ul>",
+  "risks": "<h3>⚠️ 风险提示</h3><ul><li><strong>FOMC鹰派超预期：</strong>若取消年内降息预期，全球risk-off</li><li><strong>中国经济数据不及预期：</strong>内需恢复力度存疑</li><li><strong>地缘风险：</strong>中美关税/台海等黑天鹅</li><li><strong>数据时效性风险：</strong>本报告搜索工具故障，建议人工核实FOMC结果（北京时间今日凌晨2:00公布）</li></ul>"
+}
