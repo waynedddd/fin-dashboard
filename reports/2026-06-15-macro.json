@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-15 08:00",
+  "indicators": "<h3>📊 关键宏观指标</h3><ul><li><strong>美联储利率：</strong>维持不变（5.25-5.50%），6月FOMC大概率继续按兵不动。高盛、路透均预计年内不降息</li><li><strong>中国制造业PMI：</strong>5月官方PMI 50.0（前值50.3），处于荣枯线边缘，增长动能放缓</li><li><strong>财新PMI：</strong>5月超预期，民营制造业韧性尚存</li><li><strong>VIX恐慌指数：</strong>16.70（5月底），处于低位，市场情绪偏平静</li><li><strong>通胀：</strong>美国通胀仍高（能源+住房成本驱动），降息预期持续推后</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>美股：</strong>VIX低位运行，风险偏好尚可，但高利率环境压制估值扩张</li><li><strong>A股：</strong>外部紧缩预期未消，内部经济数据边际走弱，市场观望情绪浓</li><li><strong>预测市场：</strong>Polymarket显示6月Fed维持利率概率极高，市场已充分定价</li></ul>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储：</strong>Powell 4月最后一次会议后卸任，新任主席政策取向待观察。DOJ对Powell调查已结案</li><li><strong>中国：</strong>5月PMI回落至荣枯线，后续稳增长政策加码预期升温</li><li><strong>关税/贸易：</strong>Reuters提及\"war inflation\"持续，贸易摩擦仍是通胀驱动因素之一</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>宏观环境对A股：中性偏谨慎</strong></p><ul><li>美联储年内不降息已成共识，流动性宽松预期落空，外资回流动力不足</li><li>中国经济数据边际走弱但未失速，政策对冲窗口打开</li><li>VIX低位+市场已定价Fed按兵不动=短期无重大外部冲击</li></ul><p><strong>仓位建议：维持60-65%仓位</strong>（较当前75%适度降低）</p><ul><li>经济数据走弱期，防御优于进攻</li><li>等待6月FOMC会后声明确认政策基调</li><li>关注国内稳增长政策加码信号再加仓</li></ul>",
+  "risks": "<h3>⚠️ 风险提示</h3><ul><li><strong>Fed意外鹰派：</strong>若CNBC报道的加息讨论升温，全球风险资产承压</li><li><strong>中国PMI跌破50：</strong>若6月PMI进一步走弱，市场信心可能松动</li><li><strong>贸易战升级：</strong>\"war inflation\"叙事下，新一轮关税可能推高通胀、压制出口链</li><li><strong>Fed换帅不确定性：</strong>新任主席政策倾向未明，市场可能出现波动</li></ul>"
+}
