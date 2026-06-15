@@ -1,0 +1,232 @@
+{
+  "analysis_date": "2026-06-15",
+  "strategy": "long_term_value",
+  "recommendations": [
+    {
+      "code": "600989",
+      "name": "宝丰能源",
+      "rating": "strong_buy",
+      "confidence": 0.82,
+      "current_price": 22.3,
+      "fair_value": 28.0,
+      "target_price_6m": 26.5,
+      "target_price_12m": 31.0,
+      "entry_zone": [20.5, 22.5],
+      "stop_loss": 18.8,
+      "upside_pct": 39,
+      "hold_months": 9,
+      "position_pct": 8,
+      "reasons": [
+        "ROE 24.84%+毛利35.92%，煤化工龙头成本优势显著",
+        "营收增速45.64%，宁东基地新产能释放期",
+        "PE仅13倍，远低于化工行业均值20倍+",
+        "现金流优秀，每股经营现金流2.3元覆盖分红"
+      ],
+      "risks": [
+        "煤炭价格上涨侵蚀利润",
+        "烯烃产品价格受宏观影响波动"
+      ],
+      "moat": "宁东能源基地煤炭自给+规模化煤制烯烃产业链一体化",
+      "catalyst": "内蒙古新基地投产+煤制烯烃产能翻倍预期",
+      "valuation_method": "按18倍PE×2026E EPS 1.72元=31元"
+    },
+    {
+      "code": "603259",
+      "name": "药明康德",
+      "rating": "strong_buy",
+      "confidence": 0.78,
+      "current_price": 99.37,
+      "fair_value": 120.0,
+      "target_price_6m": 115.0,
+      "target_price_12m": 135.0,
+      "entry_zone": [90.0, 100.0],
+      "stop_loss": 83.0,
+      "upside_pct": 36,
+      "hold_months": 10,
+      "position_pct": 7,
+      "reasons": [
+        "CRO/CDMO全球龙头，ROE 28.56%，净利率42.53%极高",
+        "地缘政治风险消化后估值修复，PE仅14.73倍处于历史底部",
+        "全球创新药管线持续增长，订单能见度高",
+        "低负债22%+强现金流，经营质量极佳"
+      ],
+      "risks": [
+        "美国BIOSECURE法案虽延期但不确定性犹存",
+        "全球Biotech融资回暖速度可能不及预期"
+      ],
+      "moat": "全球一体化CRDMO平台，客户转换成本极高，规模壁垒深",
+      "catalyst": "BIOSECURE法案彻底落地消除不确定性+全球Biotech融资回暖",
+      "valuation_method": "按20倍PE×2026E EPS 6.75元=135元"
+    },
+    {
+      "code": "600660",
+      "name": "福耀玻璃",
+      "rating": "buy",
+      "confidence": 0.80,
+      "current_price": 52.41,
+      "fair_value": 60.0,
+      "target_price_6m": 58.0,
+      "target_price_12m": 65.0,
+      "entry_zone": [48.0, 53.0],
+      "stop_loss": 44.5,
+      "upside_pct": 24,
+      "hold_months": 8,
+      "position_pct": 7,
+      "reasons": [
+        "全球汽车玻璃龙头，ROE 25.56%，竞争格局极优",
+        "单车玻璃用量提升(天幕+HUD)带来量价齐升",
+        "海外产能扩张顺利，美国工厂盈利改善",
+        "PE 15.21倍，对于确定性极高的龙头偏低估"
+      ],
+      "risks": [
+        "全球汽车销量下滑拖累需求",
+        "汇率波动影响海外利润回流"
+      ],
+      "moat": "全球40%+市占率，技术+规模+客户粘性三重壁垒",
+      "catalyst": "智能汽车渗透率提升推动ASP上行+美国工厂利润率持续改善",
+      "valuation_method": "按18倍PE×2026E EPS 3.6元=65元"
+    },
+    {
+      "code": "000975",
+      "name": "山金国际",
+      "rating": "buy",
+      "confidence": 0.75,
+      "current_price": 22.15,
+      "fair_value": 26.0,
+      "target_price_6m": 25.0,
+      "target_price_12m": 28.0,
+      "entry_zone": [20.0, 22.5],
+      "stop_loss": 18.5,
+      "upside_pct": 26,
+      "hold_months": 8,
+      "position_pct": 6,
+      "reasons": [
+        "黄金持续强势周期，ROE 21.56%优秀",
+        "海外矿产注入预期明确，产量增长可见",
+        "PE仅16.73倍，低负债18.65%，现金流稳健",
+        "央行购金+地缘政治支撑金价中枢上移"
+      ],
+      "risks": [
+        "金价阶段性大幅回调",
+        "海外矿山运营政治风险"
+      ],
+      "moat": "山东黄金集团海外优质矿产整合平台，资源禀赋优",
+      "catalyst": "黄金价格持续上行+集团矿产注入",
+      "valuation_method": "按20倍PE×2026E EPS 1.4元=28元"
+    },
+    {
+      "code": "000999",
+      "name": "华润三九",
+      "rating": "buy",
+      "confidence": 0.76,
+      "current_price": 24.55,
+      "fair_value": 28.0,
+      "target_price_6m": 27.0,
+      "target_price_12m": 30.0,
+      "entry_zone": [23.0, 25.0],
+      "stop_loss": 21.0,
+      "upside_pct": 22,
+      "hold_months": 8,
+      "position_pct": 6,
+      "reasons": [
+        "OTC中药龙头，品牌壁垒深，毛利率54%",
+        "PE仅12.66倍处于历史低位，防御属性强",
+        "整合昆药集团完成，协同效应逐步释放",
+        "现金流极佳(每股3.31元)，分红能力强"
+      ],
+      "risks": [
+        "集采压力扩散到OTC品种",
+        "整合昆药的协同不及预期"
+      ],
+      "moat": "999品牌认知度极高+OTC渠道覆盖优势+中药配方独占",
+      "catalyst": "中药创新药获批+品牌OTC提价+昆药协同兑现",
+      "valuation_method": "按16倍PE×2026E EPS 1.95元=31元，保守取30元"
+    },
+    {
+      "code": "605499",
+      "name": "东鹏饮料",
+      "rating": "buy",
+      "confidence": 0.74,
+      "current_price": 128.26,
+      "fair_value": 145.0,
+      "target_price_6m": 140.0,
+      "target_price_12m": 155.0,
+      "entry_zone": [118.0, 130.0],
+      "stop_loss": 108.0,
+      "upside_pct": 21,
+      "hold_months": 8,
+      "position_pct": 5,
+      "reasons": [
+        "ROE高达51.61%，功能饮料赛道高增长",
+        "营收增速31.8%维持高增，第二曲线(电解质水)放量",
+        "渠道下沉空间大，全国化进程加速",
+        "现金流极强(每股11.87元)"
+      ],
+      "risks": [
+        "PE 20倍在消费股中不算便宜",
+        "红牛品牌回归竞争加剧"
+      ],
+      "moat": "功能饮料第二品牌，性价比定位+渠道深度覆盖",
+      "catalyst": "电解质水等新品类持续放量+华东/华南市占率提升",
+      "valuation_method": "按25倍PE×2026E EPS 6.2元=155元(高增长溢价)"
+    },
+    {
+      "code": "002558",
+      "name": "巨人网络",
+      "rating": "hold",
+      "confidence": 0.60,
+      "current_price": 24.31,
+      "fair_value": 22.0,
+      "target_price_6m": 26.0,
+      "target_price_12m": 28.0,
+      "entry_zone": [19.0, 21.0],
+      "stop_loss": 17.0,
+      "upside_pct": 15,
+      "hold_months": 6,
+      "position_pct": 0,
+      "reasons": [
+        "毛利率91%极高，AI赋能游戏研发降本",
+        "营收增速72.69%亮眼但主要靠爆款不稳定",
+        "低负债+强现金流，财务健康"
+      ],
+      "risks": [
+        "游戏行业爆款依赖性强，持续性存疑",
+        "版号政策不确定性",
+        "营收增速大幅波动是常态"
+      ],
+      "moat": "IP积累+研发能力，但游戏行业护城河普遍较浅",
+      "catalyst": "新游上线表现+AI降本增效",
+      "valuation_method": "游戏股PE波动大，按15倍PE×EPS 1.5元=22.5元为合理中枢"
+    },
+    {
+      "code": "002602",
+      "name": "世纪华通",
+      "rating": "hold",
+      "confidence": 0.55,
+      "current_price": 13.95,
+      "fair_value": 12.5,
+      "target_price_6m": 15.0,
+      "target_price_12m": 16.0,
+      "entry_zone": [11.0, 12.5],
+      "stop_loss": 10.0,
+      "upside_pct": 15,
+      "hold_months": 6,
+      "position_pct": 0,
+      "reasons": [
+        "ROE 20.27%优秀，游戏+数据要素双线布局",
+        "净利润增362%属于低基数恢复，不可持续"
+      ],
+      "risks": [
+        "商誉减值风险仍存",
+        "数据要素商业化落地不及预期",
+        "利润高增长主要来自低基数效应"
+      ],
+      "moat": "盛趣游戏IP库+IDC数据中心，但整合效果待验证",
+      "catalyst": "数据要素政策催化+新游戏周期",
+      "valuation_method": "扣除低基数效应后正常PE约18倍×EPS 0.7=12.6元"
+    }
+  ],
+  "sector_view": "超配：能源化工(宝丰能源)、医药CXO(药明康德)、黄金(山金国际)、高端制造(福耀玻璃)；标配：消费(东鹏/华润三九)；低配：游戏(巨人/世纪华通波动大不适合中长线)",
+  "market_view": "A股当前处于估值修复中段，沪深300 PE约14倍仍具吸引力。宏观上国内经济弱复苏+流动性宽松构成底部支撑，但外需不确定性和地产拖累限制上行空间。中长期看好具备全球竞争力的制造业龙头和内需消费升级方向。建议仓位70-80%，保留现金应对波动。",
+  "portfolio_suggestion": "如果只买3只：宝丰能源(35%仓位，高成长低估值确定性强)、药明康德(35%，底部反转弹性大)、福耀玻璃(30%，稳健白马压舱石)。三者分属能化/医药/制造，行业分散风险低。"
+}
