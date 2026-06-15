@@ -1,0 +1,229 @@
+{
+  "analysis_date": "2026-06-15",
+  "strategy": "pre_market",
+  "lhb_date": "20260612",
+  "recommendations": [
+    {
+      "code": "600906",
+      "name": "财达证券",
+      "rating": "buy",
+      "confidence": 0.65,
+      "entry_strategy": "券商涨停次日，观察集合竞价量能。若高开2%以内且量能不萎缩，开盘5分钟内回踩6.9-7.0区间可半仓介入；若高开超4%则放弃追涨",
+      "target_price": 7.7,
+      "stop_loss": 6.5,
+      "reasons": [
+        "净利润增长114.53%，业绩拐点确认",
+        "PE 25.7倍，券商板块估值合理",
+        "龙虎榜净买入8950万，放量涨停有资金认可",
+        "RSI 59.7适中未超买，布林0.95接近上轨但有空间"
+      ],
+      "risks": [
+        "券商股联动性强，若板块不跟风则独木难支",
+        "涨停次日高开低走概率不低",
+        "负债率79.5%偏高（券商特性）"
+      ],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "000630",
+      "name": "铜陵有色",
+      "rating": "watch",
+      "confidence": 0.55,
+      "entry_strategy": "有色资源股涨停，今日需看板块共振。若高开后回踩6.8-6.9企稳可轻仓试探；若直接高开5%以上冲高则不追",
+      "target_price": 7.8,
+      "stop_loss": 6.4,
+      "reasons": [
+        "营收增长83.59%+净利润增长19.12%，业绩实打实",
+        "RSI 59.5适中，MACD金叉初期",
+        "龙虎榜净买3.6亿大资金介入",
+        "有色金属板块若有涨价逻辑则弹性大"
+      ],
+      "risks": [
+        "涨停次日溢价高开后被砸概率大",
+        "5日涨10.25%已有一定涨幅",
+        "大盘股换手率5.64%偏低，流动性一般"
+      ],
+      "hold_days": 5,
+      "position_pct": 2
+    },
+    {
+      "code": "001257",
+      "name": "盛龙股份",
+      "rating": "watch",
+      "confidence": 0.5,
+      "entry_strategy": "连续涨停（含一字板），今日若开板需观察封单变化。不追一字板；若盘中打开后在26-27区间企稳可考虑轻仓",
+      "target_price": 30.5,
+      "stop_loss": 24.5,
+      "reasons": [
+        "ROE 6.56%+毛利率51%，基本面扎实",
+        "负债率仅23%，财务健康",
+        "龙虎榜净买1.6亿，机构关注"
+      ],
+      "risks": [
+        "一字板后开板日波动极大",
+        "短期涨幅已达15%，获利盘抛压",
+        "营收微降-1.57%，成长性一般"
+      ],
+      "hold_days": 3,
+      "position_pct": 1
+    },
+    {
+      "code": "603466",
+      "name": "风语筑",
+      "rating": "watch",
+      "confidence": 0.45,
+      "entry_strategy": "前天大跌-7.9%后昨日反包+15.7%，今日需确认能否站稳11.5上方。若回调至10.8-11.0不破可轻仓；破10.5止损",
+      "target_price": 12.5,
+      "stop_loss": 10.5,
+      "reasons": [
+        "龙虎榜净买1.65亿",
+        "RSI 54.5中性位置，无超买",
+        "反包K线显示有资金护盘意愿"
+      ],
+      "risks": [
+        "基本面一般（亏损股，营收下降21%）",
+        "近期波动极大，难以把握节奏",
+        "MACD柱为负，中期趋势不明"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "002119",
+      "name": "康强电子",
+      "rating": "avoid",
+      "confidence": 0.7,
+      "entry_strategy": "放弃。RSI超买+5日涨29%+上周五冲高回落大阴线，追高风险极大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买3.7亿但当日为冲高回落日（高开34.3→收31.96）"
+      ],
+      "risks": [
+        "RSI(6) 85.9严重超买",
+        "5日涨幅28.7%，短期获利盘巨大",
+        "换手率38%天量换手，多空分歧极大",
+        "PE 103倍估值透支"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "000032",
+      "name": "深桑达A",
+      "rating": "avoid",
+      "confidence": 0.7,
+      "entry_strategy": "放弃。连板股+基本面亏损，纯题材博弈不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买3.4亿"
+      ],
+      "risks": [
+        "基本面极差：亏损、利润-142%、负债率82%",
+        "连续两天涨停后接力风险大",
+        "PE为负，无估值锚定"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603773",
+      "name": "沃格光电",
+      "rating": "avoid",
+      "confidence": 0.65,
+      "entry_strategy": "放弃。高位连跌两天趋势走坏，等企稳再说",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买2.7亿"
+      ],
+      "risks": [
+        "连跌两天（-7%、-5.3%），趋势转空",
+        "基本面亏损，ROE -4.74%",
+        "10日涨幅仍有24.7%，下跌空间未释放"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603078",
+      "name": "江化微",
+      "rating": "avoid",
+      "confidence": 0.75,
+      "entry_strategy": "放弃。昨日跌停，高位断头铡刀形态，短期不碰",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买9768万"
+      ],
+      "risks": [
+        "昨日跌停-11.2%，恐慌情绪蔓延",
+        "前期连续暴涨后急跌，多头信心受挫",
+        "今日低开概率大，抄底容易被埋"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603435",
+      "name": "嘉德利",
+      "rating": "avoid",
+      "confidence": 0.7,
+      "entry_strategy": "放弃。RSI 19极度超卖但趋势仍向下，5日跌27%不抄底",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买9299万"
+      ],
+      "risks": [
+        "连续暴跌5日-27%，趋势极弱",
+        "新股炒作退潮，接力无人",
+        "MACD/布林数据缺失，技术面不可判断"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "301313",
+      "name": "凡拓数创",
+      "rating": "avoid",
+      "confidence": 0.6,
+      "entry_strategy": "放弃。换手率42%+大幅波动，纯投机博弈不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买9045万"
+      ],
+      "risks": [
+        "换手率42%极高，筹码松散",
+        "基本面亏损，PE为负",
+        "5日涨20.6%但波动剧烈（-12%后+8%）"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603135",
+      "name": "中重科技",
+      "rating": "avoid",
+      "confidence": 0.65,
+      "entry_strategy": "放弃。连续下跌趋势，虽有龙虎榜但明显被套",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买8952万"
+      ],
+      "risks": [
+        "连跌3天（-4.4%、-1.8%、-6.1%）",
+        "RSI 48但趋势向下",
+        "营收下降13.5%，基本面走弱"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "周一开盘，上周五龙虎榜显示资金集中在有色金属(铜陵有色)、券商(财达证券)、半导体封测(康强电子)方向。券商+有色双涨停暗示市场情绪偏乐观，但多数龙虎榜标的已在高位，追高性价比差。今日策略：以财达证券为核心关注，有色板块联动为辅，其余高位股不追。",
+  "top_picks": ["600906", "000630"]
+}

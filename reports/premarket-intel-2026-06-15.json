@@ -1,0 +1,1496 @@
+{
+  "date": "2026-06-15 08:30",
+  "lhb_date": "20260612",
+  "candidates": [
+    {
+      "code": "002119",
+      "name": "康强电子",
+      "source": "lhb"
+    },
+    {
+      "code": "000630",
+      "name": "铜陵有色",
+      "source": "lhb"
+    },
+    {
+      "code": "000032",
+      "name": "深桑达A",
+      "source": "lhb"
+    },
+    {
+      "code": "300263",
+      "name": "隆华科技",
+      "source": "lhb"
+    },
+    {
+      "code": "603773",
+      "name": "沃格光电",
+      "source": "lhb"
+    },
+    {
+      "code": "603466",
+      "name": "风语筑",
+      "source": "lhb"
+    },
+    {
+      "code": "001257",
+      "name": "盛龙股份",
+      "source": "lhb"
+    },
+    {
+      "code": "603078",
+      "name": "江化微",
+      "source": "lhb"
+    },
+    {
+      "code": "603435",
+      "name": "嘉德利",
+      "source": "lhb"
+    },
+    {
+      "code": "301313",
+      "name": "凡拓数创",
+      "source": "lhb"
+    },
+    {
+      "code": "603135",
+      "name": "中重科技",
+      "source": "lhb"
+    },
+    {
+      "code": "600906",
+      "name": "财达证券",
+      "source": "lhb"
+    }
+  ],
+  "intel": [
+    {
+      "code": "002119",
+      "name": "康强电子",
+      "quote": {
+        "name": "康强电子",
+        "price": 31.96,
+        "change": 2.44,
+        "turnover": 38.35,
+        "amount": 474645.0,
+        "pe": "103.38",
+        "market_cap": 119.94
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 22.3,
+          "close": 21.45,
+          "high": 23.15,
+          "low": 21.4,
+          "volume": 392679.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 21.82,
+          "close": 21.93,
+          "high": 22.44,
+          "low": 21.3,
+          "volume": 301631.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 21.89,
+          "close": 24.11,
+          "high": 24.12,
+          "low": 21.81,
+          "volume": 467236.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 23.38,
+          "close": 24.5,
+          "high": 24.79,
+          "low": 23.38,
+          "volume": 544448.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 24.3,
+          "close": 24.83,
+          "high": 25.58,
+          "low": 23.92,
+          "volume": 490655.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 23.4,
+          "close": 24.19,
+          "high": 24.8,
+          "low": 23.25,
+          "volume": 301713.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 24.83,
+          "close": 25.78,
+          "high": 26.13,
+          "low": 24.25,
+          "volume": 500042.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 26.08,
+          "close": 28.36,
+          "high": 28.36,
+          "low": 25.6,
+          "volume": 514702.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 29.0,
+          "close": 31.2,
+          "high": 31.2,
+          "low": 29.0,
+          "volume": 547003.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 34.3,
+          "close": 31.96,
+          "high": 34.32,
+          "low": 31.22,
+          "volume": 1439260.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 74.61,
+        "rsi_6": 85.93,
+        "macd_dif": 1.75,
+        "macd_dea": 0.984,
+        "macd_hist": 1.532,
+        "boll_mid": 25.06,
+        "boll_upper": 30.33,
+        "boll_lower": 19.78,
+        "ma5": 28.3,
+        "ma10": 25.83,
+        "ma20": 25.06,
+        "volume_ratio": 3.06,
+        "chg_5d": 28.72,
+        "chg_10d": 38.96,
+        "current_price": 31.96,
+        "boll_position": 1.15
+      },
+      "fundamentals": {
+        "roe": 1.84,
+        "eps": 0.07,
+        "nav_per_share": 3.75,
+        "rev_growth": 49.31,
+        "profit_growth": -1.74,
+        "debt_ratio": 50.06,
+        "gross_margin": 14.5,
+        "net_margin": 3.88,
+        "net_profit": 2546.77,
+        "revenue": 6.56,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 369686468.3
+    },
+    {
+      "code": "000630",
+      "name": "铜陵有色",
+      "quote": {
+        "name": "铜陵有色",
+        "price": 7.1,
+        "change": 10.08,
+        "turnover": 5.64,
+        "amount": 435605.0,
+        "pe": "36.20",
+        "market_cap": 952.07
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 6.85,
+          "close": 6.77,
+          "high": 7.0,
+          "low": 6.75,
+          "volume": 4149544.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 6.96,
+          "close": 7.03,
+          "high": 7.1,
+          "low": 6.81,
+          "volume": 5482674.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 6.9,
+          "close": 7.02,
+          "high": 7.25,
+          "low": 6.86,
+          "volume": 6519553.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 6.8,
+          "close": 6.64,
+          "high": 6.82,
+          "low": 6.61,
+          "volume": 4810775.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 6.6,
+          "close": 6.44,
+          "high": 6.76,
+          "low": 6.4,
+          "volume": 3388795.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 6.04,
+          "close": 5.93,
+          "high": 6.23,
+          "low": 5.9,
+          "volume": 4411175.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 6.13,
+          "close": 6.25,
+          "high": 6.33,
+          "low": 6.01,
+          "volume": 4441406.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 6.12,
+          "close": 6.35,
+          "high": 6.43,
+          "low": 6.06,
+          "volume": 4427973.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 6.38,
+          "close": 6.45,
+          "high": 6.63,
+          "low": 6.29,
+          "volume": 4041024.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 6.6,
+          "close": 7.1,
+          "high": 7.1,
+          "low": 6.55,
+          "volume": 6289787.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 59.48,
+        "rsi_6": 68.41,
+        "macd_dif": 0.072,
+        "macd_dea": 0.072,
+        "macd_hist": 0.0,
+        "boll_mid": 6.47,
+        "boll_upper": 7.27,
+        "boll_lower": 5.66,
+        "ma5": 6.42,
+        "ma10": 6.6,
+        "ma20": 6.47,
+        "volume_ratio": 1.52,
+        "chg_5d": 10.25,
+        "chg_10d": 3.65,
+        "current_price": 7.1,
+        "boll_position": 0.89
+      },
+      "fundamentals": {
+        "roe": 3.59,
+        "eps": 0.1,
+        "nav_per_share": 2.8,
+        "rev_growth": 83.59,
+        "profit_growth": 19.12,
+        "debt_ratio": 54.34,
+        "gross_margin": 7.58,
+        "net_margin": 3.08,
+        "net_profit": 13.38,
+        "revenue": 646.99,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 359717230.98
+    },
+    {
+      "code": "000032",
+      "name": "深桑达A",
+      "quote": {
+        "name": "深桑达Ａ",
+        "price": 18.92,
+        "change": 10.0,
+        "turnover": 9.69,
+        "amount": 192267.0,
+        "pe": "-131.06",
+        "market_cap": 229.91
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 16.445,
+          "close": 16.465,
+          "high": 16.875,
+          "low": 16.315,
+          "volume": 195611.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 16.465,
+          "close": 16.015,
+          "high": 16.575,
+          "low": 15.745,
+          "volume": 205422.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 15.97,
+          "close": 15.94,
+          "high": 16.28,
+          "low": 15.81,
+          "volume": 165300.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 15.89,
+          "close": 16.36,
+          "high": 17.34,
+          "low": 15.66,
+          "volume": 309954.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 16.46,
+          "close": 15.9,
+          "high": 16.48,
+          "low": 15.9,
+          "volume": 229122.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 15.49,
+          "close": 15.1,
+          "high": 15.73,
+          "low": 14.96,
+          "volume": 200907.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 15.33,
+          "close": 15.54,
+          "high": 15.65,
+          "low": 15.15,
+          "volume": 145870.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 15.43,
+          "close": 15.64,
+          "high": 16.54,
+          "low": 15.35,
+          "volume": 225518.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 15.8,
+          "close": 17.2,
+          "high": 17.2,
+          "low": 15.46,
+          "volume": 364211.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 17.4,
+          "close": 18.92,
+          "high": 18.92,
+          "low": 16.6,
+          "volume": 1055556.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 60.4,
+        "rsi_6": 76.05,
+        "macd_dif": -0.408,
+        "macd_dea": -0.519,
+        "macd_hist": 0.222,
+        "boll_mid": 17.42,
+        "boll_upper": 20.46,
+        "boll_lower": 14.39,
+        "ma5": 16.48,
+        "ma10": 16.31,
+        "ma20": 17.42,
+        "volume_ratio": 4.53,
+        "chg_5d": 18.99,
+        "chg_10d": 15.05,
+        "current_price": 18.92,
+        "boll_position": 0.75
+      },
+      "fundamentals": {
+        "roe": -1.11,
+        "eps": -0.0678,
+        "nav_per_share": 6.08,
+        "rev_growth": 2.14,
+        "profit_growth": -141.97,
+        "debt_ratio": 81.87,
+        "gross_margin": 6.64,
+        "net_margin": -0.45,
+        "net_profit": -8240.58,
+        "revenue": 128.13,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 342897279.14
+    },
+    {
+      "code": "603773",
+      "name": "沃格光电",
+      "quote": {
+        "name": "沃格光电",
+        "price": 129.8,
+        "change": -6.93,
+        "turnover": 24.31,
+        "amount": 728304.0,
+        "pe": "-157.33",
+        "market_cap": 291.71
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 110.0,
+          "close": 114.49,
+          "high": 114.49,
+          "low": 109.23,
+          "volume": 121842.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 118.21,
+          "close": 122.0,
+          "high": 123.44,
+          "low": 110.61,
+          "volume": 430032.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 120.0,
+          "close": 118.82,
+          "high": 128.78,
+          "low": 115.23,
+          "volume": 362677.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 113.9,
+          "close": 122.4,
+          "high": 126.66,
+          "low": 107.11,
+          "volume": 333219.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 122.3,
+          "close": 132.4,
+          "high": 134.64,
+          "low": 122.3,
+          "volume": 357753.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 129.76,
+          "close": 136.5,
+          "high": 144.05,
+          "low": 125.8,
+          "volume": 377372.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 137.0,
+          "close": 150.15,
+          "high": 150.15,
+          "low": 131.0,
+          "volume": 335116.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 145.08,
+          "close": 154.96,
+          "high": 158.8,
+          "low": 141.22,
+          "volume": 347595.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 150.01,
+          "close": 139.46,
+          "high": 157.88,
+          "low": 139.46,
+          "volume": 295293.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 137.07,
+          "close": 129.8,
+          "high": 149.87,
+          "low": 125.51,
+          "volume": 546066.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 62.98,
+        "rsi_6": 51.39,
+        "macd_dif": 19.346,
+        "macd_dea": 17.782,
+        "macd_hist": 3.126,
+        "boll_mid": 109.34,
+        "boll_upper": 161.89,
+        "boll_lower": 56.79,
+        "ma5": 142.17,
+        "ma10": 132.1,
+        "ma20": 109.34,
+        "volume_ratio": 1.59,
+        "chg_5d": -1.96,
+        "chg_10d": 24.71,
+        "current_price": 129.8,
+        "boll_position": 0.69
+      },
+      "fundamentals": {
+        "roe": -4.74,
+        "eps": -0.2274,
+        "nav_per_share": 4.7,
+        "rev_growth": 8.48,
+        "profit_growth": -112.07,
+        "debt_ratio": 71.6,
+        "gross_margin": 16.74,
+        "net_margin": -7.77,
+        "net_profit": -5110.3,
+        "revenue": 5.94,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 269995258.21
+    },
+    {
+      "code": "603466",
+      "name": "风语筑",
+      "quote": {
+        "name": "风语筑",
+        "price": 11.45,
+        "change": 5.72,
+        "turnover": 18.41,
+        "amount": 120489.0,
+        "pe": "-424.57",
+        "market_cap": 68.11
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 10.49,
+          "close": 11.4,
+          "high": 11.48,
+          "low": 10.47,
+          "volume": 728351.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 11.19,
+          "close": 11.13,
+          "high": 11.34,
+          "low": 10.93,
+          "volume": 544381.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 10.93,
+          "close": 11.39,
+          "high": 11.39,
+          "low": 10.6,
+          "volume": 622450.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 11.18,
+          "close": 11.0,
+          "high": 11.28,
+          "low": 10.86,
+          "volume": 434031.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 11.01,
+          "close": 11.56,
+          "high": 11.73,
+          "low": 11.01,
+          "volume": 702642.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 11.23,
+          "close": 12.12,
+          "high": 12.65,
+          "low": 11.18,
+          "volume": 948565.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 12.34,
+          "close": 12.24,
+          "high": 12.5,
+          "low": 11.71,
+          "volume": 795097.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 11.94,
+          "close": 12.03,
+          "high": 12.47,
+          "low": 11.45,
+          "volume": 634987.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 11.76,
+          "close": 10.83,
+          "high": 11.77,
+          "low": 10.83,
+          "volume": 208809.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 9.9,
+          "close": 11.45,
+          "high": 11.91,
+          "low": 9.76,
+          "volume": 1095273.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 54.51,
+        "rsi_6": 51.02,
+        "macd_dif": 0.393,
+        "macd_dea": 0.405,
+        "macd_hist": -0.024,
+        "boll_mid": 11.15,
+        "boll_upper": 12.22,
+        "boll_lower": 10.07,
+        "ma5": 11.73,
+        "ma10": 11.52,
+        "ma20": 11.15,
+        "volume_ratio": 1.66,
+        "chg_5d": -0.95,
+        "chg_10d": 8.02,
+        "current_price": 11.45,
+        "boll_position": 0.64
+      },
+      "fundamentals": {
+        "roe": 2.03,
+        "eps": 0.07,
+        "nav_per_share": 3.5,
+        "rev_growth": -21.55,
+        "profit_growth": 5.79,
+        "debt_ratio": 51.51,
+        "gross_margin": 34.41,
+        "net_margin": 14.21,
+        "net_profit": 4260.79,
+        "revenue": 3.0,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 164770384.74
+    },
+    {
+      "code": "001257",
+      "name": "盛龙股份",
+      "quote": {
+        "name": "盛龙股份",
+        "price": 27.74,
+        "change": 9.99,
+        "turnover": 10.44,
+        "amount": 39670.0,
+        "pe": "56.73",
+        "market_cap": 509.29
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 24.91,
+          "close": 24.91,
+          "high": 26.45,
+          "low": 24.62,
+          "volume": 299021.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 25.0,
+          "close": 25.14,
+          "high": 25.67,
+          "low": 23.58,
+          "volume": 248794.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 24.76,
+          "close": 25.35,
+          "high": 25.89,
+          "low": 24.51,
+          "volume": 233851.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 24.9,
+          "close": 24.7,
+          "high": 25.14,
+          "low": 24.42,
+          "volume": 149646.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 24.5,
+          "close": 24.15,
+          "high": 25.06,
+          "low": 23.69,
+          "volume": 203106.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 23.21,
+          "close": 23.33,
+          "high": 24.07,
+          "low": 22.8,
+          "volume": 178729.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 23.56,
+          "close": 23.24,
+          "high": 23.72,
+          "low": 22.42,
+          "volume": 162543.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 22.91,
+          "close": 22.93,
+          "high": 23.14,
+          "low": 22.27,
+          "volume": 161867.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 22.91,
+          "close": 25.22,
+          "high": 25.22,
+          "low": 22.8,
+          "volume": 335168.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 27.74,
+          "close": 27.74,
+          "high": 27.74,
+          "low": 27.74,
+          "volume": 143005.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 59.75,
+        "rsi_6": 73.12,
+        "macd_dif": 0.14,
+        "macd_dea": 0.114,
+        "macd_hist": 0.053,
+        "boll_mid": 25.05,
+        "boll_upper": 28.01,
+        "boll_lower": 22.09,
+        "ma5": 24.49,
+        "ma10": 24.67,
+        "ma20": 25.05,
+        "volume_ratio": 0.69,
+        "chg_5d": 14.87,
+        "chg_10d": 10.08,
+        "current_price": 27.74,
+        "boll_position": 0.95
+      },
+      "fundamentals": {
+        "roe": 6.56,
+        "eps": 0.2376,
+        "nav_per_share": 4.16,
+        "rev_growth": -1.57,
+        "profit_growth": 3.74,
+        "debt_ratio": 23.05,
+        "gross_margin": 50.98,
+        "net_margin": 28.75,
+        "net_profit": 3.85,
+        "revenue": 13.36,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 164245978.75
+    },
+    {
+      "code": "603078",
+      "name": "江化微",
+      "quote": {
+        "name": "江化微",
+        "price": 41.72,
+        "change": -10.01,
+        "turnover": 13.54,
+        "amount": 229443.0,
+        "pe": "150.68",
+        "market_cap": 160.89
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 34.8,
+          "close": 34.0,
+          "high": 36.0,
+          "low": 33.79,
+          "volume": 385931.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 34.5,
+          "close": 36.12,
+          "high": 37.4,
+          "low": 34.5,
+          "volume": 520236.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 35.01,
+          "close": 35.71,
+          "high": 36.2,
+          "low": 34.5,
+          "volume": 463709.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 35.1,
+          "close": 37.78,
+          "high": 38.6,
+          "low": 34.9,
+          "volume": 480866.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 37.0,
+          "close": 41.56,
+          "high": 41.56,
+          "low": 36.0,
+          "volume": 586327.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 38.99,
+          "close": 42.84,
+          "high": 45.01,
+          "low": 38.99,
+          "volume": 720407.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 43.5,
+          "close": 45.44,
+          "high": 46.02,
+          "low": 41.52,
+          "volume": 579751.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 44.2,
+          "close": 45.7,
+          "high": 46.69,
+          "low": 44.1,
+          "volume": 410952.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 44.9,
+          "close": 46.36,
+          "high": 48.22,
+          "low": 42.44,
+          "volume": 563968.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 47.0,
+          "close": 41.72,
+          "high": 47.0,
+          "low": 41.72,
+          "volume": 522148.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 64.95,
+        "rsi_6": 54.47,
+        "macd_dif": 4.29,
+        "macd_dea": 3.692,
+        "macd_hist": 1.195,
+        "boll_mid": 37.36,
+        "boll_upper": 46.56,
+        "boll_lower": 28.17,
+        "ma5": 44.41,
+        "ma10": 40.72,
+        "ma20": 37.36,
+        "volume_ratio": 0.91,
+        "chg_5d": 0.38,
+        "chg_10d": 20.23,
+        "current_price": 41.72,
+        "boll_position": 0.74
+      },
+      "fundamentals": {
+        "roe": 1.45,
+        "eps": 0.0746,
+        "nav_per_share": 5.17,
+        "rev_growth": 16.88,
+        "profit_growth": 7.31,
+        "debt_ratio": 27.26,
+        "gross_margin": 27.13,
+        "net_margin": 8.94,
+        "net_profit": 2877.65,
+        "revenue": 3.22,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 97680283.91
+    },
+    {
+      "code": "603435",
+      "name": "嘉德利",
+      "quote": {
+        "name": "嘉德利",
+        "price": 60.91,
+        "change": -5.12,
+        "turnover": 25.24,
+        "amount": 56644.0,
+        "pe": "114.85",
+        "market_cap": 279.68
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 80.4,
+          "close": 85.36,
+          "high": 88.38,
+          "low": 77.1,
+          "volume": 177309.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 81.0,
+          "close": 76.82,
+          "high": 81.0,
+          "low": 76.82,
+          "volume": 107843.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 72.02,
+          "close": 77.14,
+          "high": 80.52,
+          "low": 71.8,
+          "volume": 116072.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 75.09,
+          "close": 84.85,
+          "high": 84.85,
+          "low": 72.0,
+          "volume": 140073.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 85.0,
+          "close": 83.11,
+          "high": 89.15,
+          "low": 81.2,
+          "volume": 140797.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 78.93,
+          "close": 76.48,
+          "high": 81.78,
+          "low": 75.8,
+          "volume": 85484.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 81.2,
+          "close": 78.08,
+          "high": 81.3,
+          "low": 76.61,
+          "volume": 73283.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 76.38,
+          "close": 70.27,
+          "high": 76.41,
+          "low": 70.27,
+          "volume": 83732.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 66.9,
+          "close": 64.2,
+          "high": 67.55,
+          "low": 64.0,
+          "volume": 90512.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 65.47,
+          "close": 60.91,
+          "high": 65.89,
+          "low": 60.49,
+          "volume": 90074.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 19.76,
+        "rsi_6": 16.5,
+        "macd_dif": null,
+        "macd_dea": null,
+        "macd_hist": null,
+        "boll_mid": null,
+        "boll_upper": null,
+        "boll_lower": null,
+        "ma5": 69.99,
+        "ma10": 75.72,
+        "ma20": null,
+        "volume_ratio": 0.95,
+        "chg_5d": -26.71,
+        "chg_10d": -24.24,
+        "current_price": 60.91
+      },
+      "fundamentals": {
+        "roe": 4.37,
+        "eps": 0.15,
+        "nav_per_share": 3.59,
+        "rev_growth": null,
+        "profit_growth": 3.28,
+        "debt_ratio": null,
+        "gross_margin": null,
+        "net_margin": null,
+        "net_profit": 6341.86,
+        "revenue": null,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 92986063.87
+    },
+    {
+      "code": "301313",
+      "name": "凡拓数创",
+      "quote": {
+        "name": "凡拓数创",
+        "price": 59.3,
+        "change": 6.64,
+        "turnover": 41.97,
+        "amount": 197429.0,
+        "pe": "-44.61",
+        "market_cap": 61.35
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 47.23,
+          "close": 47.8,
+          "high": 50.3,
+          "low": 46.33,
+          "volume": 104510.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 46.07,
+          "close": 44.06,
+          "high": 46.98,
+          "low": 43.63,
+          "volume": 130199.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 43.8,
+          "close": 44.4,
+          "high": 46.19,
+          "low": 42.66,
+          "volume": 93362.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 43.77,
+          "close": 44.36,
+          "high": 45.01,
+          "low": 43.28,
+          "volume": 62358.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 48.38,
+          "close": 49.17,
+          "high": 51.01,
+          "low": 44.36,
+          "volume": 191577.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 49.05,
+          "close": 59.0,
+          "high": 59.0,
+          "low": 49.05,
+          "volume": 289653.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 61.0,
+          "close": 64.63,
+          "high": 66.32,
+          "low": 57.26,
+          "volume": 377573.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 63.0,
+          "close": 69.51,
+          "high": 70.5,
+          "low": 62.1,
+          "volume": 324514.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 63.5,
+          "close": 55.61,
+          "high": 64.58,
+          "low": 55.61,
+          "volume": 279057.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 55.0,
+          "close": 59.3,
+          "high": 65.73,
+          "low": 53.5,
+          "volume": 329691.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 60.32,
+        "rsi_6": 57.18,
+        "macd_dif": 5.485,
+        "macd_dea": 4.622,
+        "macd_hist": 1.726,
+        "boll_mid": 51.53,
+        "boll_upper": 64.98,
+        "boll_lower": 38.07,
+        "ma5": 61.61,
+        "ma10": 53.78,
+        "ma20": 51.53,
+        "volume_ratio": 1.13,
+        "chg_5d": 20.6,
+        "chg_10d": 25.37,
+        "current_price": 59.3,
+        "boll_position": 0.79
+      },
+      "fundamentals": {
+        "roe": -3.84,
+        "eps": -0.24,
+        "nav_per_share": 6.24,
+        "rev_growth": 6.26,
+        "profit_growth": -11.12,
+        "debt_ratio": 51.91,
+        "gross_margin": 30.21,
+        "net_margin": -20.32,
+        "net_profit": -2513.46,
+        "revenue": 1.42,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 90454216.21
+    },
+    {
+      "code": "603135",
+      "name": "中重科技",
+      "quote": {
+        "name": "中重科技",
+        "price": 12.02,
+        "change": -6.09,
+        "turnover": 8.44,
+        "amount": 65970.0,
+        "pe": "-442.06",
+        "market_cap": 76.24
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 10.38,
+          "close": 10.27,
+          "high": 10.38,
+          "low": 10.16,
+          "volume": 36531.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 10.2,
+          "close": 10.54,
+          "high": 10.74,
+          "low": 9.99,
+          "volume": 71230.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 10.44,
+          "close": 11.59,
+          "high": 11.59,
+          "low": 10.32,
+          "volume": 93380.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 11.48,
+          "close": 12.75,
+          "high": 12.75,
+          "low": 11.35,
+          "volume": 149320.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 13.55,
+          "close": 14.03,
+          "high": 14.03,
+          "low": 12.58,
+          "volume": 353778.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 14.28,
+          "close": 15.43,
+          "high": 15.43,
+          "low": 13.58,
+          "volume": 754236.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 15.25,
+          "close": 15.8,
+          "high": 16.18,
+          "low": 14.3,
+          "volume": 796637.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 14.87,
+          "close": 14.22,
+          "high": 15.16,
+          "low": 14.22,
+          "volume": 346219.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 13.03,
+          "close": 12.8,
+          "high": 13.66,
+          "low": 12.8,
+          "volume": 504145.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 12.8,
+          "close": 12.02,
+          "high": 13.25,
+          "low": 11.9,
+          "volume": 531492.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 48.22,
+        "rsi_6": 40.12,
+        "macd_dif": 0.554,
+        "macd_dea": 0.427,
+        "macd_hist": 0.254,
+        "boll_mid": 12.1,
+        "boll_upper": 15.3,
+        "boll_lower": 8.9,
+        "ma5": 14.05,
+        "ma10": 12.94,
+        "ma20": 12.1,
+        "volume_ratio": 0.96,
+        "chg_5d": -14.33,
+        "chg_10d": 17.27,
+        "current_price": 12.02,
+        "boll_position": 0.49
+      },
+      "fundamentals": {
+        "roe": 0.63,
+        "eps": 0.03,
+        "nav_per_share": 4.66,
+        "rev_growth": -13.54,
+        "profit_growth": 34.85,
+        "debt_ratio": 23.75,
+        "gross_margin": 24.54,
+        "net_margin": 18.06,
+        "net_profit": 1850.26,
+        "revenue": 1.01,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 89517456.69
+    },
+    {
+      "code": "600906",
+      "name": "财达证券",
+      "quote": {
+        "name": "财达证券",
+        "price": 6.99,
+        "change": 10.08,
+        "turnover": 7.7,
+        "amount": 111162.0,
+        "pe": "25.71",
+        "market_cap": 226.83
+      },
+      "kline_recent": [
+        {
+          "date": "2026-06-01",
+          "open": 6.62,
+          "close": 6.71,
+          "high": 6.72,
+          "low": 6.51,
+          "volume": 481057.0
+        },
+        {
+          "date": "2026-06-02",
+          "open": 6.66,
+          "close": 6.82,
+          "high": 6.92,
+          "low": 6.59,
+          "volume": 861583.0
+        },
+        {
+          "date": "2026-06-03",
+          "open": 6.75,
+          "close": 6.82,
+          "high": 7.0,
+          "low": 6.67,
+          "volume": 770843.0
+        },
+        {
+          "date": "2026-06-04",
+          "open": 6.75,
+          "close": 6.66,
+          "high": 6.88,
+          "low": 6.6,
+          "volume": 561953.0
+        },
+        {
+          "date": "2026-06-05",
+          "open": 6.68,
+          "close": 6.87,
+          "high": 7.09,
+          "low": 6.67,
+          "volume": 1029170.0
+        },
+        {
+          "date": "2026-06-08",
+          "open": 6.9,
+          "close": 6.81,
+          "high": 7.15,
+          "low": 6.8,
+          "volume": 1228831.0
+        },
+        {
+          "date": "2026-06-09",
+          "open": 6.88,
+          "close": 6.75,
+          "high": 6.92,
+          "low": 6.57,
+          "volume": 693953.0
+        },
+        {
+          "date": "2026-06-10",
+          "open": 6.61,
+          "close": 6.68,
+          "high": 6.86,
+          "low": 6.46,
+          "volume": 696342.0
+        },
+        {
+          "date": "2026-06-11",
+          "open": 6.62,
+          "close": 6.35,
+          "high": 6.76,
+          "low": 6.3,
+          "volume": 730731.0
+        },
+        {
+          "date": "2026-06-12",
+          "open": 6.33,
+          "close": 6.99,
+          "high": 6.99,
+          "low": 6.27,
+          "volume": 1635630.0
+        }
+      ],
+      "technicals": {
+        "rsi_14": 59.71,
+        "rsi_6": 63.35,
+        "macd_dif": 0.087,
+        "macd_dea": 0.082,
+        "macd_hist": 0.01,
+        "boll_mid": 6.6,
+        "boll_upper": 7.03,
+        "boll_lower": 6.16,
+        "ma5": 6.72,
+        "ma10": 6.75,
+        "ma20": 6.6,
+        "volume_ratio": 1.87,
+        "chg_5d": 1.75,
+        "chg_10d": 4.8,
+        "current_price": 6.99,
+        "boll_position": 0.95
+      },
+      "fundamentals": {
+        "roe": 2.05,
+        "eps": 0.08,
+        "nav_per_share": 3.86,
+        "rev_growth": 51.06,
+        "profit_growth": 114.53,
+        "debt_ratio": 79.5,
+        "net_margin": 34.5,
+        "net_profit": 2.53,
+        "revenue": 7.35,
+        "report_date": "2026-03-31"
+      },
+      "fund_flow": {},
+      "news": [],
+      "source": "lhb",
+      "lhb_net_buy": 89504299.61
+    }
+  ]
+}
