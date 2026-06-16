@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-16 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 注意：今日搜索工具不可用（Tavily SSL故障 + web_search API key缺失），以下为框架性分析，待数据补充。</strong></p><ul><li><strong>美联储：</strong>6月FOMC会议预计本周召开，市场关注是否继续暂停降息或释放鸽派信号</li><li><strong>美债10Y收益率：</strong>近期区间约4.2-4.5%，需关注实际走势</li><li><strong>美元指数(DXY)：</strong>预计在103-106区间波动</li><li><strong>VIX：</strong>需确认是否处于低波动（&lt;15）或警戒区间（&gt;20）</li><li><strong>中国5月PMI：</strong>需确认官方制造业PMI是否站稳50上方</li><li><strong>中国5月CPI/PPI：</strong>通缩压力是否缓解待确认</li><li><strong>社融/M2：</strong>信用扩张力度待确认</li></ul>",
+  "sentiment": "<h3>🎭 市场情绪</h3><ul><li><strong>全球风险偏好：</strong>需关注美股近期走势和科技股动能</li><li><strong>A股成交量：</strong>待确认是否维持万亿以上活跃水平</li><li><strong>北向资金：</strong>近期流向待确认</li><li><strong>融资余额：</strong>杠杆资金态度待确认</li></ul><p>整体判断：6月中旬通常为季末资金面偏紧窗口，需警惕流动性扰动。</p>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储6月FOMC：</strong>本周重点事件，关注点阵图和鲍威尔措辞</li><li><strong>中国稳增长：</strong>关注是否有新的财政/货币刺激信号</li><li><strong>中美关系：</strong>贸易/科技领域最新动态待确认</li><li><strong>A股制度改革：</strong>注册制、退市新规持续推进</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>判断：中性偏谨慎（数据待补充确认）</strong></p><ul><li>FOMC会议本周召开，市场可能在结果公布前维持观望</li><li>6月中旬季末因素可能带来短期资金面扰动</li><li>A股结构性行情为主，需精选方向</li></ul><p><strong>仓位建议：</strong>维持当前约75%仓位不变，FOMC落地前不宜加仓。若会议结果偏鸽（暗示下半年降息），可择机加至80%。</p>",
+  "risks": "<h3>⚠️ 风险提示</h3><ul><li>FOMC若意外鹰派（推迟降息预期），可能引发全球风险资产回调</li><li>季末资金面收紧可能压制短期市场表现</li><li>中美关系若出现新摩擦，科技板块承压</li><li>注意：本报告数据源不可用，结论确定性较低，建议Wayne自行确认关键数据点</li></ul>"
+}
