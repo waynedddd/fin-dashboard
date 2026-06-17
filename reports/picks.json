@@ -118,17 +118,6 @@
     "stop_loss": 5.85
   },
   {
-    "code": "002851",
-    "name": "麦格米特",
-    "source": "premarket-2026-05-26",
-    "date": "2026-05-26",
-    "rating": "buy",
-    "confidence": 0.65,
-    "entry": "高开回落至128-130区间可建半仓,止损125",
-    "target": 142.0,
-    "stop_loss": 125.0
-  },
-  {
     "code": "600726",
     "name": "华电能源",
     "source": "premarket-2026-05-27",
@@ -281,5 +270,27 @@
     "entry": "高开2%以内且量能不萎缩，回踩6.9-7.0半仓；高开超4%放弃",
     "target": 7.7,
     "stop_loss": 6.5
+  },
+  {
+    "code": "002851",
+    "name": "麦格米特",
+    "source": "premarket-2026-06-17",
+    "date": "2026-06-17",
+    "rating": "buy",
+    "confidence": 0.72,
+    "entry": "高开3%以内直接半仓;高开5%以上等回踩160附近再介入",
+    "target": 178.0,
+    "stop_loss": 152.0
+  },
+  {
+    "code": "002008",
+    "name": "大族激光",
+    "source": "premarket-2026-06-17",
+    "date": "2026-06-17",
+    "rating": "buy",
+    "confidence": 0.68,
+    "entry": "回调至132-134区间可建半仓;涨停板不追;低开反而是好机会",
+    "target": 147.0,
+    "stop_loss": 125.0
   }
 ]
