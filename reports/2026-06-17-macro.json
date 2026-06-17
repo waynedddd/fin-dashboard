@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-17 08:00",
+  "indicators": "<h3>⚠️ 数据获取失败</h3><p>今日宏观数据未能自动抓取，原因：Tavily API SSL证书错误、web_search API key缺失、web_fetch网络受限。</p><h3>需要修复</h3><ul><li>Python SSL证书：运行 <code>/Applications/Python 3.14/Install Certificates.command</code></li><li>web_search：配置 Kimi API key</li><li>web_fetch：检查DNS/网络设置</li></ul>",
+  "sentiment": "<h3>市场情绪</h3><p>数据不可用，无法评估。</p>",
+  "policy": "<h3>政策动向</h3><p>数据不可用，无法评估。</p>",
+  "conclusion": "<h3>综合判断</h3><p>今日自动宏观分析因工具链故障未能完成。建议手动检查：</p><ul><li>美联储6月议息会议结果/预期</li><li>中国5月社融、CPI数据</li><li>美债10Y收益率、美元指数DXY、VIX水平</li></ul><p><strong>仓位建议：</strong>维持现有仓位不变，待数据恢复后再做调整判断。</p>",
+  "risks": "<h3>风险提示</h3><ul><li>自动化监控中断，可能错过重要市场信号</li><li>建议今日手动关注财经新闻</li></ul>"
+}
