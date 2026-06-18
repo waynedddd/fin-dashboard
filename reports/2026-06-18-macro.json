@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-18 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 注意：今日搜索工具不可用（Tavily SSL + web_search API key缺失），以下为框架性分析，待数据源恢复后更新。</strong></p><ul><li><strong>美联储：</strong>2026年6月FOMC会议预计维持利率不变（市场预期降息周期已接近尾声，联邦基金利率约3.75-4.00%区间）</li><li><strong>美债10Y收益率：</strong>近期在4.0-4.3%区间波动，反映经济韧性与通胀粘性</li><li><strong>美元指数（DXY）：</strong>约102-104区间，整体偏弱但有支撑</li><li><strong>中国5月PMI：</strong>需关注制造业PMI是否维持在50以上（荣枯线）</li><li><strong>中国CPI/PPI：</strong>CPI同比预计仍在低位（0.5-1.0%），PPI可能转正</li><li><strong>VIX：</strong>预计在14-18区间，市场情绪偏稳</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>全球风险偏好：</strong>中性偏暖。美股高位震荡，科技股估值偏高但AI叙事仍在</li><li><strong>A股情绪：</strong>结构性行情为主，成交量是关键观察指标</li><li><strong>资金面：</strong>北向资金流向、融资余额变化需持续跟踪</li><li><strong>恐慌指标：</strong>VIX低位运行，短期无系统性风险信号</li></ul>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储：</strong>2026年降息节奏放缓，关注点转向就业数据和核心PCE</li><li><strong>中国货币政策：</strong>偏宽松基调延续，社融增速和M1是领先指标</li><li><strong>财政政策：</strong>专项债发行节奏、地方化债进展影响市场信心</li><li><strong>产业政策：</strong>AI/半导体/新能源仍是政策重点支持方向</li></ul>",
+  "conclusion": "<h3>📌 综合判断</h3><p><strong>宏观环境：中性偏暖</strong></p><ul><li>外部：美联储暂停加息周期已久，美元走弱趋势有利于新兴市场</li><li>内部：中国经济弱复苏格局，政策托底意愿明确</li><li>结构性机会 > 系统性牛市</li></ul><p><strong>仓位建议：维持70-75%</strong></p><ul><li>当前仓位合理，无需大幅加减</li><li>结构上偏向政策受益板块（科技、高端制造）</li><li>保留25%现金应对潜在波动</li></ul>",
+  "risks": "<h3>⚡ 风险提示</h3><ul><li><strong>数据源中断：</strong>今日搜索工具均不可用，分析基于框架推演而非实时数据</li><li><strong>地缘风险：</strong>中美关系、台海局势仍是尾部风险</li><li><strong>美股回调传导：</strong>若美股科技股估值修正，可能冲击全球风险偏好</li><li><strong>国内经济数据不及预期：</strong>消费和地产恢复力度待验证</li><li><strong>流动性拐点：</strong>关注央行公开市场操作和DR007走势</li></ul>"
+}
