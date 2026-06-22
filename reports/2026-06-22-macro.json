@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-22 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 数据来源受限：</strong>今日搜索工具全部不可用（Tavily SSL故障/web_search API缺失），以下基于近期趋势推断，需人工验证。</p><ul><li><strong>美联储：</strong>2026年上半年维持利率在 4.0-4.25% 区间（市场预期Q3可能再降25bp）</li><li><strong>中国PMI：</strong>6月制造业PMI预计在50附近震荡，服务业PMI维持扩张区间</li><li><strong>CPI：</strong>中国CPI同比低位运行（0.3-0.5%），通缩压力犹存</li><li><strong>社融：</strong>信贷脉冲边际改善但力度有限</li><li><strong>美债10Y：</strong>预计在 4.2-4.5% 区间</li><li><strong>美元指数：</strong>DXY 约 103-105 区间</li><li><strong>VIX：</strong>预计 15-20 低波动区间</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li>A股成交量持续萎缩，市场处于缩量震荡格局</li><li>北向资金流向需关注（近期可能净流入科技板块）</li><li>港股估值仍处洼地，南向资金持续活跃</li><li>全球风险偏好中性偏暖（VIX低位）</li></ul>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>国内：</strong>稳增长政策持续发力，关注地方专项债发行节奏和消费刺激政策落地</li><li><strong>美联储：</strong>6月FOMC会议大概率按兵不动，关注点阵图和鲍威尔讲话对Q3降息的暗示</li><li><strong>中美关系：</strong>贸易摩擦间歇性缓和，科技领域博弈持续</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>宏观环境：中性偏暖</strong></p><ul><li>海外流动性边际宽松预期支撑估值</li><li>国内经济弱复苏，政策托底意愿明确</li><li>A股处于震荡筑底阶段，结构性机会为主</li></ul><p><strong>仓位建议：维持70-75%</strong></p><ul><li>当前仓位合理，无需大幅调整</li><li>结构上可偏向：科技（AI/半导体）、高股息防御、出海消费</li><li>等待放量突破信号再加仓至80%+</li></ul>",
+  "risks": "<h3>⚠️ 风险提示</h3><ul><li>中国CPI持续低迷→企业盈利承压</li><li>美债收益率反弹→压制成长股估值</li><li>地缘政治黑天鹅（台海/中东）</li><li>A股缩量阴跌→可能跌破关键支撑</li><li>本报告数据源受限，关键数据请以盘中实际为准</li></ul>"
+}

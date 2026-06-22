@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-20 08:00",
+  "indicators": "<h3>⚠️ 数据获取失败</h3><p>今日宏观数据未能通过自动化工具获取（Tavily SSL证书错误 + web_search API key缺失 + web_fetch网络受限）。</p><h3>需手动确认的关键指标</h3><ul><li><strong>美联储：</strong>6月FOMC会议结果（利率决议、点阵图、鲍威尔讲话）</li><li><strong>美债：</strong>10Y收益率水平（4.0%上方偏紧，3.5%下方偏松）</li><li><strong>美元指数：</strong>DXY强弱直接影响人民币和北向资金</li><li><strong>中国数据：</strong>5月PMI/CPI/社融是否超预期</li><li><strong>VIX：</strong>恐慌指数水平（&lt;15平静，&gt;20警惕）</li></ul>",
+  "sentiment": "<h3>市场情绪（待确认）</h3><p>因无法获取实时数据，情绪判断暂缺。建议关注：</p><ul><li>A股成交量是否持续萎缩</li><li>北向资金净流入/流出方向</li><li>融资余额变化趋势</li><li>美股隔夜表现及科技股走势</li></ul>",
+  "policy": "<h3>政策动向（框架判断）</h3><ul><li><strong>美联储：</strong>2026年处于降息周期后半段，需确认是否已暂停</li><li><strong>中国：</strong>稳增长政策持续，关注是否有增量财政/货币政策出台</li><li><strong>汇率：</strong>人民币汇率稳定性是北向资金的关键变量</li></ul>",
+  "conclusion": "<h3>综合判断</h3><p><strong>今日无法给出有效结论。</strong></p><p>原因：所有数据源（Tavily、web_search、web_fetch）均不可用，缺乏实时信息支撑判断。</p><h3>仓位建议（通用）</h3><ul><li>当前75%仓位，在数据真空期维持不动</li><li>不建议在信息不充分时加减仓</li><li>待数据恢复后再做决策</li></ul>",
+  "risks": "<h3>风险提示</h3><ul><li><strong>数据盲区风险：</strong>今日分析基于框架推理，非实时数据，决策参考价值有限</li><li><strong>周末效应：</strong>今天是周六，注意下周一开盘前需补充周末消息面</li><li><strong>工具故障：</strong>Tavily SSL + web_search API key 需修复，否则持续影响日常分析</li></ul>"
+}
