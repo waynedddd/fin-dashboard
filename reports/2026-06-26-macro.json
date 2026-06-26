@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-26 08:00",
+  "indicators": "<h3>宏观数据概览</h3><p><strong>⚠️ 数据获取失败：</strong>Tavily API（SSL证书问题）和 web_search（Kimi API key 缺失）均不可用，web_fetch 被网络策略阻断。以下为框架性分析，待数据源修复后更新。</p><ul><li><strong>美联储：</strong>2026年6月FOMC会议预计维持利率不变（基于此前降息周期已至中性利率区间）</li><li><strong>中国PMI：</strong>待获取6月官方制造业PMI（通常月末公布）</li><li><strong>美债10Y收益率：</strong>预计在4.0-4.5%区间波动</li><li><strong>美元指数：</strong>预计100-104区间</li><li><strong>VIX：</strong>待获取实时数据</li></ul>",
+  "sentiment": "<h3>市场情绪</h3><p>因数据源不可用，无法提供实时情绪指标。</p><ul><li>建议关注：A股成交量变化、北向资金流向、融资余额</li><li>6月底为半年度结算窗口，流动性可能边际收紧</li></ul>",
+  "policy": "<h3>政策动向</h3><ul><li><strong>国内：</strong>关注6月LPR是否调整、财政发力节奏（专项债发行进度）</li><li><strong>海外：</strong>美联储6月议息会议声明基调、点阵图变化</li><li><strong>地缘：</strong>中美关系、关税政策持续关注</li></ul>",
+  "conclusion": "<h3>综合判断</h3><p><strong>评级：中性偏谨慎</strong></p><p>6月底处于季末时间窗口，市场流动性可能阶段性收紧。在缺乏明确催化剂的情况下，建议维持当前仓位（~75%），不宜追高。</p><ul><li><strong>仓位建议：</strong>维持70-75%，保留现金应对波动</li><li><strong>方向：</strong>关注半年报预增板块、政策受益方向</li></ul>",
+  "risks": "<h3>风险提示</h3><ul><li>⚠️ 本报告数据源异常，未能获取实时数据，分析仅供参考</li><li>季末流动性收紧风险</li><li>美联储政策转向不确定性</li><li>地缘政治突发事件</li><li>半年报业绩不及预期风险</li></ul>"
+}
