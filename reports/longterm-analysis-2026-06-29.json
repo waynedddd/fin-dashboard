@@ -1,0 +1,259 @@
+{
+  "analysis_date": "2026-06-29",
+  "strategy": "long_term_value",
+  "recommendations": [
+    {
+      "code": "600989",
+      "name": "宝丰能源",
+      "rating": "strong_buy",
+      "confidence": 0.82,
+      "current_price": 20.82,
+      "fair_value": 26.0,
+      "target_price_6m": 25.0,
+      "target_price_12m": 30.0,
+      "entry_zone": [19.5, 21.5],
+      "stop_loss": 18.0,
+      "upside_pct": 44,
+      "hold_months": 12,
+      "position_pct": 8,
+      "reasons": [
+        "ROE 24.84%+营收增45.64%，兼具盈利能力和成长性",
+        "PE仅12.14倍，煤化工龙头估值严重低估",
+        "内蒙古新基地投产带来产能翻倍预期，利润弹性大",
+        "净利率23.63%远超行业平均，成本优势显著"
+      ],
+      "risks": [
+        "煤化工产品价格周期波动",
+        "新项目投产进度不及预期"
+      ],
+      "moat": "宁夏低成本煤炭资源+一体化产业链，吨成本行业最低",
+      "catalyst": "内蒙古烯烃项目投产贡献增量利润",
+      "valuation_method": "按15倍PE×2026E EPS 1.75元=26.25元合理估值"
+    },
+    {
+      "code": "605499",
+      "name": "东鹏饮料",
+      "rating": "strong_buy",
+      "confidence": 0.85,
+      "current_price": 121.99,
+      "fair_value": 150.0,
+      "target_price_6m": 145.0,
+      "target_price_12m": 170.0,
+      "entry_zone": [115.0, 125.0],
+      "stop_loss": 105.0,
+      "upside_pct": 39,
+      "hold_months": 12,
+      "position_pct": 8,
+      "reasons": [
+        "ROE 51.61%极其优秀，资本回报率顶级",
+        "营收增速31.8%，功能饮料赛道高增长持续",
+        "全国化渠道扩张仍在加速期，天花板远未触及",
+        "现金流极其充沛，每股经营现金流11.87元"
+      ],
+      "risks": [
+        "竞争加剧（红牛、怪兽等）可能压缩份额",
+        "估值PE 19倍在消费板块不算便宜"
+      ],
+      "moat": "功能饮料第一品牌+全国密集分销网络+价格带优势",
+      "catalyst": "电解质水等新品类放量+海外市场开拓",
+      "valuation_method": "按25倍PE×2026E EPS 6.4元=160元，考虑高成长给予溢价"
+    },
+    {
+      "code": "000975",
+      "name": "山金国际",
+      "rating": "strong_buy",
+      "confidence": 0.80,
+      "current_price": 17.45,
+      "fair_value": 21.0,
+      "target_price_6m": 20.5,
+      "target_price_12m": 24.0,
+      "entry_zone": [16.0, 18.0],
+      "stop_loss": 15.0,
+      "upside_pct": 37,
+      "hold_months": 9,
+      "position_pct": 7,
+      "reasons": [
+        "黄金长期上行周期中，资源股盈利弹性大",
+        "ROE 21.56%+PE仅13倍，金矿股中性价比突出",
+        "营收增25.86%+净利增36.75%，量价齐升",
+        "负债率仅18.65%，财务安全边际高"
+      ],
+      "risks": [
+        "金价大幅回调风险",
+        "海外矿山政治风险"
+      ],
+      "moat": "优质金矿资源储备+低成本开采能力",
+      "catalyst": "金价维持高位+新矿投产增厚产量",
+      "valuation_method": "按16倍PE×2026E EPS 1.32元=21.1元"
+    },
+    {
+      "code": "603259",
+      "name": "药明康德",
+      "rating": "buy",
+      "confidence": 0.72,
+      "current_price": 126.17,
+      "fair_value": 140.0,
+      "target_price_6m": 135.0,
+      "target_price_12m": 155.0,
+      "entry_zone": [118.0, 128.0],
+      "stop_loss": 108.0,
+      "upside_pct": 23,
+      "hold_months": 9,
+      "position_pct": 6,
+      "reasons": [
+        "CRO/CDMO全球龙头，ROE 28.56%顶级",
+        "净利率42.53%反映极强定价权",
+        "生物医药外包长期需求确定性高",
+        "负债率仅22%，现金流充沛"
+      ],
+      "risks": [
+        "地缘政治风险，美国Biosecure法案不确定性",
+        "全球医药融资环境波动影响订单"
+      ],
+      "moat": "一体化CRDMO平台+全球客户粘性+产能规模壁垒",
+      "catalyst": "海外大客户订单恢复+新分子TIDES业务放量",
+      "valuation_method": "按22倍PE×2026E EPS 6.75元=148.5元"
+    },
+    {
+      "code": "000999",
+      "name": "华润三九",
+      "rating": "buy",
+      "confidence": 0.78,
+      "current_price": 23.25,
+      "fair_value": 27.0,
+      "target_price_6m": 26.0,
+      "target_price_12m": 29.0,
+      "entry_zone": [22.0, 24.0],
+      "stop_loss": 20.5,
+      "upside_pct": 25,
+      "hold_months": 9,
+      "position_pct": 6,
+      "reasons": [
+        "OTC中药龙头，品牌力+渠道力双强",
+        "PE仅12倍严重低估，防御性消费医药",
+        "毛利率54%+经营现金流3.31元/股，质量极高",
+        "并购整合（昆药集团）打开成长空间"
+      ],
+      "risks": [
+        "集采政策扩展至OTC领域",
+        "净利润增速放缓至1.58%需关注"
+      ],
+      "moat": "999品牌认知度+OTC渠道网络+中药配方独占",
+      "catalyst": "中药政策持续利好+并购协同释放",
+      "valuation_method": "按15倍PE×2026E EPS 1.85元=27.75元"
+    },
+    {
+      "code": "600660",
+      "name": "福耀玻璃",
+      "rating": "buy",
+      "confidence": 0.76,
+      "current_price": 52.15,
+      "fair_value": 58.0,
+      "target_price_6m": 56.0,
+      "target_price_12m": 62.0,
+      "entry_zone": [49.0, 53.0],
+      "stop_loss": 45.0,
+      "upside_pct": 19,
+      "hold_months": 9,
+      "position_pct": 5,
+      "reasons": [
+        "全球汽车玻璃龙头，市占率遥遥领先",
+        "ROE 25.56%+营收增16.65%，稳健增长",
+        "单车玻璃面积扩大+智能化升级提升ASP",
+        "PE 15倍对于全球龙头属合理偏低"
+      ],
+      "risks": [
+        "全球汽车销量下行周期风险",
+        "海外产能扩张带来短期费用压力"
+      ],
+      "moat": "全球规模第一+技术研发领先+客户关系深厚",
+      "catalyst": "美国工厂满产+天窗/HUD玻璃放量",
+      "valuation_method": "按18倍PE×2026E EPS 3.5元=63元"
+    },
+    {
+      "code": "002602",
+      "name": "世纪华通",
+      "rating": "buy",
+      "confidence": 0.65,
+      "current_price": 13.87,
+      "fair_value": 16.0,
+      "target_price_6m": 15.5,
+      "target_price_12m": 18.0,
+      "entry_zone": [12.5, 14.0],
+      "stop_loss": 11.5,
+      "upside_pct": 30,
+      "hold_months": 6,
+      "position_pct": 5,
+      "reasons": [
+        "游戏+AI双概念，营收暴增67.55%",
+        "ROE 20.27%+毛利率69.95%，盈利能力恢复",
+        "PE 16倍对于高增速游戏公司偏低",
+        "净利润增速362%体现强劲业绩拐点"
+      ],
+      "risks": [
+        "游戏行业监管政策不确定性",
+        "业绩爆发可能有一次性因素，持续性待验证",
+        "历史商誉减值前科"
+      ],
+      "moat": "盛趣游戏IP矩阵+AI技术应用降本",
+      "catalyst": "新游上线+AI应用落地变现",
+      "valuation_method": "按20倍PE×2026E EPS 0.85元=17元（给予成长溢价需观察持续性）"
+    },
+    {
+      "code": "600938",
+      "name": "中国海油",
+      "rating": "buy",
+      "confidence": 0.74,
+      "current_price": 27.34,
+      "fair_value": 30.0,
+      "target_price_6m": 29.0,
+      "target_price_12m": 32.0,
+      "entry_zone": [25.5, 28.0],
+      "stop_loss": 23.5,
+      "upside_pct": 17,
+      "hold_months": 12,
+      "position_pct": 5,
+      "reasons": [
+        "海上油气龙头，高分红高现金流",
+        "PE仅10倍+毛利51%，防御性极强",
+        "产量持续增长目标明确",
+        "负债率26.71%，财务极为稳健"
+      ],
+      "risks": [
+        "油价大幅下跌风险",
+        "营收已现下滑-5.3%"
+      ],
+      "moat": "海上油气开采垄断地位+低桶油成本",
+      "catalyst": "产量增长+高分红吸引力",
+      "valuation_method": "按12倍PE×2026E EPS 2.6元=31.2元"
+    },
+    {
+      "code": "300750",
+      "name": "宁德时代",
+      "rating": "hold",
+      "confidence": 0.68,
+      "current_price": 0,
+      "fair_value": 0,
+      "target_price_6m": 0,
+      "target_price_12m": 0,
+      "entry_zone": [0, 0],
+      "stop_loss": 0,
+      "upside_pct": 0,
+      "hold_months": 0,
+      "position_pct": 0,
+      "reasons": [
+        "动力电池绝对龙头，ROE 24.91%优秀",
+        "营收增17%+净利率18%保持强劲",
+        "但得分8分低于Top tier，且估值可能不够便宜",
+        "等待更好买点"
+      ],
+      "risks": ["价格战压缩利润率", "技术路线切换风险"],
+      "moat": "技术+规模+客户锁定",
+      "catalyst": "储能爆发+海外产能释放",
+      "valuation_method": "需确认当前PE后再评估"
+    }
+  ],
+  "sector_view": "超配：黄金/资源（通胀对冲+金价趋势）、消费龙头（东鹏/华润三九）、煤化工（宝丰能源成本优势）。标配：医药CXO（药明康德政策风险可控后）、汽车零部件（福耀）。低配：券商（涨幅已大）、银行（缺乏弹性）。",
+  "market_view": "沪深300当前处于估值修复中段，流动性宽松+政策支持构成底部支撑。中长期看好结构性机会：高ROE+确定成长>普涨。建议保持70-80%仓位，聚焦核心资产中的估值洼地。",
+  "portfolio_suggestion": "如果只买3只：宝丰能源30%（低估值+高成长+强现金流）、东鹏饮料35%（顶级ROE+消费确定性）、山金国际25%（黄金周期+低估值），剩余10%现金等待回调加仓。"
+}
