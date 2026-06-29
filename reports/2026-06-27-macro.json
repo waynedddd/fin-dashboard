@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-27 08:00",
+  "indicators": "<h3>⚠️ 数据获取失败</h3><p>今日搜索工具全部不可用（Tavily SSL证书错误、web_search缺少API key、web_fetch IP阻断），无法拉取实时宏观数据。</p><h3>需关注的关键指标（待更新）</h3><ul><li><strong>美联储利率</strong>：待确认当前政策利率水平</li><li><strong>美债10Y收益率</strong>：待获取</li><li><strong>美元指数DXY</strong>：待获取</li><li><strong>VIX恐慌指数</strong>：待获取</li><li><strong>中国6月PMI</strong>：预计月底公布</li><li><strong>中国5月CPI/PPI</strong>：待确认最新读数</li></ul>",
+  "sentiment": "<h3>市场情绪（缺乏实时数据）</h3><p>无法判断当前市场情绪状态。建议手动查看：</p><ul><li>A股成交量变化</li><li>北向资金流向</li><li>融资余额变动</li><li>VIX是否在20以下（风险偏好正常）</li></ul>",
+  "policy": "<h3>政策动向（基于近期趋势）</h3><ul><li><strong>美联储</strong>：2026年降息周期进展待确认，关注6月FOMC会议结果</li><li><strong>中国</strong>：稳增长政策持续，关注是否有新增量政策出台</li><li><strong>关税/贸易</strong>：中美贸易关系最新进展待确认</li></ul>",
+  "conclusion": "<h3>综合判断</h3><p><strong>⚠️ 今日无法给出数据驱动的结论</strong>，搜索工具全部故障。</p><p><strong>仓位建议</strong>：维持现有仓位（~75%），不做主动调整。在无法确认宏观环境变化时，保持纪律优于盲动。</p><p><strong>操作原则</strong>：等待数据恢复后再做判断。如有重大突发事件，Wayne可手动触发分析。</p>",
+  "risks": "<h3>风险提示</h3><ul><li><strong>数据盲区风险</strong>：今日分析工具失效，可能错过重要信息，建议手动浏览财经新闻</li><li><strong>6月底流动性</strong>：季末资金面可能偏紧，关注银行间利率</li><li><strong>月底PMI公布</strong>：6月30日前后将公布6月PMI，可能引发波动</li></ul>"
+}

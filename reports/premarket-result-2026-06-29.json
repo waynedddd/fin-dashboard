@@ -1,0 +1,174 @@
+{
+  "analysis_date": "2026-06-29",
+  "strategy": "pre_market",
+  "lhb_date": "20260626",
+  "recommendations": [
+    {
+      "code": "002354",
+      "name": "天娱数科",
+      "rating": "buy",
+      "confidence": 0.65,
+      "entry_strategy": "开盘观察前5分钟量能,若高开回落至8.5-8.6区间可轻仓介入;若低开平开直接在8.3附近半仓",
+      "target_price": 9.5,
+      "stop_loss": 7.9,
+      "reasons": [
+        "龙虎榜净买入2.99亿,资金认可度高",
+        "利润增速476.94%,业绩反转明确",
+        "RSI(14)=60.5技术面健康,未超买",
+        "布林位置0.88,仍在通道内有上行空间",
+        "换手率30%充分换手,筹码活跃"
+      ],
+      "risks": [
+        "PE为负,绝对估值仍偏贵",
+        "换手率过高意味分歧大,可能大幅波动",
+        "近5日主力净流出3041万,需盘中确认资金回流"
+      ],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "002129",
+      "name": "TCL中环",
+      "rating": "watch",
+      "confidence": 0.55,
+      "entry_strategy": "不追高!开盘若冲高回落至10.5-10.7区间且量能不萎缩,可考虑试仓;封板则放弃",
+      "target_price": 12.0,
+      "stop_loss": 10.0,
+      "reasons": [
+        "龙虎榜净买入5.97亿为全场最高,机构/游资合力",
+        "连续两天大涨(+6.9%,+9.4%),短线动能强",
+        "量比2.13持续放量,资金持续流入"
+      ],
+      "risks": [
+        "ROE=-7.81%,基本面较差,纯资金驱动",
+        "已连续大涨,追高风险极大",
+        "负债率68%偏高,毛利率为负",
+        "布林位置1.08已突破上轨"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "001389",
+      "name": "广合科技",
+      "rating": "watch",
+      "confidence": 0.5,
+      "entry_strategy": "等回调!若盘中回调至210以下且缩量企稳可考虑;高开直接放弃,不追220以上的价格",
+      "target_price": 240.0,
+      "stop_loss": 200.0,
+      "reasons": [
+        "基本面优秀:ROE 9.28%,营收增71%,利润增63%",
+        "龙虎榜净买3.68亿,市场认可",
+        "MACD金叉且柱体放大,趋势向上"
+      ],
+      "risks": [
+        "RSI(6)=74.9短期超买信号",
+        "10日涨幅已达25%,获利盘丰厚",
+        "PE=89倍估值不低",
+        "布林位置1.19大幅突破上轨,均值回归压力大"
+      ],
+      "hold_days": 3,
+      "position_pct": 1
+    },
+    {
+      "code": "603002",
+      "name": "宏昌电子",
+      "rating": "avoid",
+      "confidence": 0.75,
+      "entry_strategy": "回避,10日涨46%+RSI(14)=71.8,追高风险极大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买3.24亿"
+      ],
+      "risks": [
+        "10日涨幅46.66%,严重超涨",
+        "利润增速-92.74%,基本面崩塌",
+        "PE=1012倍,泡沫严重",
+        "RSI(6)=75.5+RSI(14)=71.8双双超买"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600545",
+      "name": "卓郎智能",
+      "rating": "avoid",
+      "confidence": 0.6,
+      "entry_strategy": "回避,缩量涨停(量比0.35)后续动能不足",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买2.25亿"
+      ],
+      "risks": [
+        "量比0.35严重缩量,涨停封板不牢固",
+        "MACD柱为负,中期趋势仍偏弱",
+        "ROE为负,基本面不支持"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600520",
+      "name": "三佳科技",
+      "rating": "avoid",
+      "confidence": 0.7,
+      "entry_strategy": "回避,RSI(6)=83.22严重超买,短期有回调压力",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "利润增速134.99%,业绩不错"
+      ],
+      "risks": [
+        "RSI(6)=83.22极度超买",
+        "布林位置1.12突破上轨",
+        "10日涨25%,获利盘重"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "601016",
+      "name": "节能风电",
+      "rating": "avoid",
+      "confidence": 0.65,
+      "entry_strategy": "回避,趋势仍在下行,单日涨停不改中期弱势",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买2.09亿"
+      ],
+      "risks": [
+        "MA5<MA10<MA20,均线空头排列",
+        "MACD柱为负,趋势偏弱",
+        "利润增速-47.93%,业绩下滑",
+        "布林位置0.36仍在下半区,反弹性质"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603800",
+      "name": "洪田股份",
+      "rating": "avoid",
+      "confidence": 0.7,
+      "entry_strategy": "回避,龙虎榜买入与主力净流出1.42亿矛盾,资金分歧大",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买1.57亿"
+      ],
+      "risks": [
+        "近5日主力净流出1.42亿,资金大举出逃",
+        "ROE=-2%,毛利率=-1.9%,基本面极差",
+        "负债率62.57%偏高",
+        "RSI(6)=73.98逼近超买"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "周四龙虎榜显示资金集中在光伏(TCL中环)、PCB(广合科技)、数字经济(天娱数科)方向。但多数个股短期涨幅过大、RSI超买，追涨风险高。今日周一开盘需警惕获利盘回吐，建议以观察为主，等回调再介入。整体看资金偏好有业绩反转+概念催化的标的。",
+  "top_picks": ["002354"]
+}

@@ -1,5 +1,16 @@
 [
   {
+    "code": "002354",
+    "name": "天娱数科",
+    "source": "premarket-2026-06-29",
+    "date": "2026-06-29",
+    "rating": "buy",
+    "confidence": 0.65,
+    "entry": "高开回落至8.5-8.6轻仓;低开平开8.3附近半仓",
+    "target": 9.5,
+    "stop_loss": 7.9
+  },
+  {
     "code": "000815",
     "name": "美利云",
     "source": "premarket-2026-05-08",
@@ -116,6 +127,17 @@
     "entry": "高开3-5%后缩量回踩6.1附近轻仓试探,放量突破6.24加仓",
     "target": 6.8,
     "stop_loss": 5.85
+  },
+  {
+    "code": "002851",
+    "name": "麦格米特",
+    "source": "premarket-2026-05-26",
+    "date": "2026-05-26",
+    "rating": "buy",
+    "confidence": 0.65,
+    "entry": "高开回落至128-130区间可建半仓,止损125",
+    "target": 142.0,
+    "stop_loss": 125.0
   },
   {
     "code": "600726",
@@ -261,69 +283,14 @@
     "stop_loss": 19.8
   },
   {
-    "code": "600906",
-    "name": "财达证券",
-    "source": "premarket-2026-06-15",
-    "date": "2026-06-15",
-    "rating": "buy",
-    "confidence": 0.65,
-    "entry": "高开2%以内且量能不萎缩，回踩6.9-7.0半仓；高开超4%放弃",
-    "target": 7.7,
-    "stop_loss": 6.5
-  },
-  {
-    "code": "002851",
-    "name": "麦格米特",
-    "source": "premarket-2026-06-17",
-    "date": "2026-06-17",
+    "code": "600497",
+    "name": "驰宏锌锗",
+    "source": "premarket-2026-06-16",
+    "date": "2026-06-16",
     "rating": "buy",
     "confidence": 0.72,
-    "entry": "高开3%以内直接半仓;高开5%以上等回踩160附近再介入",
-    "target": 178.0,
-    "stop_loss": 152.0
-  },
-  {
-    "code": "002008",
-    "name": "大族激光",
-    "source": "premarket-2026-06-17",
-    "date": "2026-06-17",
-    "rating": "buy",
-    "confidence": 0.68,
-    "entry": "回调至132-134区间可建半仓;涨停板不追;低开反而是好机会",
-    "target": 147.0,
-    "stop_loss": 125.0
-  },
-  {
-    "code": "603399",
-    "name": "永杉锂业",
-    "source": "premarket-2026-06-25",
-    "date": "2026-06-25",
-    "rating": "buy",
-    "confidence": 0.72,
-    "entry": "高开<3%半仓介入;高开>5%等回调至21.5-22低吸",
-    "target": 25.0,
-    "stop_loss": 20.0
-  },
-  {
-    "code": "002600",
-    "name": "领益智造",
-    "source": "premarket-2026-06-25",
-    "date": "2026-06-25",
-    "rating": "buy",
-    "confidence": 0.68,
-    "entry": "高开≤3%半仓;高开5%+放弃追涨,等回踩17元支撑",
-    "target": 19.5,
-    "stop_loss": 15.9
-  },
-  {
-    "code": "000100",
-    "name": "TCL科技",
-    "source": "premarket-2026-06-26",
-    "date": "2026-06-26",
-    "rating": "buy",
-    "confidence": 0.72,
-    "entry": "高开不超3%在5.3-5.4半仓;低开至5.1-5.2更优建6成仓;放量站稳5.3加仓",
-    "target": 5.8,
-    "stop_loss": 4.95
+    "entry": "高开不超5%且放量承接好,9.8-10.0区间建半仓;高开超5%等回踩10日均线9.08",
+    "target": 11.0,
+    "stop_loss": 9.2
   }
 ]
