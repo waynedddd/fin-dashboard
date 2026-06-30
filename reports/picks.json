@@ -74,17 +74,6 @@
     "stop_loss": 37.5
   },
   {
-    "code": "000988",
-    "name": "华工科技",
-    "source": "premarket-2026-05-21",
-    "date": "2026-05-21",
-    "rating": "watch",
-    "confidence": 0.6,
-    "entry": "回调至155-158(MA5附近)企稳轻仓低吸;不回调则观望",
-    "target": 175.0,
-    "stop_loss": 150.0
-  },
-  {
     "code": "002920",
     "name": "德赛西威",
     "source": "premarket-2026-05-22",
@@ -292,5 +281,16 @@
     "entry": "高开不超5%且放量承接好,9.8-10.0区间建半仓;高开超5%等回踩10日均线9.08",
     "target": 11.0,
     "stop_loss": 9.2
+  },
+  {
+    "code": "000988",
+    "name": "华工科技",
+    "source": "premarket-2026-06-30",
+    "date": "2026-06-30",
+    "rating": "buy",
+    "confidence": 0.72,
+    "entry": "集合竞价观察封单量,若回落至172-174可建半仓;一字板放弃等次日回调",
+    "target": 195.0,
+    "stop_loss": 165.0
   }
 ]
