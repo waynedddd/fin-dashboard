@@ -1,0 +1,65 @@
+{
+  "date": "2026-07-01",
+  "strategy": "pre_market",
+  "picks": [
+    {
+      "code": "002407",
+      "name": "多氟多",
+      "rating": "watch",
+      "confidence": 0.72,
+      "entry_strategy": "集合竞价观察，若开盘涨幅>8%则等回调至49以下低吸半仓；若集合竞价涨幅<5%可T+0+模式追，但RSI已81需注意高位风险",
+      "target_price": 52.5,
+      "position_pct": 2
+    },
+    {
+      "code": "002167",
+      "name": "东方锆业",
+      "rating": "buy",
+      "confidence": 0.75,
+      "entry_strategy": "开盘低吸20.5-21.5，可建1仓；若集合竞价跳空>12%则等回调；不追高，做T+0思路",
+      "target_price": 24.0,
+      "position_pct": 2
+    },
+    {
+      "code": "000938",
+      "name": "紫光股份",
+      "rating": "watch",
+      "confidence": 0.68,
+      "entry_strategy": "开盘观察3-5分钟，若保持红盘可低吸28以下半仓；若集合竞价跳空>12%则观望；利润增速126%可关注，但负债82%需谨慎",
+      "target_price": 30.5,
+      "position_pct": 1
+    },
+    {
+      "code": "002202",
+      "name": "金风科技",
+      "rating": "watch",
+      "confidence": 0.65,
+      "entry_strategy": "开盘观察，若维持涨幅<8%且量能缩量则低吸23.2以下；若追高则回避。营收增速63%可关注长期，短线做T思路",
+      "target_price": 25.0,
+      "position_pct": 1
+    },
+    {
+      "code": "000100",
+      "name": "TCL科技",
+      "rating": "watch",
+      "confidence": 0.62,
+      "entry_strategy": "开盘观察，低吸5.6-5.7是较好的介入点；短线做反弹思路，盘中若冲10%后回落则追高回避",
+      "target_price": 6.2,
+      "position_pct": 1
+    },
+    {
+      "code": "002600",
+      "name": "领益智造",
+      "rating": "watch",
+      "confidence": 0.58,
+      "entry_strategy": "开盘观察，可尝试17以下低吸，但基本面利空（利润增速-30.7%）限制上升空间，不推荐追高",
+      "target_price": 18.5,
+      "position_pct": 1
+    }
+  ],
+  "top_3": [
+    "002167（东方锆业）- 游资力度最大，换手20%最高，技术最强",
+    "002407（多氟多）- 大资金净买入最多，但需控制风险",
+    "000938（紫光股份）- 利润增速最高，均衡选择"
+  ]
+}

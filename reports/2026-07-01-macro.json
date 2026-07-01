@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-07-01 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 注意：搜索工具不可用（Tavily SSL / web_search API key缺失），以下为框架性分析，非实时数据。</strong></p><ul><li><strong>美联储：</strong>2026年上半年市场预期联储维持利率在较低水平（此前降息周期末段），关注7月FOMC声明措辞</li><li><strong>美债收益率：</strong>10Y美债预计在3.5-4.0%区间波动，需确认最新数据</li><li><strong>美元指数（DXY）：</strong>偏弱运行有利于新兴市场资金流入</li><li><strong>中国PMI：</strong>6月制造业PMI需关注是否站稳荣枯线上方（50以上）</li><li><strong>中国CPI：</strong>通缩压力是否缓解是关键观察点</li><li><strong>社融/信贷：</strong>6月数据为半年末冲量窗口，通常环比改善</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>VIX：</strong>需实时确认，若低于15则市场偏乐观</li><li><strong>A股成交量：</strong>关注是否维持万亿以上活跃水平</li><li><strong>北向资金：</strong>6月末季度调仓窗口，关注净流入方向</li><li><strong>融资余额：</strong>杠杆资金活跃度反映短期情绪</li></ul><p>Q3开局通常有「七翻身」预期，但需基本面配合。</p>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>国内：</strong>下半年稳增长政策窗口期，关注7月政治局会议定调</li><li><strong>货币政策：</strong>央行降准/降息空间仍在，MLF操作是前瞻信号</li><li><strong>产业政策：</strong>AI、新能源、半导体等方向持续获政策支持</li><li><strong>地产：</strong>因城施策持续松绑，关注核心城市成交量回暖程度</li><li><strong>外部：</strong>中美关系、关税政策变化需持续跟踪</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>整体判断：中性偏积极（待数据确认）</strong></p><ul><li>Q3开局季节性偏多，政策托底预期仍在</li><li>美联储偏鸽+美元偏弱组合对A股友好</li><li>国内经济复苏力度是核心变量</li></ul><h3>仓位建议</h3><ul><li><strong>当前仓位75%：</strong>维持不变，暂不加仓</li><li><strong>策略：</strong>结构性调仓优于整体加减仓</li><li><strong>方向：</strong>政策确定性高的板块（AI应用、自主可控）+ 低估值红利防御</li><li><strong>止盈：</strong>反弹至关键压力位时可适当减仓锁定利润</li></ul>",
+  "risks": "<h3>⚠️ 风险提示</h3><ul><li><strong>数据风险：</strong>本次分析未获取实时数据，结论需待数据验证</li><li><strong>地缘风险：</strong>中美博弈升级可能冲击市场情绪</li><li><strong>经济风险：</strong>若6月PMI回落至荣枯线下方，复苏逻辑将受质疑</li><li><strong>流动性风险：</strong>半年末跨季资金面紧张已过，但需关注7月MLF到期量</li><li><strong>外部风险：</strong>美股若出现回调可能传导至A股</li></ul>"
+}
