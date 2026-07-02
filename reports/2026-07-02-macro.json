@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-07-02 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 数据时效提示：</strong>今日搜索工具不可用（Tavily SSL故障 + web_search API key缺失），以下基于近期趋势框架分析，具体数值请自行验证。</p><ul><li><strong>美联储：</strong>2026年上半年维持渐进降息路径，联邦基金利率预计已降至3.75-4.00%区间，7月FOMC会议（7/29-30）将是下一个关键节点</li><li><strong>美债收益率：</strong>10Y美债收益率在3.8-4.2%区间波动，降息预期支撑债市</li><li><strong>美元指数(DXY)：</strong>降息周期下美元偏弱运行，预计在100-103区间</li><li><strong>中国PMI：</strong>6月制造业PMI关注是否站稳50荣枯线上方，服务业PMI维持扩张</li><li><strong>中国CPI：</strong>通缩压力是否缓解是关键观察点</li><li><strong>社融：</strong>关注信贷投放节奏和结构</li></ul>",
+  "sentiment": "<h3>🎯 市场情绪</h3><ul><li><strong>VIX：</strong>美股波动率预计处于中低水平（15-20区间），反映市场对软着陆的定价</li><li><strong>北向资金：</strong>美元走弱+降息周期有利于新兴市场资金流入</li><li><strong>A股情绪：</strong>Q3传统上为政策预期窗口（7月政治局会议），市场博弈政策加码</li></ul>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储：</strong>7/29-30 FOMC会议，市场关注点评和前瞻指引</li><li><strong>中国：</strong>7月底政治局会议定调下半年经济政策，关注是否有增量刺激</li><li><strong>财政：</strong>特别国债发行节奏、地方专项债使用进度</li><li><strong>产业：</strong>科技自主、新能源、消费刺激政策持续出台</li></ul>",
+  "conclusion": "<h3>📈 综合判断</h3><p><strong>宏观环境对A股：偏中性略偏多</strong></p><ul><li>美联储降息周期 → 外部流动性边际改善 ✅</li><li>美元走弱 → 人民币压力减轻，北向资金有回流动力 ✅</li><li>国内经济复苏力度待验证 → 结构性机会为主 ⚠️</li><li>7月政治局会议前为政策博弈窗口期 ✅</li></ul><p><strong>仓位建议：</strong>维持当前75%仓位，7月上旬可适度加仓至80%。重点配置：政策受益板块（科技/消费）+ 红利防御（银行/煤炭）。</p>",
+  "risks": "<h3>⚡ 风险提示</h3><ul><li><strong>数据风险：</strong>本次分析因工具故障未获取实时数据，结论可靠性降低</li><li><strong>地缘风险：</strong>中美关系、台海局势等突发事件</li><li><strong>经济不及预期：</strong>若6月PMI/社融数据低于预期，市场可能回调</li><li><strong>美股调整传导：</strong>美股估值高位，若出现回调可能拖累A股风险偏好</li><li><strong>政策低于预期：</strong>若7月政治局会议未出增量政策，博弈资金可能撤退</li></ul>"
+}
