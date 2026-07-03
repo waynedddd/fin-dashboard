@@ -303,5 +303,27 @@
     "entry": "竞价排涨停板;若高开5%以内回踩不破17.0可建半仓",
     "target": 19.0,
     "stop_loss": 16.5
+  },
+  {
+    "code": "002842",
+    "name": "翔鹭钨业",
+    "source": "premarket-2026-07-03",
+    "date": "2026-07-03",
+    "rating": "buy",
+    "confidence": 0.75,
+    "entry": "高开不超3%可建仓;高开超5%等回落至49附近再接",
+    "target": 55.0,
+    "stop_loss": 46.5
+  },
+  {
+    "code": "002738",
+    "name": "中矿资源",
+    "source": "premarket-2026-07-03",
+    "date": "2026-07-03",
+    "rating": "buy",
+    "confidence": 0.7,
+    "entry": "低开或平开直接建仓;高开超2%等回踩MA5(59.36)附近接",
+    "target": 72.0,
+    "stop_loss": 60.0
   }
 ]
