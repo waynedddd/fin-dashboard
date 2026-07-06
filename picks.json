@@ -325,5 +325,38 @@
     "entry": "低开或平开直接建仓;高开超2%等回踩MA5(59.36)附近接",
     "target": 72.0,
     "stop_loss": 60.0
+  },
+  {
+    "code": "000975",
+    "name": "山金国际",
+    "source": "premarket-2026-07-06",
+    "date": "2026-07-06",
+    "rating": "buy",
+    "confidence": 0.75,
+    "entry": "高开不超3%直接介入;高开超5%等回调至20附近低吸",
+    "target": 22.0,
+    "stop_loss": 18.5
+  },
+  {
+    "code": "600988",
+    "name": "赤峰黄金",
+    "source": "premarket-2026-07-06",
+    "date": "2026-07-06",
+    "rating": "buy",
+    "confidence": 0.7,
+    "entry": "回调至29.5-30区间加仓;止损28.5",
+    "target": 34.0,
+    "stop_loss": 28.5
+  },
+  {
+    "code": "002353",
+    "name": "杰瑞股份",
+    "source": "premarket-2026-07-06",
+    "date": "2026-07-06",
+    "rating": "buy",
+    "confidence": 0.65,
+    "entry": "回调至155-158建仓;封板则放弃等次日",
+    "target": 175.0,
+    "stop_loss": 148.0
   }
 ]
