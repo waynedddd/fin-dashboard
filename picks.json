@@ -369,5 +369,27 @@
     "entry": "高开3%以内可轻仓介入;回调至18.0-18.5区间再接;高开5%以上不追",
     "target": 20.5,
     "stop_loss": 17.0
+  },
+  {
+    "code": "000973",
+    "name": "佛塑科技",
+    "source": "premarket-2026-07-08",
+    "date": "2026-07-08",
+    "rating": "buy",
+    "confidence": 0.75,
+    "entry": "高开3%以内半仓介入;高开超5%等回调至14.3附近再接",
+    "target": 16.0,
+    "stop_loss": 13.5
+  },
+  {
+    "code": "002185",
+    "name": "华天科技",
+    "source": "premarket-2026-07-08",
+    "date": "2026-07-08",
+    "rating": "buy",
+    "confidence": 0.7,
+    "entry": "集合竞价高开5%以上且量能充足可小仓追;开盘回落则放弃不追高",
+    "target": 24.0,
+    "stop_loss": 20.0
   }
 ]
