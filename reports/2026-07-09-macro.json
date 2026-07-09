@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-07-09 08:00",
+  "indicators": "<h3>📊 宏观数据概览</h3><p><strong>⚠️ 注意：今日搜索工具不可用（Tavily SSL / web_search API key缺失），以下为框架分析，数据待验证。</strong></p><ul><li><strong>美联储：</strong>6月FOMC维持利率不变（预计4.25-4.50%区间），市场关注7月底会议是否释放降息信号</li><li><strong>美债10Y收益率：</strong>预计在4.0-4.3%区间波动，若降息预期升温则承压下行</li><li><strong>美元指数DXY：</strong>预计103-105区间，美元走弱利好新兴市场</li><li><strong>中国6月PMI：</strong>关注官方制造业PMI是否站稳50荣枯线上方</li><li><strong>中国6月CPI：</strong>预计同比低位（0.5-1.0%），通缩压力仍在</li><li><strong>社融：</strong>关注6月社融数据是否超预期，信贷脉冲对市场有指引作用</li></ul>",
+  "sentiment": "<h3>🌡️ 市场情绪</h3><ul><li><strong>VIX：</strong>预计15-18区间，市场整体偏平静</li><li><strong>北向资金：</strong>需关注7月初流入/流出趋势</li><li><strong>A股成交量：</strong>若两市成交维持万亿以上，说明市场活跃度尚可</li><li><strong>板块轮动：</strong>AI/科技、消费复苏、出口链为近期主线</li></ul>",
+  "policy": "<h3>🏛️ 政策动向</h3><ul><li><strong>美联储：</strong>7月30日FOMC会议为下一关键节点，市场定价9月降息概率</li><li><strong>中国：</strong>7月政治局会议（月底）将定调下半年经济政策，关注是否加码刺激</li><li><strong>中美关系：</strong>贸易谈判进展影响市场风险偏好</li><li><strong>A股制度：</strong>关注IPO节奏、减持新规等资本市场改革动向</li></ul>",
+  "conclusion": "<h3>📋 综合判断</h3><p><strong>宏观环境评估：中性偏积极</strong></p><ul><li>全球降息周期预期仍在，流动性环境对权益资产偏友好</li><li>中国经济弱复苏格局未变，政策托底意愿明确</li><li>A股估值处于历史中位偏低，下行空间有限</li></ul><p><strong>仓位建议：维持当前75%仓位</strong></p><ul><li>不急于加仓，等待7月底政治局会议和FOMC明确方向</li><li>结构上偏向：科技成长（AI算力）> 消费 > 周期</li><li>25%现金留作7月底政策窗口期的加仓弹药</li></ul>",
+  "risks": "<h3>⚠️ 风险提示</h3><ul><li><strong>美联储鹰派超预期：</strong>若7月FOMC暗示推迟降息，全球风险资产承压</li><li><strong>中国经济数据不及预期：</strong>PMI跌破50或社融大幅低于预期将打击信心</li><li><strong>地缘风险：</strong>中美/台海/中东局势突变</li><li><strong>流动性收缩：</strong>北向资金持续流出或两市成交萎缩至8000亿以下</li><li><strong>数据时效性：</strong>本报告搜索工具不可用，建议手动验证关键数据点</li></ul>"
+}
