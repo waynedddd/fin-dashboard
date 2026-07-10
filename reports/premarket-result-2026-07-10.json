@@ -1,0 +1,215 @@
+{
+  "analysis_date": "2026-07-10",
+  "strategy": "pre_market",
+  "lhb_date": "20260709",
+  "recommendations": [
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "rating": "buy",
+      "confidence": 0.72,
+      "entry_strategy": "开盘观察前5分钟，若竞价未大幅高开(涨幅<5%)，可在250-255区间低吸半仓；若高开回落至MA5(238)附近可加仓",
+      "target_price": 280,
+      "stop_loss": 237,
+      "reasons": [
+        "龙虎榜净买5.2亿，机构认可",
+        "营收增速52.7%+利润增143%，基本面扎实",
+        "RSI 57.8健康不超买，布林0.70有空间",
+        "10日跌5.25%后反弹涨停，属于超跌修复"
+      ],
+      "risks": [
+        "PE 234高估值，回调空间大",
+        "MACD柱为负，中期趋势尚未完全反转"
+      ],
+      "hold_days": 3,
+      "position_pct": 3
+    },
+    {
+      "code": "002281",
+      "name": "光迅科技",
+      "rating": "buy",
+      "confidence": 0.68,
+      "entry_strategy": "竞价阶段观察资金态度，若开盘回调至225-230区间可建仓；涨停板打开则不追",
+      "target_price": 260,
+      "stop_loss": 215,
+      "reasons": [
+        "龙虎榜净买3.5亿",
+        "RSI 54.3+布林0.52，位置安全在中轨附近",
+        "利润增60%+营收增25%，光通信龙头基本面好",
+        "负债率43%较低，财务健康"
+      ],
+      "risks": [
+        "PE 190高估值",
+        "MACD柱-10较大，短期动能修复需要时间",
+        "10日跌8.79%，可能是下跌中继反弹"
+      ],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "002156",
+      "name": "通富微电",
+      "rating": "watch",
+      "confidence": 0.55,
+      "entry_strategy": "不追涨停，若今日冲高回落至68-70区间可考虑低吸；连续封板则放弃",
+      "target_price": 78,
+      "stop_loss": 64,
+      "reasons": [
+        "龙虎榜净买15.5亿巨量，机构/游资重仓",
+        "利润增速224%，半导体封装龙头",
+        "RSI 55.6健康，技术位置合理"
+      ],
+      "risks": [
+        "昨日涨停今日追高风险大",
+        "近期波动剧烈(10日跌7.25%)，方向不明确"
+      ],
+      "hold_days": 2,
+      "position_pct": 2
+    },
+    {
+      "code": "002747",
+      "name": "埃斯顿",
+      "rating": "watch",
+      "confidence": 0.50,
+      "entry_strategy": "昨日逆势下跌但龙虎榜净买，今日若低开企稳在40-41区间可小仓试探",
+      "target_price": 46,
+      "stop_loss": 38,
+      "reasons": [
+        "逆势跌5.8%仍有2.3亿净买入，说明资金看好",
+        "利润增674%（低基数效应）",
+        "RSI 49.5中性位置，无超买风险"
+      ],
+      "risks": [
+        "PE 308极高估值",
+        "营收下滑2.2%，增长质量存疑",
+        "负债率69%偏高"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "600909",
+      "name": "华安证券",
+      "rating": "watch",
+      "confidence": 0.45,
+      "entry_strategy": "券商反弹博弈，若今日回调至9.5-9.8可少量参与，严格止损",
+      "target_price": 11.0,
+      "stop_loss": 9.1,
+      "reasons": [
+        "龙虎榜净买1.5亿",
+        "超跌严重(10日跌16%)后首板反弹",
+        "布林0.5中轨位置，有修复空间"
+      ],
+      "risks": [
+        "利润下滑17%，基本面走弱",
+        "券商板块整体疲软，可能是死猫跳",
+        "5日跌15%趋势性下跌"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "001248",
+      "name": "华润新能源",
+      "rating": "avoid",
+      "confidence": 0.80,
+      "entry_strategy": "回避，不参与",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买1.98亿"
+      ],
+      "risks": [
+        "次新股5日暴跌38%，趋势极度恶化",
+        "利润下滑31%基本面差",
+        "技术指标缺失无法判断支撑位",
+        "典型高位崩塌走势，不可抄底"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "600172",
+      "name": "黄河旋风",
+      "rating": "avoid",
+      "confidence": 0.75,
+      "entry_strategy": "回避，纯博弈标的风险过高",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "龙虎榜净买1.17亿"
+      ],
+      "risks": [
+        "ROE -18.86%持续亏损",
+        "负债率92.78%极高，有债务风险",
+        "RSI 64+布林0.81偏高位，追高风险大",
+        "PE为负，无盈利支撑"
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    },
+    {
+      "code": "603538",
+      "name": "美诺华",
+      "rating": "watch",
+      "confidence": 0.40,
+      "entry_strategy": "近期剧烈震荡的游资票，若回调至26以下可关注，否则观望",
+      "target_price": 31,
+      "stop_loss": 25,
+      "reasons": [
+        "龙虎榜净买2.2亿",
+        "MACD柱转正，短期动能恢复"
+      ],
+      "risks": [
+        "近期多次涨跌停，波动极大",
+        "换手率23%纯游资博弈",
+        "ROE仅1.32%，业绩平庸"
+      ],
+      "hold_days": 1,
+      "position_pct": 1
+    },
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "rating": "watch",
+      "confidence": 0.50,
+      "entry_strategy": "连续大涨后RSI偏高，不追板；若回调至21-22区间可考虑",
+      "target_price": 25.5,
+      "stop_loss": 20.5,
+      "reasons": [
+        "龙虎榜净买13.7亿巨量",
+        "利润增568%，半导体封装赛道",
+        "MACD柱微正，趋势向上"
+      ],
+      "risks": [
+        "RSI 72偏高，布林0.92逼近上轨",
+        "5日涨17%短期获利盘巨大",
+        "ROE仅0.48%，盈利能力弱"
+      ],
+      "hold_days": 2,
+      "position_pct": 2
+    },
+    {
+      "code": "600353",
+      "name": "旭光电子",
+      "rating": "watch",
+      "confidence": 0.40,
+      "entry_strategy": "缩量涨停可靠性存疑，今日若放量确认可关注，否则放弃",
+      "target_price": 45,
+      "stop_loss": 36.5,
+      "reasons": [
+        "龙虎榜净买1亿",
+        "RSI 54.7+布林0.47，位置安全"
+      ],
+      "risks": [
+        "量比0.55缩量涨停，资金参与度低",
+        "前两天暴跌-10.7%和-7.1%",
+        "PE 205高估值"
+      ],
+      "hold_days": 2,
+      "position_pct": 1
+    }
+  ],
+  "market_view": "昨日龙虎榜显示资金集中在半导体封装(通富微电/华天科技)和科技制造(东山精密/光迅科技)方向，AI+半导体产业链热度回升。但多只标的前期跌幅较大后涨停反弹，需警惕是超跌反弹非趋势反转。今日建议以低吸为主，不追高开票。",
+  "top_picks": ["002384", "002281"]
+}
