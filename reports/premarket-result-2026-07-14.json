@@ -1,0 +1,48 @@
+{
+  "analysis_date": "2026-07-14",
+  "strategy": "pre_market",
+  "lhb_date": "20260713",
+  "recommendations": [
+    {
+      "code": "002317",
+      "name": "众生药业",
+      "rating": "buy",
+      "confidence": 0.9,
+      "entry_strategy": "开盘观察5分钟，若回调至30.5以下可建仓，目标价34，止损28。",
+      "target_price": 34,
+      "stop_loss": 28,
+      "reasons": ["龙虎榜资金大幅净买入", "技术面RSI高于70，强趋势确认"],
+      "risks": ["高位追涨风险"],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "002185",
+      "name": "华天科技",
+      "rating": "watch",
+      "confidence": 0.7,
+      "entry_strategy": "若开盘回调至22以下放量企稳可尝试建轻仓，目标价25，止损20。",
+      "target_price": 25,
+      "stop_loss": 20,
+      "reasons": ["龙虎榜资金净买入次高", "技术指标未超买"],
+      "risks": ["消息面缺乏催化"],
+      "hold_days": 2,
+      "position_pct": 1
+    },
+    {
+      "code": "000920",
+      "name": "沃顿科技",
+      "rating": "buy",
+      "confidence": 0.8,
+      "entry_strategy": "跳空高开则不追，关注能否回踩13.5守住支撑。目标价15，止损12.5。",
+      "target_price": 15,
+      "stop_loss": 12.5,
+      "reasons": ["龙虎榜尾势放量突破", "量价齐升趋势明确"],
+      "risks": ["大盘弱势拖累"],
+      "hold_days": 2,
+      "position_pct": 2
+    }
+  ],
+  "market_view": "昨日涨跌互现，资金博弈明显，今日关注量能变化。",
+  "top_picks": ["002317", "002185", "000920"]
+}
