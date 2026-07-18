@@ -1,0 +1,63 @@
+{
+  "analysis_date": "2026-07-15",
+  "strategy": "pre_market",
+  "lhb_date": "20260714",
+  "recommendations": [
+    {
+      "code": "002384",
+      "name": "东山精密",
+      "rating": "buy",
+      "confidence": 0.8,
+      "entry_strategy": "开盘后观察，若稳站250日均线并量能持续，可低吸建仓",
+      "target_price": 280,
+      "stop_loss": 245,
+      "reasons": [
+        "龙虎榜净买入显著（1.3亿）",
+        "近期K线形态健康，量能支持波段上攻"
+      ],
+      "risks": [
+        "若无量突破，则短期承压于上一高点区间（270-274）"
+      ],
+      "hold_days": 7,
+      "position_pct": 3
+    },
+    {
+      "code": "002463",
+      "name": "沪电股份",
+      "rating": "watch",
+      "confidence": 0.6,
+      "entry_strategy": "高开不追，回踩136以下或急跌至132附近可分批吸",
+      "target_price": 148,
+      "stop_loss": 129,
+      "reasons": [
+        "龙虎榜资金买入占比强",
+        "近期涨幅相对低于板块内其他热门标的"
+      ],
+      "risks": [
+        "短期均线压制，站稳确认前可能面临回踩风险"
+      ],
+      "hold_days": 5,
+      "position_pct": 2
+    },
+    {
+      "code": "603538",
+      "name": "美诺华",
+      "rating": "avoid",
+      "confidence": 0.4,
+      "entry_strategy": "短期超买严重，暂勿参与。若市值分母回归至30元附近后重新评估情况",
+      "target_price": null,
+      "stop_loss": null,
+      "reasons": [
+        "技术指标超买，布林带上轨已偏离较多",
+        "缺乏明显催化剂支撑当前高市值预期"
+      ],
+      "risks": [
+        "大盘整体情绪不佳可能加快跌幅 "
+      ],
+      "hold_days": 0,
+      "position_pct": 0
+    }
+  ],
+  "market_view": "主观判断大盘方向向下，但题材内部分板块可能有分歧转二波契机",
+  "top_picks": ["002384", "002463"]
+}
