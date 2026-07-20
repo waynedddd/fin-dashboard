@@ -1,0 +1,57 @@
+{
+  "analysis_date": "2026-07-19",
+  "strategy": "pre_market",
+  "lhb_date": "20260717",
+  "recommendations": [
+    {
+      "code": "600667",
+      "name": "太极实业",
+      "rating": "watch",
+      "confidence": 0.7,
+      "entry_strategy": "观察开盘价格，若回调至16-16.2区间可轻仓布局",
+      "target_price": 18.5,
+      "stop_loss": 15.5,
+      "reasons": [
+        "RSI低，技术上无追高风险",
+        "近期龙虎榜净买入居首"
+      ],
+      "risks": ["缺乏近期催化剂"],
+      "hold_days": 3,
+      "position_pct": 2
+    },
+    {
+      "code": "603118",
+      "name": "共进股份",
+      "rating": "buy",
+      "confidence": 0.8,
+      "entry_strategy": "关注开盘强势拉升，突破15元压力则可追涨布局",
+      "target_price": 16.5,
+      "stop_loss": 14,
+      "reasons": [
+        "MACD金叉形成，技术形态良好",
+        "龙虎榜资金净流入排名第二"
+      ],
+      "risks": ["高换手率可能加大波动"],
+      "hold_days": 5,
+      "position_pct": 3
+    },
+    {
+      "code": "600722",
+      "name": "金牛化工",
+      "rating": "watch",
+      "confidence": 0.6,
+      "entry_strategy": "短线逢低补涨，关注布林通道中轨附近",
+      "target_price": 9.2,
+      "stop_loss": 8.2,
+      "reasons": [
+        "RSI处于合理区间",
+        "较低负债率风险较小"
+      ],
+      "risks": ["成交量偏低，缺乏强支撑"],
+      "hold_days": 4,
+      "position_pct": 2
+    }
+  ],
+  "market_view": "短线存量资金博弈，关注龙虎榜股分化表现，宜控制仓位主动择机布局。",
+  "top_picks": ["603118", "600667"]
+}
